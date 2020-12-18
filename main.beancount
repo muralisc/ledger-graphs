@@ -4,4 +4,11 @@
 2007-02-01 open Equity:OpeningBalences INR
 2007-02-01 open Assets:Bank:SBI:Savings:Emergency INR
 2007-02-01 open Income:SAP:Takehome INR
+
 include "ledger_2016.txt"
+
+2007-02-01 open Income:SAP INR
+2007-02-01 open Expenses:UnaccountedExpenses INR
+2007-02-01 open Assets:Investments:BTC:Zebpay BTC
+
+include "ledger_2017.txt"
