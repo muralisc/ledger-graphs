@@ -12,3 +12,6 @@ include "ledger_2016.txt"
 2007-02-01 open Assets:Investments:BTC:Zebpay BTC
 
 include "ledger_2017.txt"
+
+
+include "ledger_2018.txt"
