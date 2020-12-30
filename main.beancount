@@ -1,4 +1,4 @@
-2007-02-01 open Assets:Bank:Citi:Savings:Emergency              INR
+2007-02-01 open Assets:Bank:Citi:Savings:Emergency
 2007-02-01 open Assets:Bank:SBI:Fixed              INR
 2007-02-01 open Assets:Bank:Citi:Fixed INR
 2007-02-01 open Equity:OpeningBalences INR
@@ -13,5 +13,18 @@ include "ledger_2016.txt"
 
 include "ledger_2017.txt"
 
+2007-02-01 open Assets:LongTerm:LIC INR
+2007-02-01 open Expenses:Allowance INR
+2007-02-01 open Assets:Investments:Zerodha:Kite INR
+2007-02-01 open Liabilities:CreditCard INR
+2007-02-01 open Expenses:Living INR
+2007-02-01 open Expenses:Taxes INR
+2007-02-01 open Expenses:Housing INR
+2007-02-01 open Expenses:Donations INR
+2007-02-01 open Income:Cisco INR
+2007-02-01 open Assets:LongTerm:EPF INR
+2007-02-01 open Assets:LongTerm:NPS INR
+2007-02-01 open Assets:Investments:Zerodha:Coin:LongTerm INR
+2007-02-01 open Assets:Investments:Zerodha:Funds INR
 
 include "ledger_2018.txt"
