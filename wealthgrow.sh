@@ -4,8 +4,13 @@ if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1280,720 persist"
 fi
 
-ledger -J reg ^Assets -M --collapse "$@" > ledgeroutput1.tmp
-ledger -J reg ^Expenses -M --collapse --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(display_total))))\n" "$@" > ledgeroutput2.tmp
+ledger -J reg ^Assets -M --collapse \
+  --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" \
+  "$@" > ledgeroutput1.tmp
+ledger -J reg ^Expenses -M \
+  --collapse \
+  --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" \
+  "$@" > ledgeroutput2.tmp
 
 (cat <<EOF) | gnuplot
   set terminal $LEDGER_TERM
@@ -25,4 +30,4 @@ ledger -J reg ^Expenses -M --collapse --plot-total-format="%(format_date(date, \
     using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle
 EOF
 
-rm ledgeroutput*.tmp
+#rm ledgeroutput*.tmp
