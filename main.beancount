@@ -10,7 +10,6 @@ include "ledger_2016.txt"
 
 2007-02-01 open Income:SAP INR
 2007-02-01 open Expenses:UnaccountedExpenses INR
-2007-02-01 open Expenses:Shopping
 2007-02-01 open Expenses:Utilities
 2007-02-01 open Expenses:Groceries
 2007-02-01 open Expenses:Transport
@@ -23,7 +22,6 @@ include "ledger_2017.txt"
 2007-02-01 open Expenses:Allowance
 2007-02-01 open Assets:Investments:Zerodha:Kite INR
 2007-02-01 open Liabilities:CreditCard INR
-2007-02-01 open Expenses:Living INR
 2007-02-01 open Expenses:Taxes INR
 2007-02-01 open Expenses:Housing
 2007-02-01 open Expenses:Donations INR
