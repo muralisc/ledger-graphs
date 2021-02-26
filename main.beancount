@@ -3,7 +3,7 @@
 2007-02-01 open Assets:Bank:Citi:Fixed INR
 2007-02-01 open Equity:OpeningBalences INR
 2007-02-01 open Assets:Bank:SBI:Savings:Emergency INR
-2007-02-01 open Expenses:Posessions INR
+2007-02-01 open Expenses:Posessions
 2007-02-01 open Income:SAP:Takehome INR
 
 include "ledger_2016.txt"
