@@ -9,17 +9,22 @@ include "ledger_2016.txt"
 
 2007-02-01 open Income:SAP INR
 2007-02-01 open Expenses:UnaccountedExpenses INR
+2007-02-01 open Expenses:Shopping
+2007-02-01 open Expenses:Utilities
+2007-02-01 open Expenses:Groceries
+2007-02-01 open Expenses:Transport
+2007-02-01 open Expenses:Entertainment
 2007-02-01 open Assets:Investments:BTC:Zebpay BTC
 
 include "ledger_2017.txt"
 
 2007-02-01 open Assets:LongTerm:LIC INR
-2007-02-01 open Expenses:Allowance INR
+2007-02-01 open Expenses:Allowance
 2007-02-01 open Assets:Investments:Zerodha:Kite INR
 2007-02-01 open Liabilities:CreditCard INR
 2007-02-01 open Expenses:Living INR
 2007-02-01 open Expenses:Taxes INR
-2007-02-01 open Expenses:Housing INR
+2007-02-01 open Expenses:Housing
 2007-02-01 open Expenses:Donations INR
 2007-02-01 open Income:Cisco
 2007-02-01 open Assets:LongTerm:EPF INR
@@ -34,13 +39,9 @@ include "ledger_2018.txt"
 2020-02-01 open Assets:Bank:Monzo GBP
 2020-02-01 open Assets:Investments:TataSmartPlusInsurance INR
 2020-02-01 open Assets:Investments:Vanguard GBP
-2020-02-01 open Expenses:Utilities
-2020-02-01 open Expenses:Groceries
 2020-02-01 open Expenses:Health
 2020-02-01 open Expenses:Investment:Fees
-2020-02-01 open Expenses:Entertainment
 2020-02-01 open Assets:Investments:BTC:Electrum:Legacy BTC
-2020-02-01 open Expenses:Transport
 2020-02-01 open Assets:Investments:CharlesSchwab
 2020-02-01 open Assets:Investments:Zerodha:Coin:MAUSDF:BearMarketFund
 2020-02-01 open Assets:Investments:Zerodha:Coin:MACMF:InsuranceFund
@@ -51,5 +52,6 @@ include "ledger_2018.txt"
 include "ledger_2020.txt"
 
 2021-01-01 open Assets:Investments:BTC:Wazirx:Funds INR
+2021-01-01 open Assets:Bank:HSBC GBP
 
 include "ledger_2021.txt"
