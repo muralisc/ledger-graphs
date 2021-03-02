@@ -33,13 +33,15 @@ include "ledger_2017.txt"
 
 include "ledger_2018.txt"
 
-2020-02-01 open Expenses:Insurance INR
+2020-02-01 open Assets:Investments:TataSampoornaRakshaInsurance INR
 2020-02-01 open Income:Facebook GBP
 2020-02-01 open Assets:Bank:Monzo GBP
 2020-02-01 open Assets:Investments:TataSmartPlusInsurance INR
 2020-02-01 open Assets:Investments:Vanguard GBP
 2020-02-01 open Expenses:Health
-2020-02-01 open Expenses:Investment:Fees
+2020-02-01 open Income:Zerodha:Divident
+2020-02-01 open Income:Citi:Interest
+2020-02-01 open Expenses:InvestmentFees
 2020-02-01 open Assets:Investments:BTC:Electrum:Legacy BTC
 2020-02-01 open Assets:Investments:CharlesSchwab
 2020-02-01 open Assets:Investments:Zerodha:Coin:MAUSDF:BearMarketFund
