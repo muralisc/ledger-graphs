@@ -1,28 +1,27 @@
 #!/usr/bin/python3
 
-TIME_INTERVAL="1year"
-UNIT="lakhs"
-SAVINGS_AMOUNT_PER_YEAR=12 # lakhs
-INITIAL_CORPUS_ENDING_YEAR=2019
-INITIAL_CORPUS=42 #lakhs
-AGE_ENDING_YEAR=30
-RATE_OF_INTEREST=6
-Inflation=8
+SAVINGS_AMOUNT_PER_YEAR=12.0 # lakhs
+EXPENSE_PER_YEAR = 12.0 # lakhs
+INITIAL_CORPUS=42.0 #lakhs
+INITIAL_CORPUS_YEAR=2019
+AGE_INITIAL_CORPUS=30
+RATE_OF_INTEREST=6.0
+Inflation=8.0
 Last_age=35
 
 # Assumptions
 # Expense per year == Savings
 
-# Starting with prev corpus and savings rate, estimate: 
+# Starting with prev corpus and savings rate, estimate:
 # 1. Networth at an age
 # 2. Salary required to achieve that
 # 3. Corpus required for fire : Interest from corpus should be equal to expanses
 
-YEAR=INITIAL_CORPUS_ENDING_YEAR
+YEAR=INITIAL_CORPUS_YEAR
 PREV_CORPUS=INITIAL_CORPUS
-year = INITIAL_CORPUS_ENDING_YEAR
+year = INITIAL_CORPUS_YEAR
 titles = ""
-titles += "{:5}".format("AGE")
+titles += "{:3}".format("AGE")
 titles += ",YEAR"
 titles += ",Inflation"
 titles += ",Savings"
@@ -35,37 +34,40 @@ titles += ",SalReqBeforeTax"
 titles += ",FIRE_Now"
 print(titles)
 titles = ""
-titles += "{:5}".format(AGE_ENDING_YEAR)
-titles += ",{:5}".format(year)
-titles += ", " 
-titles += ", "
-titles += ", "
-titles += ", "
-titles += ",{:5.2f}" .format(PREV_CORPUS)
+titles += " {:3}"    .format(AGE_INITIAL_CORPUS)
+titles += ",{:5}"    .format(year)
+titles += ",{:7}%"   .format(8.0)
+titles += ",{:6}"    .format("")
+titles += ",{:5}"    .format("")
+titles += ",{:7}"    .format("")
+titles += ",{:8.2f}" .format(PREV_CORPUS)
 titles += ",|"
-titles += ", "
-titles += ", "
-titles += ", "
+titles += ",{:14}".format("")
+titles += ",{:15}".format("")
+titles += ",{:8}".format("")
 print(titles)
-for age in range(AGE_ENDING_YEAR+1, Last_age+1):
+for age in range(AGE_INITIAL_CORPUS+1, Last_age+1):
   INTEREST=PREV_CORPUS*RATE_OF_INTEREST/100
   NEXT_CORPUS=INTEREST + PREV_CORPUS + SAVINGS_AMOUNT_PER_YEAR
   year+=1
-  SALARY_REQ_AFTER_TAX=2*SAVINGS_AMOUNT_PER_YEAR
-  SALARY_BEFORE_TAX = SALARY_REQ_AFTER_TAX / 0.7
-  FIRE_CORPUS_REQ = SAVINGS_AMOUNT_PER_YEAR / RATE_OF_INTEREST * 100
+  # savings should increase per year
+  SAVINGS_AMOUNT_PER_YEAR = SAVINGS_AMOUNT_PER_YEAR * (1 + Inflation/100)
+  EXPENSE_PER_YEAR = EXPENSE_PER_YEAR * (1 + Inflation/100)
+  SALARY_REQ_AFTER_TAX=EXPENSE_PER_YEAR + SAVINGS_AMOUNT_PER_YEAR # assuming will save half of the salary
+  SALARY_BEFORE_TAX = SALARY_REQ_AFTER_TAX / 0.70 # add the tax , assuming 30 tax bracket
+  FIRE_CORPUS_REQ = SALARY_REQ_AFTER_TAX / 0.04 # 4percent of corpus should be your salary
   msg = ""
-  msg += "{:5}"     .format (age)
+  msg += " {:3}"    .format (age)
   msg += ",{:5}"    .format (year)
-  msg += ",{}%"     .format (Inflation)
-  msg += ",{:5.2f}" .format (SAVINGS_AMOUNT_PER_YEAR)
+  msg += ",{:7}%"   .format (Inflation)
+  msg += ",{:6.2f}" .format (SAVINGS_AMOUNT_PER_YEAR)
   msg += ",{:5}"    .format (RATE_OF_INTEREST)
-  msg += ",{:5.2f}" .format (INTEREST)
-  msg += ",{:5.2f}" .format (NEXT_CORPUS)
+  msg += ",{:7.2f}" .format (INTEREST)
+  msg += ",{:8.2f}" .format (NEXT_CORPUS)
   msg += ",|"
-  msg += ",{:5.2f}" .format (SALARY_REQ_AFTER_TAX)
-  msg += ",{:5.2f}" .format (SALARY_BEFORE_TAX)
-  msg += ",{:5.2f}" .format (FIRE_CORPUS_REQ)
+  msg += ",{:14.2f}" .format (SALARY_REQ_AFTER_TAX)
+  msg += ",{:15.2f}" .format (SALARY_BEFORE_TAX)
+  msg += ",{:8.2f}" .format (FIRE_CORPUS_REQ)
   print(msg)
   PREV_CORPUS= NEXT_CORPUS
   SAVINGS_AMOUNT_PER_YEAR *= 1.00 + Inflation/100
