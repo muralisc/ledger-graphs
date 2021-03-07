@@ -25,7 +25,7 @@ ledger -J reg -X INR ^Expenses -M \
   set style fill transparent solid 0.6 noborder
   plot "ledgeroutput1.tmp" \
     using 1:2 with filledcurves x1 title "Assets" linecolor rgb "goldenrod", '' \
-    using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, "ledgeroutput2.tmp" \
+    using 1:2:2 with labels font "Courier,8" rotate by 45 offset 0,0.5 textcolor linestyle 0 notitle, "ledgeroutput2.tmp" \
     using 1:2 with filledcurves y1=0 title "Expenses" linecolor rgb "violet", '' \
     using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle
 EOF
