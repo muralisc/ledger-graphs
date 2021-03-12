@@ -46,7 +46,7 @@ include "ledger_2018.txt"
 2020-02-01 open Assets:Investments:CharlesSchwab
 2020-02-01 open Assets:Investments:Zerodha:Coin:MAUSDF:BearMarketFund
 2020-02-01 open Assets:Investments:Zerodha:Coin:MACMF:InsuranceFund
-2020-02-01 open Assets:Investments:Crypto:Wazirx BTC "NONE"
+2020-02-01 open Assets:Investments:Crypto:Wazirx:Btc BTC "NONE"
 2020-02-01 open Assets:Investments:Zerodha:ICLShares
 2020-02-01 open Assets:Investments:Profit
 
