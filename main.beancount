@@ -33,6 +33,7 @@ include "ledger_2017.txt"
 2007-02-01 open Assets:LongTerm:EPF INR
 2007-02-01 open Assets:LongTerm:NPS INR
 2007-02-01 open Assets:Investments:Zerodha:Coin:LongTerm INR
+2018-02-01 open Assets:Investments:Zerodha:ICLShares
 2007-02-01 open Assets:Investments:Zerodha:Funds INR
 
 include "ledger_2018.txt"
@@ -51,7 +52,6 @@ include "ledger_2018.txt"
 2020-02-01 open Assets:Investments:Zerodha:Coin:MAUSDF:BearMarketFund
 2020-02-01 open Assets:Investments:Zerodha:Coin:MACMF:InsuranceFund
 2020-02-01 open Assets:Investments:Crypto:Wazirx:Btc BTC "NONE"
-2020-02-01 open Assets:Investments:Zerodha:ICLShares
 2020-02-01 open Assets:Investments:Profit
 
 include "ledger_2020.txt"
