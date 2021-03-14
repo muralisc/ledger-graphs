@@ -1,3 +1,5 @@
+; vim: ft=ledger:
+
 2007-02-01 open Assets:Bank:Citi:Savings
 2007-02-01 open Assets:Bank:SBI:Fixed              INR
 2007-02-01 open Assets:Bank:Citi:Fixed INR
@@ -22,6 +24,11 @@ include "ledger_2016.txt"
 
 include "ledger_2017.txt"
 
+2017/12/25  balance Assets:Bank:SBI:Savings   34134.00 INR
+2017/12/25  balance Assets:Bank:SBI:Fixed     368280.00 INR
+2017/12/25  balance Assets:Bank:Citi:Savings  175776.93 INR
+2017/12/25  balance Assets:Bank:Citi:Fixed    1083833.00 INR
+
 2007-02-01 open Assets:LongTerm:LIC INR
 2007-02-01 open Expenses:Allowance
 2007-02-01 open Assets:Investments:Zerodha:Kite INR
@@ -37,6 +44,8 @@ include "ledger_2017.txt"
 2007-02-01 open Assets:Investments:Zerodha:Funds INR
 
 include "ledger_2018.txt"
+
+2019/12/25  balance Assets:Bank:Citi:Fixed          1399175.00 INR
 
 2020-02-01 open Assets:Investments:TataSampoornaRakshaInsurance INR
 2020-02-01 open Income:Facebook GBP
@@ -56,8 +65,19 @@ include "ledger_2018.txt"
 
 include "ledger_2020.txt"
 
+2020/12/31  balance Assets:Bank:Citi:Fixed            250000.00 INR
+2020/12/31  balance Liabilities:CreditCard            -4343.44 INR
+2020/12/31  balance Assets:Bank:Citi:Savings          614802.33 INR
+2020/12/31  balance Assets:Investments:Zerodha:Funds  74383.25 INR
+2020/12/31  balance Assets:Investments:Zerodha:Kite   839963.91 INR
+
 2021-01-01 open Assets:Investments:Crypto:Wazirx:Funds INR
 2021-01-01 open Assets:Bank:HSBC GBP
 2021-01-01 open Assets:Investments:Crypto:Coinbase:Funds   GBP
 
-include "ledger_2021.txt"
+include "ledger_2021_feb.txt"
+
+2021/02/28  balance Assets:Bank:HSBC                          5,697.91 GBP
+2021/02/28  balance Assets:Bank:Citi:Savings                  249192.53 INR
+2021/03/01  balance Assets:Bank:Monzo                         10308.38 GBP
+2021/03/01  balance Assets:Investments:Zerodha:Coin:LongTerm  1876767.17 INR
