@@ -10,7 +10,7 @@ fi
 ledger -f $LEDGER_FILE -X INR -jMn reg --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Income' "$@" > ledgeroutput1.tmp
 ledger -f $LEDGER_FILE -X INR -jMn reg --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Expe' "$@" > ledgeroutput2.tmp
 
-python3 monthly_expense.py | sort > ledgeroutput3.tmp
+python3 plot_ledger_monthly_expense.py | sort > ledgeroutput3.tmp
 
 (cat <<EOF) | gnuplot
   set terminal $LEDGER_TERM
