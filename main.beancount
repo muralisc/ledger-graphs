@@ -6,6 +6,10 @@
 2007-02-01 open Expenses:Posessions
 2007-02-01 open Income:SAP:Takehome INR
 
+2007-01-01 commodity INR
+  name: "Indian Rupee"
+  asset-class: "cash"
+
 include "ledger_2016.txt"
 
 2007-02-01 open Income:SAP INR
