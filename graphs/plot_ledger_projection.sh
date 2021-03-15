@@ -14,14 +14,23 @@ ledger -J reg -X INR ^Expenses -M \
 
 durMonths=12
 yearlyInterest=10
-dateEnd=$(date +"%Y-%m")
+dateEnd=2021-03 # $(date +"%Y-%m")
 dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
 durationsav=$(ledger b Income Expense -X INR -n --begin $dateBeg --end $dateEnd --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
-monthsav=$((durationsav/$durMonths))
+monthsav_old=138074 # avg cisco savings
+monthsav=600000 # $((durationsav/$durMonths))
+
+# Calculated with no compound Interest
 cur=$(ledger b Assets -X INR -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
 datev=$(dateadd now 0mo --format "%Y-%m-%d")
 while (( $cur < 80000000)); do echo "$datev $cur" ; cur=$((cur+monthsav*12)); datev=$(dateadd $datev +12mo --format "%Y-%m-%d");  done > ledgeroutput3.tmp
 
+# TODO: make this function
+cur=$(ledger b Assets -X INR -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+datev=$(dateadd now 0mo --format "%Y-%m-%d")
+while (( $cur < 80000000)); do echo "$datev $cur" ; cur=$((cur+monthsav_old*12)); datev=$(dateadd $datev +12mo --format "%Y-%m-%d");  done > ledgeroutput5.tmp
+
+# Project with Compound Interest
 cur=$(ledger b Assets -X INR -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
 datev=$(dateadd now 0mo --format "%Y-%m-%d")
 while (( $(echo "$cur < 80000000" | bc -l) )); do
@@ -29,6 +38,15 @@ while (( $(echo "$cur < 80000000" | bc -l) )); do
   cur=$(bc <<< "scale=2; $cur * (1 + $yearlyInterest/100) + ($monthsav * 12)")
   datev=$(dateadd $datev +12mo --format "%Y-%m-%d");
 done > ledgeroutput4.tmp
+
+# TODO : make function
+cur=$(ledger b Assets -X INR -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+datev=$(dateadd now 0mo --format "%Y-%m-%d")
+while (( $(echo "$cur < 80000000" | bc -l) )); do
+  echo "$datev $cur" ;
+  cur=$(bc <<< "scale=2; $cur * (1 + $yearlyInterest/100) + ($monthsav_old * 12)")
+  datev=$(dateadd $datev +12mo --format "%Y-%m-%d");
+done > ledgeroutput6.tmp
 
 echo $LEDGER_TERM
 (cat <<EOF) | gnuplot
@@ -57,7 +75,11 @@ echo $LEDGER_TERM
     "ledgeroutput3.tmp" using 1:2 with linespoints ls 1 title "Projection" ,\
                      '' using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 0 notitle, \
     "ledgeroutput4.tmp" using 1:2 with linespoints ls 2 title "ProjectionCompound", \
-                     '' using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 2 notitle
+                     '' using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 2 notitle, \
+    "ledgeroutput5.tmp" using 1:2 with linespoints ls 1 title "Projection old" ,\
+                     '' using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle, \
+    "ledgeroutput6.tmp" using 1:2 with linespoints ls 2 title "ProjectionCompound 0ld", \
+                     '' using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 3 notitle
 EOF
 
 #rm ledgeroutput*.tmp
