@@ -75,9 +75,17 @@ include "ledger_2020.txt"
 2021-01-01 open Assets:Bank:HSBC GBP
 2021-01-01 open Assets:Investments:Crypto:Coinbase:Funds   GBP
 
-include "ledger_2021_feb.txt"
+2021-01-01 open Income:SBI:Interest INR
 
-2021/02/28  balance Assets:Bank:HSBC                          5,697.91 GBP
+include "ledger_2021_02feb.txt"
+
 2021/02/28  balance Assets:Bank:Citi:Savings                  249192.53 INR
+2021/02/28  balance Assets:Bank:HSBC                          5,697.91 GBP
 2021/03/01  balance Assets:Bank:Monzo                         10308.38 GBP
 2021/03/01  balance Assets:Investments:Zerodha:Coin:LongTerm  1876767.17 INR
+
+
+include "ledger_2021_03march.txt"
+
+2021/04/01 balance Assets:Bank:SBI:Savings           147046.23 INR
+2021/04/01 balance Assets:Bank:Monzo                10990.33 GBP
