@@ -51,7 +51,9 @@ include "ledger_2018.txt"
 2020-02-01 open Income:Facebook GBP
 2020-02-01 open Assets:Bank:Monzo GBP
 2020-02-01 open Assets:Investments:TataSmartPlusInsurance INR
-2020-02-01 open Assets:Investments:Vanguard GBP
+2020-02-01 open Assets:Investments:Vanguard:Funds GBP
+2020-02-01 open Assets:Investments:Vanguard:Ftse100  GBP
+2020-02-01 open Assets:Investments:Vanguard:Fees GBP
 2020-02-01 open Expenses:Health
 2020-02-01 open Income:Zerodha:Divident
 2020-02-01 open Income:Citi:Interest
@@ -84,8 +86,15 @@ include "ledger_2021_02feb.txt"
 2021/03/01  balance Assets:Bank:Monzo                         10308.38 GBP
 2021/03/01  balance Assets:Investments:Zerodha:Coin:LongTerm  1876767.17 INR
 
+2021-01-01 open Assets:Investments:Crypto:Coinbase:Bitcoin
+2021-01-01 open Assets:Investments:Crypto:Coinbase:Btc BTC
+2021-01-01 open Assets:Investments:Crypto:Coinbase:Fees GBP
 
 include "ledger_2021_03march.txt"
 
-2021/04/01 balance Assets:Bank:SBI:Savings           147046.23 INR
-2021/04/01 balance Assets:Bank:Monzo                10990.33 GBP
+2021/04/01 balance Assets:Bank:SBI:Savings                     147046.23 INR
+2021/04/01 balance Assets:Bank:Monzo                            10990.33 GBP
+2021/04/01 balance Assets:Bank:Citi:Savings                    241886.21 INR
+2021/04/01 balance Assets:Bank:HSBC                             17526.07 GBP
+2021/04/01 balance Assets:Investments:Vanguard:Ftse100            200.00 GBP
+2021/04/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.00993773 BTC

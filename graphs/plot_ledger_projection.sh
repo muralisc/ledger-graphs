@@ -14,11 +14,11 @@ ledger -J reg -X INR ^Expenses -M \
 
 durMonths=12
 yearlyInterest=10
-dateEnd=2021-03 # $(date +"%Y-%m")
+dateEnd=2021-04 # $(date +"%Y-%m")
 dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
 durationsav=$(ledger b Income Expense -X INR -n --begin $dateBeg --end $dateEnd --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
 monthsav_old=138074 # avg cisco savings
-monthsav=600000 # $((durationsav/$durMonths))
+monthsav=$((durationsav/$durMonths)) #600000
 
 # Calculated with no compound Interest
 cur=$(ledger b Assets -X INR -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
@@ -57,6 +57,7 @@ echo $LEDGER_TERM
   set xtics nomirror scale 0 center
   unset mxtics
   set mytics 2
+  set key bottom right
   set grid xtics ytics mytics
   set title "Wealthgrow"
   set ylabel "Amount"
@@ -76,9 +77,9 @@ echo $LEDGER_TERM
                      '' using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 0 notitle, \
     "ledgeroutput4.tmp" using 1:2 with linespoints ls 2 title "ProjectionCompound", \
                      '' using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 2 notitle, \
-    "ledgeroutput5.tmp" using 1:2 with linespoints ls 1 title "Projection old" ,\
+    "ledgeroutput5.tmp" using 1:2 with linespoints ls 1 title "Projection Cisco" ,\
                      '' using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle, \
-    "ledgeroutput6.tmp" using 1:2 with linespoints ls 2 title "ProjectionCompound 0ld", \
+    "ledgeroutput6.tmp" using 1:2 with linespoints ls 2 title "ProjectionCompound Cisco", \
                      '' using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 3 notitle
 EOF
 
