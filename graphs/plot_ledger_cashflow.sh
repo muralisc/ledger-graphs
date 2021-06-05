@@ -8,6 +8,7 @@ ledger -X INR -J reg ^Income -M --collapse --plot-total-format="%(format_date(da
 ledger -X INR -J reg ^Expenses -M --collapse --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(display_total))))\n" "$@" > ledgeroutput2.tmp
 
 (cat <<EOF) | gnuplot
+  # set terminal canvas mousing size 1750, 900
   set terminal $LEDGER_TERM
   set xdata time
   set timefmt "%Y-%m-%d"

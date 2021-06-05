@@ -13,6 +13,7 @@ ledger -J reg -R -X INR ^Expenses -M \
   "$@" > ledgeroutput2.tmp
 
 (cat <<EOF) | gnuplot
+  # set terminal canvas mousing size 1750, 900
   set terminal $LEDGER_TERM
   set xdata time
   set timefmt "%Y-%m-%d"

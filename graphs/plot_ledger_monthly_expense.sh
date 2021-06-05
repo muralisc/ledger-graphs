@@ -14,6 +14,7 @@ python3 plot_ledger_monthly_expense.py | sort > ledgeroutput3.tmp
 
 (cat <<EOF) | gnuplot
   set terminal $LEDGER_TERM
+  # set terminal canvas mousing size 1750, 900
   set xdata time
   set timefmt "%Y-%m-%d"
   set xtics nomirror scale 0 rotate by -55

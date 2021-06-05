@@ -98,3 +98,20 @@ include "ledger_2021_03march.txt"
 2021/04/01 balance Assets:Bank:HSBC                             17526.07 GBP
 2021/04/01 balance Assets:Investments:Vanguard:Ftse100            200.00 GBP
 2021/04/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.00993773 BTC
+
+2021-04-01 open Assets:Investments:IG:Funds
+2021-04-01 open Income:Facebook:Reimburse
+
+include "ledger_2021_04april.txt"
+
+2021/05/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.02519304 BTC
+2021/05/01 balance Assets:Bank:HSBC                              8469.98 GBP
+2021/05/01 balance Assets:Investments:Vanguard:Ftse100           3200.00 GBP
+2021/05/01 balance Assets:Bank:Monzo                            17891.49 GBP
+
+include "ledger_2021_05May.txt"
+
+2021/06/01 balance Assets:Bank:Monzo                            19185.67 GBP
+2021/06/01 balance Assets:Investments:Vanguard:Ftse100           3200.00 GBP
+2021/06/01 balance Assets:Bank:HSBC                             10290.58 GBP
+2021/06/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.03252478 BTC
