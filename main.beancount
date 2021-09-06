@@ -53,6 +53,7 @@ include "ledger_2018.txt"
 2020-02-01 open Assets:Investments:TataSmartPlusInsurance INR
 2020-02-01 open Assets:Investments:Vanguard:Funds GBP
 2020-02-01 open Assets:Investments:Vanguard:Ftse100  GBP
+2020-02-01 open Assets:Investments:Vanguard:Snp500  GBP
 2020-02-01 open Assets:Investments:Vanguard:Fees GBP
 2020-02-01 open Expenses:Health
 2020-02-01 open Income:Zerodha:Divident
@@ -109,9 +110,26 @@ include "ledger_2021_04april.txt"
 2021/05/01 balance Assets:Investments:Vanguard:Ftse100           3200.00 GBP
 2021/05/01 balance Assets:Bank:Monzo                            17891.49 GBP
 
+2020-05-01 open Assets:Investments:Crypto:Coinbase:Eth ETH "NONE"
+
 include "ledger_2021_05May.txt"
 
 2021/06/01 balance Assets:Bank:Monzo                            19185.67 GBP
 2021/06/01 balance Assets:Investments:Vanguard:Ftse100           3200.00 GBP
 2021/06/01 balance Assets:Bank:HSBC                             10290.58 GBP
 2021/06/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.03252478 BTC
+
+include "ledger_2021_06June.txt"
+
+2021/07/01 balance Assets:Bank:HSBC                             13422.88 GBP
+2021/07/01 balance Assets:Bank:Monzo                            19666.22 GBP
+
+include "ledger_2021_07July.txt"
+
+2021/08/01 balance Assets:Bank:Monzo                            20762.99 GBP
+2021/08/01 balance Assets:Bank:HSBC                             10256.42 GBP
+
+include "ledger_2021_08Aug.txt"
+
+2021/09/01 balance Assets:Bank:HSBC                             10499.29 GBP
+2021/09/01 balance Assets:Bank:Monzo                            21149.54 GBP

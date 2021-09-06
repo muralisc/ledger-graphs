@@ -1,5 +1,10 @@
 #!/bin/bash
 
+
+# 
+# This plots the Assets and Expenses till date
+
+
 if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1280,720 persist"
 fi

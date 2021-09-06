@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Needs dateutils installed
+# sudo apt install dateutils
+
+export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
+export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
+
+function dateadd() {
+	dateutils.dadd $@
+}
 if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1750,900 persist"
 fi
@@ -14,7 +23,7 @@ ledger -J reg -X INR ^Expenses -M \
 
 durMonths=12
 yearlyInterest=10
-dateEnd=2021-04 # $(date +"%Y-%m")
+dateEnd=2021-08 # $(date +"%Y-%m")
 dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
 durationsav=$(ledger b Income Expense -X INR -n --begin $dateBeg --end $dateEnd --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
 monthsav_old=138074 # avg cisco savings
@@ -48,10 +57,16 @@ while (( $(echo "$cur < 80000000" | bc -l) )); do
   datev=$(dateadd $datev +12mo --format "%Y-%m-%d");
 done > ledgeroutput6.tmp
 
+
+#
+# Enabled the UserDir module in apache so we can access this form index.html
+#
 echo $LEDGER_TERM
 (cat <<EOF) | gnuplot
   # set terminal canvas mousing size 1750, 900
-  set terminal $LEDGER_TERM
+  # set terminal $LEDGER_TERM
+  set terminal pngcairo size 1750,900 enhanced font 'Verdana,10'
+  set output "$HOME/public_html/ledger_projection.png"
   set xdata time
   set timefmt "%Y-%m-%d"
   set xtics nomirror scale 0 center
@@ -65,7 +80,7 @@ echo $LEDGER_TERM
   #linestyle for 3
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
   #linestyle for 4
-  set style line 2 lc rgb '#dd181f' lt 1 lw 2 pt 7 pi -1 ps 1.5
+  set style line 2 lc rgb '#dd181f' lt 1 lw 2 pt 5 pi -1 ps 1.5
   set pointintervalbox 3
 
   plot "ledgeroutput1.tmp" \
