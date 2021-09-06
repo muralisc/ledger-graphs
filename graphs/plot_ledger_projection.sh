@@ -14,26 +14,31 @@ if [[ -z "$LEDGER_TERM" ]]; then
 fi
 
 CURRENCY=INR
+targe_amt=$((1000000*80))
+
+CURRENCY=USD
+targe_amt=$((1000000/2))
 
 ledger -J reg -X $CURRENCY ^Assets -M --collapse \
   --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" \
   "$@" > ledgeroutput_assets.tmp
-ledger -J reg -X $CURRENCY ^Expenses -M \
+ledger -J reg -X $CURRENCY ^Expense -M \
   --collapse \
   --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" \
   "$@" > ledgeroutput_expense.tmp
 
 durMonths=12
-yearlyInterest=10
+yearlyInterest=3
 dateEnd=2021-08 # $(date +"%Y-%m")
 dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
 echo "Calulating avg monthly savings from $dateBeg to $dateEnd"
 durationsav=$(ledger b Income Expense -X $CURRENCY -n --begin $dateBeg --end $dateEnd --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
-monthsav_old=138074 # avg cisco savings
+durationsav_old=$(ledger b Income Expense -X $CURRENCY -n --begin 2019-11 --end 2020-11 --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1) # Cisco savings
+monthsav_old=$((durationsav_old/$durMonths)) # avg cisco savings
+echo "Monthly Savings Old: $monthsav_old"
 monthsav=$((durationsav/$durMonths)) #600000
 echo "Monthly Savings: $monthsav"
 
-targe_amt=$((1000000*80))
 
 # Calculated with no compound Interest
 cur=$(ledger b Assets -X $CURRENCY -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
@@ -93,7 +98,7 @@ echo $LEDGER_TERM
 
   plot \
     "ledgeroutput_assets.tmp" 	using 1:2 with filledcurves x1 title "Assets" linecolor rgb "goldenrod", \
-    ''				using 1:2:2 with labels font "Courier,8" rotate by 45 offset 0,0.5 textcolor linestyle 0 notitle, \
+    ''				every 1 using 1:2:2 with labels font "Courier,12" rotate by 05 offset 2,2.5 textcolor linestyle 0 notitle, \
     "ledgeroutput_expense.tmp"  using 1:2 with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
     ''     			using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
     "ledgeroutput3.tmp" using 1:2 with linespoints ls 1 title "Projection" ,\
