@@ -15,10 +15,10 @@ fi
 
 CURRENCY=INR
 
-ledger -J reg -X INR ^Assets -M --collapse \
+ledger -J reg -X $CURRENCY ^Assets -M --collapse \
   --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" \
   "$@" > ledgeroutput_assets.tmp
-ledger -J reg -X INR ^Expenses -M \
+ledger -J reg -X $CURRENCY ^Expenses -M \
   --collapse \
   --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" \
   "$@" > ledgeroutput_expense.tmp
@@ -28,7 +28,7 @@ yearlyInterest=10
 dateEnd=2021-08 # $(date +"%Y-%m")
 dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
 echo "Calulating avg monthly savings from $dateBeg to $dateEnd"
-durationsav=$(ledger b Income Expense -X INR -n --begin $dateBeg --end $dateEnd --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
+durationsav=$(ledger b Income Expense -X $CURRENCY -n --begin $dateBeg --end $dateEnd --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
 monthsav_old=138074 # avg cisco savings
 monthsav=$((durationsav/$durMonths)) #600000
 echo "Monthly Savings: $monthsav"
@@ -36,17 +36,17 @@ echo "Monthly Savings: $monthsav"
 targe_amt=$((1000000*80))
 
 # Calculated with no compound Interest
-cur=$(ledger b Assets -X INR -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+cur=$(ledger b Assets -X $CURRENCY -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
 datev=$(dateadd now 0mo --format "%Y-%m-%d")
 while (( $cur < $targe_amt)); do echo "$datev $cur" ; cur=$((cur+monthsav*12)); datev=$(dateadd $datev +12mo --format "%Y-%m-%d");  done > ledgeroutput3.tmp
 
 # TODO: make this function
-cur=$(ledger b Assets -X INR -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+cur=$(ledger b Assets -X $CURRENCY -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
 datev=$(dateadd now 0mo --format "%Y-%m-%d")
 while (( $cur < $targe_amt)); do echo "$datev $cur" ; cur=$((cur+monthsav_old*12)); datev=$(dateadd $datev +12mo --format "%Y-%m-%d");  done > ledgeroutput5.tmp
 
 # Project with Compound Interest
-cur=$(ledger b Assets -X INR -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+cur=$(ledger b Assets -X $CURRENCY -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
 datev=$(dateadd now 0mo --format "%Y-%m-%d")
 while (( $(echo "$cur < $targe_amt" | bc -l) )); do
   echo "$datev $cur" ;
@@ -55,7 +55,7 @@ while (( $(echo "$cur < $targe_amt" | bc -l) )); do
 done > ledgeroutput4.tmp
 
 # TODO : make function
-cur=$(ledger b Assets -X INR -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+cur=$(ledger b Assets -X $CURRENCY -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
 datev=$(dateadd now 0mo --format "%Y-%m-%d")
 while (( $(echo "$cur < $targe_amt" | bc -l) )); do
   echo "$datev $cur" ;
@@ -83,24 +83,26 @@ echo $LEDGER_TERM
   set title "Wealthgrow"
   set ylabel "Amount"
   set style fill transparent solid 0.6 noborder
-  #linestyle for 3
+  #linestyle for 1
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
-  #linestyle for 4
+  #linestyle for 2
   set style line 2 lc rgb '#dd181f' lt 1 lw 2 pt 5 pi -1 ps 1.5
+  #linestyle for 3
+  set style line 3 lc rgb '#dd181f' lt 1 lw 2 pt 3 pi -1 ps 1.5
   set pointintervalbox 3
 
-  plot "ledgeroutput_assets.tmp" \
-    using 1:2 with filledcurves x1 title "Assets" linecolor rgb "goldenrod", '' \
-    using 1:2:2 with labels font "Courier,8" rotate by 45 offset 0,0.5 textcolor linestyle 0 notitle, "ledgeroutput_expense.tmp" \
-    using 1:2 with filledcurves y1=0 title "Expenses" linecolor rgb "violet", '' \
-    using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
+  plot \
+    "ledgeroutput_assets.tmp" 	using 1:2 with filledcurves x1 title "Assets" linecolor rgb "goldenrod", \
+    ''				using 1:2:2 with labels font "Courier,8" rotate by 45 offset 0,0.5 textcolor linestyle 0 notitle, \
+    "ledgeroutput_expense.tmp"  using 1:2 with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
+    ''     			using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
     "ledgeroutput3.tmp" using 1:2 with linespoints ls 1 title "Projection" ,\
                      '' using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 0 notitle, \
     "ledgeroutput4.tmp" using 1:2 with linespoints ls 2 title "ProjectionCompound", \
                      '' using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 2 notitle, \
-    "ledgeroutput5.tmp" using 1:2 with linespoints ls 1 title "Projection Cisco" ,\
+    "ledgeroutput5.tmp" using 1:2 with linespoints ls 3 title "Projection Cisco" ,\
                      '' using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle, \
-    "ledgeroutput6.tmp" using 1:2 with linespoints ls 2 title "ProjectionCompound Cisco", \
+    "ledgeroutput6.tmp" using 1:2 with linespoints ls 4 title "ProjectionCompound Cisco", \
                      '' using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 4 notitle
 EOF
 
