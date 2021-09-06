@@ -13,21 +13,25 @@ if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1750,900 persist"
 fi
 
+CURRENCY=INR
+
 ledger -J reg -X INR ^Assets -M --collapse \
   --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" \
-  "$@" > ledgeroutput1.tmp
+  "$@" > ledgeroutput_assets.tmp
 ledger -J reg -X INR ^Expenses -M \
   --collapse \
   --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" \
-  "$@" > ledgeroutput2.tmp
+  "$@" > ledgeroutput_expense.tmp
 
 durMonths=12
 yearlyInterest=10
 dateEnd=2021-08 # $(date +"%Y-%m")
 dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
+echo "Calulating avg monthly savings from $dateBeg to $dateEnd"
 durationsav=$(ledger b Income Expense -X INR -n --begin $dateBeg --end $dateEnd --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
 monthsav_old=138074 # avg cisco savings
 monthsav=$((durationsav/$durMonths)) #600000
+echo "Monthly Savings: $monthsav"
 
 targe_amt=$((1000000*80))
 
@@ -85,9 +89,9 @@ echo $LEDGER_TERM
   set style line 2 lc rgb '#dd181f' lt 1 lw 2 pt 5 pi -1 ps 1.5
   set pointintervalbox 3
 
-  plot "ledgeroutput1.tmp" \
+  plot "ledgeroutput_assets.tmp" \
     using 1:2 with filledcurves x1 title "Assets" linecolor rgb "goldenrod", '' \
-    using 1:2:2 with labels font "Courier,8" rotate by 45 offset 0,0.5 textcolor linestyle 0 notitle, "ledgeroutput2.tmp" \
+    using 1:2:2 with labels font "Courier,8" rotate by 45 offset 0,0.5 textcolor linestyle 0 notitle, "ledgeroutput_expense.tmp" \
     using 1:2 with filledcurves y1=0 title "Expenses" linecolor rgb "violet", '' \
     using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
     "ledgeroutput3.tmp" using 1:2 with linespoints ls 1 title "Projection" ,\
