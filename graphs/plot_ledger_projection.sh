@@ -29,14 +29,18 @@ while (( loop < 5 )) ; do
   datev=$(dateadd $datev -1y --format="%Y-%m-%d")
 done > ledgeroutput_assets.tmp
 
-
-ledger -J reg -X $CURRENCY ^Expense -M \
-  --collapse \
-  --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" \
-  "$@" > ledgeroutput_expense.tmp
+cat /dev/null > ledgeroutput_expense.tmp
+datev=$(date +"%Y-%m-%d")
+loop=1
+while (( loop < 5 )) ; do
+  bal=$(ledger b -X $CURRENCY ^Expense --end $datev --balance-format="%(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
+  echo "$datev $bal"
+  loop=$((loop+1))
+  datev=$(dateadd $datev -1y --format="%Y-%m-%d")
+done > ledgeroutput_expense.tmp
 
 durMonths=12
-yearlyInterest=3
+yearlyInterest=8
 dateEnd=2021-08 # $(date +"%Y-%m")
 dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
 echo "Calulating avg monthly savings from $dateBeg to $dateEnd"
