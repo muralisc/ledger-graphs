@@ -111,6 +111,7 @@ include "ledger_2021_04april.txt"
 2021/05/01 balance Assets:Bank:Monzo                            17891.49 GBP
 
 2020-05-01 open Assets:Investments:Crypto:Coinbase:Eth ETH "NONE"
+2021-05-01 open Income:Facebook:RSU
 
 include "ledger_2021_05May.txt"
 

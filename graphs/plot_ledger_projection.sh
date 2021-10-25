@@ -6,6 +6,9 @@
 export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
 export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
 
+FOLDER="/var/tmp/ledger_$(date +%Y-%m-%d_%H)"
+mkdir -p $FOLDER
+
 function dateadd() {
 	dateutils.dadd $@
 }
@@ -19,6 +22,7 @@ targe_amt=$((1000000*80))
 CURRENCY=USD
 targe_amt=$((1000000/2))
 
+pushd $FOLDER
 cat /dev/null > ledgeroutput_assets.tmp
 datev=$(date +"%Y-%m-%d")
 loop=1
@@ -130,5 +134,6 @@ echo $LEDGER_TERM
     "ledgeroutput_cisco_compound.tmp" 	          using 1:2   with linespoints ls 4 title "ProjectionCompound Cisco", \
     "" 					          using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 4 notitle
 EOF
+popd
 
 #rm ledgeroutput*.tmp
