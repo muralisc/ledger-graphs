@@ -39,11 +39,36 @@ include "ledger_2017.txt"
 2007-02-01 open Income:Cisco
 2007-02-01 open Assets:LongTerm:EPF INR
 2007-02-01 open Assets:LongTerm:NPS INR
-2007-02-01 open Assets:Investments:Zerodha:Coin:LongTerm INR
 2018-02-01 open Assets:Investments:Zerodha:ICLShares
 2007-02-01 open Assets:Investments:Zerodha:Funds INR
+2018-02-01 open Assets:Investments:Zerodha:Coin:AdityaBirlaSunLifeFloatingRateFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:AxisBluechipFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:AxisLongTermEquityFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:DSPEquityBondFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:DSPTaxSaverFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:FranklinIndiaFeederFranklinUSOpportunitiesFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:IndiabullsShortTermFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:KotakBluechipFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:MiraeAssetCashManagementFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:MiraeAssetEmergingBluechipFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:MiraeAssetLargeCapFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:MiraeAssetTaxSaverFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:MotilalOswalFlexiCapFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:MotilalOswalLongTermEquityFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:MotilalOswalNasdaq100FundofFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:MotilalOswalNifty50IndexFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:ParagParikhFlexiCapFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:SBIBankingFinancialServicesFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:SBIBlueChipFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:SBIFlexiCapFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:SBISmallCapFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:UTINiftyIndexFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:MiraeAssetUltraShortDurationFundDirectPlan
+2018-02-01 open Assets:Investments:Zerodha:Coin:AdityaBirlaSunLifeOvernightFundDirectPlan
 
 include "ledger_2018.txt"
+include "ledger_2018_zerodha_coin.txt"
+include "ledger_2018_zerodha_coin1.txt"
 
 2019/12/25  balance Assets:Bank:Citi:Fixed          1399175.00 INR
 
@@ -61,16 +86,15 @@ include "ledger_2018.txt"
 2020-02-01 open Expenses:InvestmentFees
 2020-02-01 open Assets:Investments:Crypto:Electrum:Legacy BTC
 2020-02-01 open Assets:Investments:CharlesSchwab
-2020-02-01 open Assets:Investments:Zerodha:Coin:MAUSDF:BearMarketFund
-2020-02-01 open Assets:Investments:Zerodha:Coin:MACMF:InsuranceFund
 2020-02-01 open Assets:Investments:Crypto:Wazirx:Btc BTC "NONE"
 2020-02-01 open Assets:Investments:Profit
 
 include "ledger_2020.txt"
+include "ledger_2020_zerodha_coin1.txt"
 
 2020/12/31  balance Assets:Bank:Citi:Fixed            250000.00 INR
 2020/12/31  balance Liabilities:CreditCard            -4343.44 INR
-2020/12/31  balance Assets:Bank:Citi:Savings          614802.33 INR
+2020/12/31  balance Assets:Bank:Citi:Savings          717623.69 INR
 2020/12/31  balance Assets:Investments:Zerodha:Funds  74383.25 INR
 2020/12/31  balance Assets:Investments:Zerodha:Kite   839963.91 INR
 
@@ -81,11 +105,11 @@ include "ledger_2020.txt"
 2021-01-01 open Income:SBI:Interest INR
 
 include "ledger_2021_02feb.txt"
+include "ledger_2021_zerodha_coin1.txt"
 
-2021/02/28  balance Assets:Bank:Citi:Savings                  249192.53 INR
+2021/02/28  balance Assets:Bank:Citi:Savings                  352013.89 INR
 2021/02/28  balance Assets:Bank:HSBC                          5,697.91 GBP
 2021/03/01  balance Assets:Bank:Monzo                         10308.38 GBP
-2021/03/01  balance Assets:Investments:Zerodha:Coin:LongTerm  1876767.17 INR
 
 2021-01-01 open Assets:Investments:Crypto:Coinbase:Bitcoin
 2021-01-01 open Assets:Investments:Crypto:Coinbase:Btc BTC
@@ -95,7 +119,7 @@ include "ledger_2021_03march.txt"
 
 2021/04/01 balance Assets:Bank:SBI:Savings                     147046.23 INR
 2021/04/01 balance Assets:Bank:Monzo                            10990.33 GBP
-2021/04/01 balance Assets:Bank:Citi:Savings                    241886.21 INR
+2021/04/01 balance Assets:Bank:Citi:Savings                    344707.57 INR
 2021/04/01 balance Assets:Bank:HSBC                             17526.07 GBP
 2021/04/01 balance Assets:Investments:Vanguard:Ftse100            200.00 GBP
 2021/04/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.00993773 BTC
