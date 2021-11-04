@@ -158,3 +158,13 @@ include "ledger_2021_08Aug.txt"
 
 2021/09/01 balance Assets:Bank:HSBC                             10499.29 GBP
 2021/09/01 balance Assets:Bank:Monzo                            21149.54 GBP
+
+include "ledger_2021_09Sept.txt"
+
+2021/10/01 balance Assets:Bank:Monzo                            22459.06 GBP
+2021/10/01 balance Assets:Bank:HSBC                              9487.58 GBP
+
+include "ledger_2021_10Oct.txt"
+
+2021/11/01 balance Assets:Bank:Monzo                            14367.61 GBP
+2021/11/01 balance Assets:Bank:HSBC                             10554.75 GBP
