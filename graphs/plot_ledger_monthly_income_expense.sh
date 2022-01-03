@@ -10,7 +10,25 @@ fi
 ledger -f $LEDGER_FILE -X INR -jMn reg --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Income' "$@" > ledgeroutput1.tmp
 ledger -f $LEDGER_FILE -X INR -jMn reg --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Expe' "$@" > ledgeroutput2.tmp
 
-python3 plot_ledger_monthly_expense.py | sort > ledgeroutput3.tmp
+(cat <<EOF) | python3 | sort > ledgeroutput3.tmp
+#!/usr/local/bin/python3
+import csv
+from collections import defaultdict
+
+
+date_val = defaultdict(int)
+with open('ledgeroutput1.tmp') as income:
+    inc = csv.reader(income, delimiter=' ')
+    for row in inc:
+        date_val[row[0]] = int(row[1])
+with open('ledgeroutput2.tmp') as income:
+    inc = csv.reader(income, delimiter=' ')
+    for row in inc:
+        date_val[row[0]] = date_val[row[0]] - int(row[1])
+
+for k in date_val:
+    print(k, date_val[k])
+EOF
 
 (cat <<EOF) | gnuplot
   set terminal $LEDGER_TERM
@@ -25,8 +43,8 @@ python3 plot_ledger_monthly_expense.py | sort > ledgeroutput3.tmp
   plot \
     "ledgeroutput1.tmp" using 1:2 with linespoints title "Income" linecolor rgb "blue", \
     "ledgeroutput2.tmp" using 1:2 with linespoints title "Expense" ls 1, \
-                     '' using 1:2:2 with labels left font "Courier,12" rotate by 90 offset 1,1 textcolor linestyle 1 notitle, \
-    "ledgeroutput3.tmp" using 1:2 with linespoints title "Income - Expense" linecolor rgb "red"
+    "ledgeroutput3.tmp" using 1:2 with linespoints title "Income - Expense" ls 1 linecolor rgb "red", \
+                     '' using 1:2:2 with labels left font "Courier,12" rotate by 90 offset 1,1 textcolor linestyle 1 notitle
 EOF
 
 #rm ledgeroutput*.tmp

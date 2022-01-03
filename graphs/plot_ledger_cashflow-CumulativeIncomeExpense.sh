@@ -23,8 +23,8 @@ ledger -X INR -J reg ^Expenses -M --collapse --plot-total-format="%(format_date(
   plot \
     "ledgeroutput1.tmp" using 1:2 with filledcurves x1 title "Income" linecolor rgb "light-salmon", \
     ''                  using 1:2:2 with labels font "Courier,12" rotate by 65 offset 1,3 textcolor linestyle 0 notitle, \
-    "ledgeroutput2.tmp" using 1:2 with filledcurves y1=0 title "Expenses" linecolor rgb "seagreen", '' \
-    using 1:2:(sprintf('%.2f', \$2)) with labels font "Courier,12" offset 0,0.5 textcolor linestyle 0 notitle
+    "ledgeroutput2.tmp" using 1:2 with filledcurves y1=0 title "Expenses" linecolor rgb "seagreen", \
+    '' using 1:2:(sprintf('%.2f', \$2)) with labels font "Courier,12" offset 0,0.5 textcolor linestyle 0 notitle
 EOF
 
 rm ledgeroutput*.tmp
