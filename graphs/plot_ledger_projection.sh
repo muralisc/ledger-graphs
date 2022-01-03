@@ -6,12 +6,10 @@
 export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
 export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
 
-FOLDER="/var/tmp/ledger_$(date +%Y-%m-%d_%H)"
+ledger_run_date=$(date +%Y-%m-%d_%H)
+FOLDER="/var/tmp/ledger_${ledger_run_date}"
 mkdir -p $FOLDER
 
-function dateadd() {
-	dateutils.dadd $@
-}
 if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1750,900 persist"
 fi
@@ -25,9 +23,13 @@ targe_amt=$((1000000/2))
 pushd $FOLDER
 cat /dev/null > ledgeroutput_assets.tmp
 datev=$(date +"%Y-%m-%d")
+echo $datev
 loop=1
 while (( loop < 5 )) ; do
-  bal=$(ledger b -X $CURRENCY ^Assets --end $datev --balance-format="%(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
+  bal=$(ledger b \
+    -X $CURRENCY ^Assets \
+    --end $datev \
+    --balance-format="%(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
   echo "$datev $bal"
   loop=$((loop+1))
   datev=$(dateadd $datev -1y --format="%Y-%m-%d")
@@ -93,6 +95,7 @@ while (( $(echo "$cur < $targe_amt" | bc -l) )) && (( loop < 10 )); do
 done > ledgeroutput_cisco_compound.tmp
 
 
+echo "Creating file in $FOLDER/ledger_projection.png"
 #
 # Enabled the UserDir module in apache so we can access this form index.html
 #
@@ -101,7 +104,7 @@ echo $LEDGER_TERM
   # set terminal canvas mousing size 1750, 900
   # set terminal $LEDGER_TERM
   set terminal pngcairo size 1750,900 enhanced font 'Verdana,10'
-  set output "$HOME/public_html/ledger_projection.png"
+  set output "$FOLDER/ledger_projection.png"
   set xdata time
   set timefmt "%Y-%m-%d"
   set xtics nomirror scale 0 center
@@ -121,18 +124,18 @@ echo $LEDGER_TERM
   set pointintervalbox 3
 
   plot \
-    "ledgeroutput_assets.tmp" 	          	  using 1:2   with filledcurves x1 title "Assets" linecolor rgb "goldenrod", \
-    ""				          every 1 using 1:2:2 with labels font "Courier,12" rotate by 05 offset 0,0.5 textcolor linestyle 0 notitle, \
-    "ledgeroutput_expense.tmp"                    using 1:2   with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
-    ""     			                  using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
-    "ledgeroutput_current_projection.tmp"         using 1:2   with linespoints ls 1 title "Projection" ,\
-    "" 	                                          using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 0 notitle, \
-    "ledgeroutput_current_compound.tmp"           using 1:2   with linespoints ls 2 title "ProjectionCompound", \
-    "" 					          using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 2 notitle, \
-    "ledgeroutput_cisco.tmp" 		          using 1:2   with linespoints ls 3 title "Projection Cisco" ,\
-    "" 					          using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle, \
-    "ledgeroutput_cisco_compound.tmp" 	          using 1:2   with linespoints ls 4 title "ProjectionCompound Cisco", \
-    "" 					          using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 4 notitle
+    "ledgeroutput_assets.tmp" 	            using 1:2   with filledcurves x1 title "Assets" linecolor rgb "goldenrod", \
+    ""				              every 1   using 1:2:2 with labels font "Courier,12" rotate by 05 offset 0,0.5 textcolor linestyle 0 notitle, \
+    "ledgeroutput_expense.tmp"              using 1:2   with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
+    ""     			                        using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
+    "ledgeroutput_current_projection.tmp"   using 1:2   with linespoints ls 1 title "Projection" ,\
+    "" 	                                    using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 0 notitle, \
+    "ledgeroutput_current_compound.tmp"     using 1:2   with linespoints ls 2 title "ProjectionCompound", \
+    "" 					                    using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 2 notitle, \
+    "ledgeroutput_cisco.tmp" 		        using 1:2   with linespoints ls 3 title "Projection Cisco" ,\
+    "" 					                    using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle, \
+    "ledgeroutput_cisco_compound.tmp" 	    using 1:2   with linespoints ls 4 title "ProjectionCompound Cisco", \
+    "" 					                    using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 4 notitle
 EOF
 popd
 
