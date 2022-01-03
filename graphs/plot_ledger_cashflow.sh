@@ -9,7 +9,9 @@ ledger -X INR -J reg ^Expenses -M --collapse --plot-total-format="%(format_date(
 
 (cat <<EOF) | gnuplot
   # set terminal canvas mousing size 1750, 900
-  set terminal $LEDGER_TERM
+  # set terminal $LEDGER_TERM
+  set terminal pngcairo size 1750,900 enhanced font 'Verdana,10'
+  set output "ledger_cashflow-Cumulative_Income_Expense.png"
   set xdata time
   set timefmt "%Y-%m-%d"
   unset mxtics
@@ -18,10 +20,10 @@ ledger -X INR -J reg ^Expenses -M --collapse --plot-total-format="%(format_date(
   set title "Cashflow - Cumulative Income and Expenses"
   set ylabel "Cumulative Income and Expenses"
   set style fill transparent solid 0.6 noborder
-  plot "ledgeroutput1.tmp" \
-    using 1:2 with filledcurves x1 title "Income" linecolor rgb "light-salmon", '' \
-    using 1:2:2 with labels font "Courier,12" rotate by 65 offset 1,3 textcolor linestyle 0 notitle, "ledgeroutput2.tmp" \
-    using 1:2 with filledcurves y1=0 title "Expenses" linecolor rgb "seagreen", '' \
+  plot \
+    "ledgeroutput1.tmp" using 1:2 with filledcurves x1 title "Income" linecolor rgb "light-salmon", \
+    ''                  using 1:2:2 with labels font "Courier,12" rotate by 65 offset 1,3 textcolor linestyle 0 notitle, \
+    "ledgeroutput2.tmp" using 1:2 with filledcurves y1=0 title "Expenses" linecolor rgb "seagreen", '' \
     using 1:2:(sprintf('%.2f', \$2)) with labels font "Courier,12" offset 0,0.5 textcolor linestyle 0 notitle
 EOF
 
