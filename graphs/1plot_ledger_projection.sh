@@ -6,7 +6,7 @@
 export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
 export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
 
-ledger_run_date=$(date +%Y-%m-%d_%H)
+ledger_run_date=$(date +%Y-%m-%d)
 FOLDER="/var/tmp/ledger_${ledger_run_date}"
 mkdir -p $FOLDER
 
