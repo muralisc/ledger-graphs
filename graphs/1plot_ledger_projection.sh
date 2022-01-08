@@ -112,7 +112,7 @@ echo $LEDGER_TERM
   set mytics 2
   set key bottom right
   set grid xtics ytics mytics
-  set title "Wealthgrow"
+  set title "Wealthgrow $CURRENCY $ledger_run_date"
   set ylabel "Amount"
   set style fill transparent solid 0.6 noborder
   #linestyle for 1

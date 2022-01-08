@@ -42,3 +42,8 @@ curl --request POST \
   --header "Content-Type: text/plain; charset=utf-8" \
   --header "Accept: application/json" \
   --data-binary "@$influx_db_data_file"
+
+
+# COPY GENERATED PNG TO PUBLIC FOLDER
+mkdir -p ~/public_html/
+cp $PROJECTION_FOLDER/ledger_projection.png ~/public_html/ledger_projection.png
