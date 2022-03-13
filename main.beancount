@@ -178,3 +178,5 @@ include "ledger_2021_10Oct.txt"
 2021-11-01 open Assets:Investments:Crypto:TrustWallet:Wallet1:Fees
 
 include "ledger_2021_11NovDec.ledger"
+
+include "ledger_2022_02Feb.txt"
