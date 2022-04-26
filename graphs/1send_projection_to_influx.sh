@@ -2,7 +2,7 @@
 
 # find the latest ledger run
 PROJECTION_FOLDER=$(find /var/tmp -iname "ledger_20*" 2> /dev/null | sort | tail -1)
-
+echo "projection folder: $PROJECTION_FOLDER"
 CURRENT_PROJECTION_FILE=ledgeroutput_current_projection.tmp
 CURRENT_COMPOUND=ledgeroutput_current_compound.tmp
 
@@ -63,7 +63,7 @@ org=my-org
 bucket=my-bucket
 token=my-super-secret-auth-token
 curl --request POST \
-"http://192.168.0.26:8086/api/v2/write?org=${org}&bucket=${bucket}&precision=ns" \
+"http://192.168.1.237:8086/api/v2/write?org=${org}&bucket=${bucket}&precision=ns" \
   --header "Authorization: Token $token" \
   --header "Content-Type: text/plain; charset=utf-8" \
   --header "Accept: application/json" \
@@ -73,3 +73,4 @@ curl --request POST \
 # COPY GENERATED PNG TO PUBLIC FOLDER
 mkdir -p ~/public_html/
 cp $PROJECTION_FOLDER/ledger_projection.png ~/public_html/ledger_projection.png
+cp $PROJECTION_FOLDER/ledger_monthly.png ~/public_html/ledger_monthly.png

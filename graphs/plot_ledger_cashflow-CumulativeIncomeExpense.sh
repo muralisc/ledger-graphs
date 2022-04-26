@@ -4,8 +4,10 @@ if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1280,720 persist"
 fi
 
-ledger -X INR -J reg ^Income -M --collapse --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(display_total))))\n" "$@" > ledgeroutput1.tmp
-ledger -X INR -J reg ^Expenses -M --collapse --plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(display_total))))\n" "$@" > ledgeroutput2.tmp
+ledger -X INR -J reg ^Income -M --collapse \
+	--plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" "$@" > ledgeroutput1.tmp
+ledger -X INR -J reg ^Expenses -M --collapse \
+	--plot-total-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" "$@" > ledgeroutput2.tmp
 
 (cat <<EOF) | gnuplot
   # set terminal canvas mousing size 1750, 900

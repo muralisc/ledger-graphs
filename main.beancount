@@ -16,6 +16,8 @@ include "ledger_2016.txt"
 
 2007-02-01 open Income:SAP INR
 2007-02-01 open Expenses:UnaccountedExpenses
+2007-02-01 open Income:Unaccounted
+2007-02-01 open Income:LivingShare
 2007-02-01 open Expenses:Utilities
 2007-02-01 open Expenses:Groceries
 2007-02-01 open Expenses:Transport
@@ -179,4 +181,15 @@ include "ledger_2021_10Oct.txt"
 
 include "ledger_2021_11NovDec.ledger"
 
+2022/01/01 balance Assets:Bank:Monzo                            15843.21 GBP
+2022/01/01 balance Assets:Bank:HSBC                              7257.74 GBP
+
+include "ledger_2022_01Jan.txt"
+
+2022/02/01 balance Assets:Bank:Monzo                            17082.56 GBP
+2022/02/01 balance Assets:Bank:HSBC                             10390.36 GBP
+
 include "ledger_2022_02Feb.txt"
+
+2022/03/01 balance Assets:Bank:Monzo                            15746.22 GBP
+2022/03/01 balance Assets:Bank:HSBC                             13201.96 GBP
