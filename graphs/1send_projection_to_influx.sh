@@ -11,6 +11,7 @@ CISCO_COMPOUND=ledgeroutput_cisco_compound.tmp
 ASSETS_FILE=ledgeroutput_assets.tmp
 
 influx_db_data_file=${PROJECTION_FOLDER}/lines_for_influxdb.log
+echo "Using influx data file : $influx_db_data_file"
 
 run_date=$(date +%Y-%m-%d)
 run_date_epoch=$(date -d "$(date +%Y-%m-%d)" +%s)
@@ -73,4 +74,4 @@ curl --request POST \
 # COPY GENERATED PNG TO PUBLIC FOLDER
 mkdir -p ~/public_html/
 cp $PROJECTION_FOLDER/ledger_projection.png ~/public_html/ledger_projection.png
-cp $PROJECTION_FOLDER/ledger_monthly.png ~/public_html/ledger_monthly.png
+cp $PROJECTION_FOLDER/ledger_monthly_inc_exp.png ~/public_html/ledger_monthly_inc_exp.png

@@ -50,7 +50,7 @@ EOF
   # set terminal $LEDGER_TERM
   set terminal pngcairo size 1750,900 enhanced font 'Verdana,10'
   # set terminal canvas mousing size 1750, 900
-  set output "$FOLDER/ledger_monthly.png"
+  set output "$FOLDER/ledger_monthly_inc_exp.png"
   set xdata time
   set timefmt "%Y-%m-%d"
   set xtics nomirror scale 0 rotate by -55
@@ -61,7 +61,7 @@ EOF
   # last noted label
   xPos = "2022-01-01"
   set arrow 1 at xPos, graph 0 to xPos, graph 1 nohead lc "red" dt 4
-  set label 1 at xPos, graph 1 "noticed 4k exp" offset 0.5,-5.0
+  set label 1 at xPos, graph 1 "noticed avg exp is 4k" offset 0.5,-5.0
   plot \
     "ledger_monthly_income.tmp" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \
     "ledger_monthly_expense.tmp" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red", \
