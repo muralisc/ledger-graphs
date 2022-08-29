@@ -91,6 +91,7 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
   set style line 7 lt 1 lw 2 pt 11 pi -1 ps 1.5
   set style line 8 lt 1 lw 2 pt 12 pi -1 ps 1.5
   set style line 9 lt 1 lw 2 pt 13 pi -1 ps 1.5
+  set title "Payee split $ledger_run_date"
   plot \
     "ledger_monthly_payee.tmp" using 1:2 with linespoints title "$SELECTED_PAYEE" ls 1, \
     "ledger_monthly_allowance.tmp" using 1:2 with linespoints title "Expense:Allowance" ls 2 linecolor rgb "#ff0000", \
