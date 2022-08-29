@@ -200,9 +200,12 @@ include "ledger_2022_03Mar.txt"
 
 include "ledger_2022_04Apr.txt"
 2022/05/01 balance Assets:Bank:Monzo                            19691.43 GBP
+2022/05/01 balance Assets:Bank:HSBC                             19489.96 GBP
 
 include "ledger_2022_05May.txt"
 2022/06/01 balance Assets:Bank:Monzo                            23450.10 GBP
+2022/06/01 balance Assets:Bank:HSBC                             20284.35 GBP
 
 include "ledger_2022_06June.txt"
 2022/07/01 balance Assets:Bank:Monzo                            22644.29 GBP
+2022/07/01 balance Assets:Bank:HSBC                             23245.78 GBP
