@@ -209,3 +209,16 @@ include "ledger_2022_05May.txt"
 include "ledger_2022_06June.txt"
 2022/07/01 balance Assets:Bank:Monzo                            22644.29 GBP
 2022/07/01 balance Assets:Bank:HSBC                             23245.78 GBP
+
+include "ledger_2022_07July_monzo.txt"
+include "ledger_2022_07July_hsbc.txt"
+2022/08/01 balance Assets:Bank:Monzo                            21245.76 GBP
+
+2021-11-01 open Assets:Bank:Amex
+
+include "ledger_2022_08Aug_monzo.txt"
+include "ledger_2022_08Aug_hsbc.txt"
+include "ledger_2022_08Aug_amex.txt"
+
+2022/09/01 balance Assets:Bank:Monzo                            19138.97 GBP
+2022/09/01 balance Assets:Bank:HSBC                             29459.37 GBP
