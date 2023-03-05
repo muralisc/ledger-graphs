@@ -219,6 +219,8 @@ include "ledger_2022_07July_hsbc.txt"
 include "ledger_2022_08Aug_monzo.txt"
 include "ledger_2022_08Aug_hsbc.txt"
 include "ledger_2022_08Aug_amex.txt"
+include "ledger_2022_08Aug_charles_schwab.txt"
 
 2022/09/01 balance Assets:Bank:Monzo                            19138.97 GBP
 2022/09/01 balance Assets:Bank:HSBC                             29459.37 GBP
+2022/09/01 balance Assets:Investments:CharlesSchwab             263 META
