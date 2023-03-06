@@ -79,7 +79,7 @@ include "ledger_2018_zerodha_coin1.txt"
 2020-02-01 open Assets:Bank:Monzo GBP
 2020-02-01 open Assets:Investments:TataSmartPlusInsurance INR
 2020-02-01 open Assets:Investments:Vanguard:Funds GBP
-2020-02-01 open Assets:Investments:Vanguard:Ftse100  GBP
+2020-02-01 open Assets:Investments:Vanguard:Ftse100
 2020-02-01 open Assets:Investments:Vanguard:Snp500  GBP
 2020-02-01 open Assets:Investments:Vanguard:Fees GBP
 2020-02-01 open Expenses:Health
@@ -123,7 +123,6 @@ include "ledger_2021_03march.txt"
 2021/04/01 balance Assets:Bank:Monzo                            10990.33 GBP
 2021/04/01 balance Assets:Bank:Citi:Savings                    344707.57 INR
 2021/04/01 balance Assets:Bank:HSBC                             17526.07 GBP
-2021/04/01 balance Assets:Investments:Vanguard:Ftse100            200.00 GBP
 2021/04/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.00993773 BTC
 
 2021-04-01 open Assets:Investments:IG:Funds
@@ -133,7 +132,6 @@ include "ledger_2021_04april.txt"
 
 2021/05/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.02519304 BTC
 2021/05/01 balance Assets:Bank:HSBC                              8469.98 GBP
-2021/05/01 balance Assets:Investments:Vanguard:Ftse100           3200.00 GBP
 2021/05/01 balance Assets:Bank:Monzo                            17891.49 GBP
 
 2020-05-01 open Assets:Investments:Crypto:Coinbase:Eth ETH "NONE"
@@ -142,7 +140,6 @@ include "ledger_2021_04april.txt"
 include "ledger_2021_05May.txt"
 
 2021/06/01 balance Assets:Bank:Monzo                            19185.67 GBP
-2021/06/01 balance Assets:Investments:Vanguard:Ftse100           3200.00 GBP
 2021/06/01 balance Assets:Bank:HSBC                             10290.58 GBP
 2021/06/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.03252478 BTC
 2021/06/01 balance Assets:Bank:Citi:Savings                    288173.12 INR
