@@ -1,118 +1,3 @@
-; vim: ft=ledger:
-
-2007-02-01 open Assets:Bank:Citi:Savings
-2007-02-01 open Assets:Bank:SBI:Fixed              INR
-2007-02-01 open Assets:Bank:Citi:Fixed INR
-2007-02-01 open Equity:OpeningBalences INR
-2007-02-01 open Assets:Bank:SBI:Savings INR
-2007-02-01 open Expenses:Posessions
-2007-02-01 open Income:SAP:Takehome INR
-
-2007-01-01 commodity INR
-  name: "Indian Rupee"
-  asset-class: "cash"
-
-include "ledger_2016.txt"
-
-2007-02-01 open Income:SAP INR
-2007-02-01 open Expenses:UnaccountedExpenses
-2007-02-01 open Income:Unaccounted
-2007-02-01 open Income:LivingShare
-2007-02-01 open Expenses:Utilities
-2007-02-01 open Expenses:Groceries
-2007-02-01 open Expenses:Transport
-2007-02-01 open Expenses:Entertainment
-2007-02-01 open Assets:Investments:Crypto:Zebpay BTC
-
-include "ledger_2017.txt"
-
-2017/12/25  balance Assets:Bank:SBI:Savings   34134.00 INR
-2017/12/25  balance Assets:Bank:SBI:Fixed     368280.00 INR
-2017/12/25  balance Assets:Bank:Citi:Savings  175776.93 INR
-2017/12/25  balance Assets:Bank:Citi:Fixed    1083833.00 INR
-
-2007-02-01 open Assets:LongTerm:LIC INR
-2007-02-01 open Expenses:Allowance
-2007-02-01 open Assets:Investments:Zerodha:Kite INR
-2007-02-01 open Liabilities:CreditCard INR
-2007-02-01 open Expenses:Taxes INR
-2007-02-01 open Expenses:Housing
-2007-02-01 open Expenses:Donations INR
-2007-02-01 open Income:Cisco
-2007-02-01 open Assets:LongTerm:EPF INR
-2007-02-01 open Assets:LongTerm:NPS INR
-2018-02-01 open Assets:Investments:Zerodha:ICLShares
-2007-02-01 open Assets:Investments:Zerodha:Funds INR
-2018-02-01 open Assets:Investments:Zerodha:Coin:AdityaBirlaSunLifeFloatingRateFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:AxisBluechipFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:AxisLongTermEquityFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:DSPEquityBondFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:DSPTaxSaverFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:FranklinIndiaFeederFranklinUSOpportunitiesFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:IndiabullsShortTermFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:KotakBluechipFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:MiraeAssetCashManagementFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:MiraeAssetEmergingBluechipFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:MiraeAssetLargeCapFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:MiraeAssetTaxSaverFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:MotilalOswalFlexiCapFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:MotilalOswalLongTermEquityFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:MotilalOswalNasdaq100FundofFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:MotilalOswalNifty50IndexFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:ParagParikhFlexiCapFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:SBIBankingFinancialServicesFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:SBIBlueChipFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:SBIFlexiCapFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:SBISmallCapFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:UTINiftyIndexFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:MiraeAssetUltraShortDurationFundDirectPlan
-2018-02-01 open Assets:Investments:Zerodha:Coin:AdityaBirlaSunLifeOvernightFundDirectPlan
-
-include "ledger_2018.txt"
-include "ledger_2018_zerodha_coin.txt"
-include "ledger_2018_zerodha_coin1.txt"
-
-2019/12/25  balance Assets:Bank:Citi:Fixed          1399175.00 INR
-
-2020-02-01 open Assets:Investments:TataSampoornaRakshaInsurance INR
-2020-02-01 open Income:Facebook GBP
-2020-02-01 open Assets:Bank:Monzo GBP
-2020-02-01 open Assets:Investments:TataSmartPlusInsurance INR
-2020-02-01 open Assets:Investments:Vanguard:Funds GBP
-2020-02-01 open Assets:Investments:Vanguard:Ftse100
-2020-02-01 open Assets:Investments:Vanguard:Snp500  GBP
-2020-02-01 open Assets:Investments:Vanguard:Fees GBP
-2020-02-01 open Expenses:Health
-2020-02-01 open Income:Zerodha:Divident
-2020-02-01 open Income:Citi:Interest
-2020-02-01 open Expenses:InvestmentFees
-2020-02-01 open Assets:Investments:Crypto:Electrum:Legacy BTC
-2020-02-01 open Assets:Investments:CharlesSchwab
-2020-02-01 open Assets:Investments:Crypto:Wazirx:Btc BTC "NONE"
-2020-02-01 open Assets:Investments:Profit
-
-include "ledger_2020.txt"
-include "ledger_2020_zerodha_coin1.txt"
-
-2020/12/31  balance Assets:Bank:Citi:Fixed            250000.00 INR
-2020/12/31  balance Liabilities:CreditCard            -4343.44 INR
-2020/12/31  balance Assets:Bank:Citi:Savings          717623.69 INR
-2020/12/31  balance Assets:Investments:Zerodha:Funds  74383.25 INR
-2020/12/31  balance Assets:Investments:Zerodha:Kite   839963.91 INR
-
-2021-01-01 open Assets:Investments:Crypto:Wazirx:Funds INR
-2021-01-01 open Assets:Bank:HSBC GBP
-2021-01-01 open Assets:Investments:Crypto:Coinbase:Funds   GBP
-
-2021-01-01 open Income:SBI:Interest INR
-
-include "ledger_2021_02feb.txt"
-include "ledger_2021_zerodha_coin1.txt"
-
-2021/02/28  balance Assets:Bank:Citi:Savings                  352013.89 INR
-2021/02/28  balance Assets:Bank:HSBC                          5,697.91 GBP
-2021/03/01  balance Assets:Bank:Monzo                         10308.38 GBP
-
 2021-01-01 open Assets:Investments:Crypto:Coinbase:Bitcoin
 2021-01-01 open Assets:Investments:Crypto:Coinbase:Btc BTC
 2021-01-01 open Assets:Investments:Crypto:Coinbase:Fees GBP
@@ -123,6 +8,7 @@ include "ledger_2021_03march.txt"
 2021/04/01 balance Assets:Bank:Monzo                            10990.33 GBP
 2021/04/01 balance Assets:Bank:Citi:Savings                    344707.57 INR
 2021/04/01 balance Assets:Bank:HSBC                             17526.07 GBP
+2021/04/01 balance Assets:Investments:Vanguard:Ftse100            200.00 GBP
 2021/04/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.00993773 BTC
 
 2021-04-01 open Assets:Investments:IG:Funds
@@ -132,6 +18,7 @@ include "ledger_2021_04april.txt"
 
 2021/05/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.02519304 BTC
 2021/05/01 balance Assets:Bank:HSBC                              8469.98 GBP
+2021/05/01 balance Assets:Investments:Vanguard:Ftse100           3200.00 GBP
 2021/05/01 balance Assets:Bank:Monzo                            17891.49 GBP
 
 2020-05-01 open Assets:Investments:Crypto:Coinbase:Eth ETH "NONE"
@@ -140,6 +27,7 @@ include "ledger_2021_04april.txt"
 include "ledger_2021_05May.txt"
 
 2021/06/01 balance Assets:Bank:Monzo                            19185.67 GBP
+2021/06/01 balance Assets:Investments:Vanguard:Ftse100           3200.00 GBP
 2021/06/01 balance Assets:Bank:HSBC                             10290.58 GBP
 2021/06/01 balance Assets:Investments:Crypto:Coinbase:Btc     0.03252478 BTC
 2021/06/01 balance Assets:Bank:Citi:Savings                    288173.12 INR
