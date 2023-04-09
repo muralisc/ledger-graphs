@@ -29,7 +29,7 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jMn reg \
-    --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
+    --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(quantity(scrub(floor(display_amount))))\n" \
     '^Expense' and $SELECTED_PAYEE >> ledger_monthly_payee.tmp
   ledger \
     -f $LEDGER_FILE \
@@ -79,6 +79,7 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
   set output "$FOLDER/ledger_monthly_payee.png"
   set xdata time
   set timefmt "%Y-%m-%d"
+  set format x "%d/%m/%Y-%b"
   set xtics nomirror scale 0 rotate by -55
   set grid ytics
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5

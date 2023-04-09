@@ -29,11 +29,15 @@ ledger -J reg -R -X INR ^Expenses -M \
   set title "Wealthgrow"
   set ylabel "Amount"
   set style fill transparent solid 0.6 noborder
+  set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
+  xPos = "2020-12-01"
+  set arrow 1 at xPos, graph 0 to xPos, graph 1 nohead lc "red" dt 4
+  set label 1 at xPos, graph 1 "Joined Meta" offset 0.5,-5.0
   plot "ledgeroutput1.tmp" \
     using 1:2 with filledcurves x1 title "Assets" linecolor rgb "goldenrod", '' \
-    using 1:2:2 with labels font "Courier,8" rotate by 45 offset 0,0.5 textcolor linestyle 0 notitle, "ledgeroutput2.tmp" \
+    using 1:2:2 with labels font "Courier,8" rotate by 45 offset 0,0.5 textcolor linestyle 1 notitle, "ledgeroutput2.tmp" \
     using 1:2 with filledcurves y1=0 title "Expenses" linecolor rgb "violet", '' \
-    using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle
+    using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 1 notitle
 EOF
 
 #rm ledgeroutput*.tmp

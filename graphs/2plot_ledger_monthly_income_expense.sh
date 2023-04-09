@@ -21,8 +21,10 @@ CURRENT_MONTH_START=$(date +"%Y-%m-01")
 TIME_DIFF=1y
 START_TIME=$(dateadd $(date +"%Y-%m-01") -1y --format="%Y-%m-%d")
 for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
-  ledger -f $LEDGER_FILE --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jMn reg --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Income' "$@" >> ledger_monthly_income.tmp
-  ledger -f $LEDGER_FILE --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jMn reg --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Expe' "$@" >> ledger_monthly_expense.tmp
+  ledger -f $LEDGER_FILE --begin $cdate --end $(dateadd $cdate 1mo) -X GBP \
+      -jMn reg --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Income' "$@" >> ledger_monthly_income.tmp
+  ledger -f $LEDGER_FILE --begin $cdate --end $(dateadd $cdate 1mo) \
+      -X GBP -jMn reg --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Expe' "$@" >> ledger_monthly_expense.tmp
 done
 
 
@@ -46,6 +48,7 @@ for k in date_val:
     print(k, date_val[k])
 EOF
 
+echo "Creating file $FOLDER/ledger_monthly_inc_exp.png"
 (cat <<EOF) | gnuplot
   # set terminal $LEDGER_TERM
   set terminal pngcairo size 1750,900 enhanced font 'Verdana,10'
@@ -53,6 +56,7 @@ EOF
   set output "$FOLDER/ledger_monthly_inc_exp.png"
   set xdata time
   set timefmt "%Y-%m-%d"
+  set format x "%d/%m/%Y-%b"
   set xtics nomirror scale 0 rotate by -55
   set grid ytics
   set title "Monthly Income and Expenses $ledger_run_date"
