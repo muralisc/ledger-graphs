@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# -X INR --begin 2020 --price-db pricedb.txt
 # https://www.sundialdreams.com/report-scripts-for-ledger-cli-with-gnuplot/
 
 export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
@@ -21,10 +20,18 @@ CURRENT_MONTH_START=$(date +"%Y-%m-01")
 TIME_DIFF=1y
 START_TIME=$(dateadd $(date +"%Y-%m-01") -1y --format="%Y-%m-%d")
 for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
-  ledger -f $LEDGER_FILE --begin $cdate --end $(dateadd $cdate 1mo) -X GBP \
-      -jMn reg --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Income' "$@" >> ledger_monthly_income.tmp
-  ledger -f $LEDGER_FILE --begin $cdate --end $(dateadd $cdate 1mo) \
-      -X GBP -jMn reg --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Expe' "$@" >> ledger_monthly_expense.tmp
+  ledger \
+      -f $LEDGER_FILE \
+      --begin $cdate --end $(dateadd $cdate 1mo) \
+      -X GBP \
+      -jMn reg \
+      --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
+      '^Income' "$@" >> ledger_monthly_income.tmp
+  ledger -f $LEDGER_FILE \
+      --begin $cdate --end $(dateadd $cdate 1mo) \
+      -X GBP \
+      -jMn reg \
+      --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Expe' "$@" >> ledger_monthly_expense.tmp
 done
 
 

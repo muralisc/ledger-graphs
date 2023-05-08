@@ -1,3 +1,6 @@
+#!/bin/bash
+
+# https://www.sundialdreams.com/report-scripts-for-ledger-cli-with-gnuplot/
 
 export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
 export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
@@ -28,12 +31,16 @@ START_TIME=$(dateadd $(date +"%Y-%m-01") -1y --format="%Y-%m-%d")
 for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
   ledger \
     -f $LEDGER_FILE \
-    --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jMn reg \
+    --begin $cdate --end $(dateadd $cdate 1mo) \
+    -X GBP \
+    -jMn reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(quantity(scrub(floor(display_amount))))\n" \
     '^Expense' and $SELECTED_PAYEE >> ledger_monthly_payee.tmp
   ledger \
     -f $LEDGER_FILE \
-    --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
+    --begin $cdate --end $(dateadd $cdate 1mo) \
+    -X GBP \
+    -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
     '^Expenses:Allowance' >> ledger_monthly_allowance.tmp
   ledger \
