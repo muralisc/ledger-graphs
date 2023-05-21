@@ -81,5 +81,3 @@ echo "Creating file $FOLDER/ledger_monthly_inc_exp.png"
                      '' using 1:2:2 with labels left font "Courier,12" rotate by 90 offset 1,1 textcolor linestyle 1 notitle
 EOF
 popd
-
-#rm ledgeroutput*.tmp
