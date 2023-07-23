@@ -48,6 +48,7 @@ echo "Creating file $FOLDER/ledger_yearly_inc_exp.png"
   set grid back ls 12
   set title "Yearly Income and Expenses $ledger_run_date"
   set ylabel "Amount"
+  set rmargin 10
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
   plot \
     "ledger_yearly_income.tmp" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \

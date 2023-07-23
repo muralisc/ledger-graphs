@@ -69,6 +69,7 @@ echo "Creating file $FOLDER/ledger_monthly_inc_exp.png"
   set title "Monthly Income and Expenses $ledger_run_date"
   set ylabel "Amount"
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
+  set rmargin 10
   # last noted label
   xPos = "2022-01-01"
   set arrow 1 at xPos, graph 0 to xPos, graph 1 nohead lc "red" dt 4
@@ -78,6 +79,6 @@ echo "Creating file $FOLDER/ledger_monthly_inc_exp.png"
     "ledger_monthly_expense.tmp" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red", \
                      '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle, \
     "ledger_monthly_savings.tmp" using 1:2 with linespoints title "Income - Expense" ls 1 linecolor rgb "#dd0060ad", \
-                     '' using 1:2:2 with labels left font "Courier,12" rotate by 90 offset 1,1 textcolor linestyle 1 notitle
+                     '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor linestyle 1 notitle
 EOF
 popd
