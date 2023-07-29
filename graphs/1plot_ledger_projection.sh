@@ -25,7 +25,9 @@ FU_target=$((3*$yearlyexpenses))
 
 pushd $FOLDER
 
-cat /dev/null > ledgeroutput_assets.tmp
+
+# get_past_years_assets
+cat /dev/null > graph1_assets.tmp
 datev=$(date +"%Y-%m-%d")
 echo $datev
 loop=1
@@ -38,9 +40,10 @@ while (( loop < 9 )) ; do
   echo "$datev $bal"
   loop=$((loop+1))
   datev=$(dateadd $datev -1y --format="%Y-%m-%d")
-done > ledgeroutput_assets.tmp
+done > graph1_assets.tmp
 
-cat /dev/null > ledgeroutput_expense.tmp
+# get_past_years_expense
+cat /dev/null > graph1_expense.tmp
 datev=$(date +"%Y-%m-%d")
 loop=1
 while (( loop < 8 )) ; do
@@ -50,7 +53,7 @@ while (( loop < 8 )) ; do
   echo "$datev $bal"
   loop=$((loop+1))
   datev=$(dateadd $datev -1y --format="%Y-%m-%d")
-done > ledgeroutput_expense.tmp
+done > graph1_expense.tmp
 
 durMonths=12
 yearlyInterest=8
@@ -63,6 +66,7 @@ durationsav=$(ledger b Income Expense \
 monthsav=$((durationsav/$durMonths)) #600000
 echo "Monthly Savings: $monthsav"
 
+echo "Calulating avg monthly savings from 2019-11 to 2020-11"
 durationsav_old=$(ledger b Income Expense \
     -R --strict \
     -X $CURRENCY -n --begin 2019-11 --end 2020-11 --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1) # Cisco savings
@@ -79,7 +83,7 @@ while (( $(echo "$cur < $targe_amt" | bc -l) )); do
     echo "$datev $cur" ; 
     cur=$(bc <<< "scale=2; $cur * (1 + $yearlyInterest/100) + ($monthsav * 12)")
     datev=$(dateadd $datev +12mo --format "%Y-%m-%d");  
-done > ledgeroutput_old_meta_projection.tmp
+done > graph1_old_meta_compound.tmp
 
 # Projection from end of cisco at cisco rate
 cur=$(ledger b Assets \
@@ -92,7 +96,7 @@ while (( $(echo "$cur < $targe_amt" | bc -l) )) && (( loop < 10 )) ; do
   cur=$(bc <<< "scale=2; $cur * (1 + $yearlyInterest/100) + ($monthsav_old * 12)")
   datev=$(dateadd $datev +12mo --format "%Y-%m-%d");  
   loop=$((loop+1))
-done > ledgeroutput_cisco.tmp
+done > graph1_old_cisco_compound.tmp
 
 # Project with Compound Interest
 cur=$(ledger b Assets \
@@ -103,7 +107,7 @@ while (( $(echo "$cur < $targe_amt" | bc -l) )); do
   echo "$datev $cur" ;
   cur=$(bc <<< "scale=2; $cur * (1 + $yearlyInterest/100) + ($monthsav * 12)")
   datev=$(dateadd $datev +12mo --format "%Y-%m-%d");
-done > ledgeroutput_meta_compound.tmp
+done > graph1_meta_compound.tmp
 
 # TODO : make function
 cur=$(ledger b Assets \
@@ -116,14 +120,15 @@ while (( $(echo "$cur < $targe_amt" | bc -l) )) && (( loop < 10 )); do
   cur=$(bc <<< "scale=2; $cur * (1 + $yearlyInterest/100) + ($monthsav_old * 12)")
   datev=$(dateadd $datev +12mo --format "%Y-%m-%d");
   loop=$((loop+1))
-done > ledgeroutput_cisco_compound.tmp
+done > graph1_cisco_compound.tmp
 
 
 echo "Creating file in $FOLDER/ledger_projection.png"
 #
 # Enabled the UserDir module in apache so we can access this form index.html
 #
-echo $LEDGER_TERM
+
+# echo $LEDGER_TERM
 (cat <<EOF) | gnuplot
   # set terminal canvas mousing size 1750, 900
   # set terminal $LEDGER_TERM
@@ -137,7 +142,7 @@ echo $LEDGER_TERM
   set mytics 2
   set key bottom right
   set grid xtics ytics mytics
-  set title "Wealthgrow $CURRENCY $ledger_run_date"
+  set title "Wealthgrow in $CURRENCY on $ledger_run_date"
   set ylabel "Amount"
   set style fill transparent solid 0.6 noborder
   #linestyle for 1
@@ -157,17 +162,17 @@ echo $LEDGER_TERM
   set label 4 at graph 0,first $lean_FI "Lean FI" offset 0.5,1.0
 
   plot \
-    "ledgeroutput_assets.tmp"               using 1:2   with filledcurves x1 title "Assets" linecolor rgb "goldenrod", \
+    "graph1_assets.tmp"               using 1:2   with filledcurves x1 title "Assets" linecolor rgb "goldenrod", \
     ""                            every 1   using 1:2:2 with labels font "Courier,12" rotate by 05 offset 0,0.5 textcolor linestyle 0 notitle, \
-    "ledgeroutput_expense.tmp"              using 1:2   with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
+    "graph1_expense.tmp"              using 1:2   with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
     ""                                      using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
-    "ledgeroutput_old_meta_projection.tmp"  using 1:2   with linespoints ls 1 title "Job Change Projection Meta" ,\
+    "graph1_old_meta_compound.tmp"    using 1:2   with linespoints ls 1 title "Job Change Projection Meta" ,\
     ""                                      using 1:2:2 with labels font "Courier,12" rotate by 10 offset -3,0 textcolor linestyle 0 notitle, \
-    "ledgeroutput_meta_compound.tmp"        using 1:2   with linespoints ls 2 title "Current ProjectionCompound", \
+    "graph1_meta_compound.tmp"        using 1:2   with linespoints ls 2 title "Current ProjectionCompound", \
     ""                                      using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 2 notitle, \
-    "ledgeroutput_cisco.tmp"                using 1:2   with linespoints ls 3 title "Job Change Projection Cisco" ,\
+    "graph1_old_cisco_compound.tmp"   using 1:2   with linespoints ls 3 title "Job Change Projection Cisco" ,\
     ""                                      using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle, \
-    "ledgeroutput_cisco_compound.tmp"       using 1:2   with linespoints ls 4 title "ProjectionCompound Cisco", \
+    "graph1_cisco_compound.tmp"       using 1:2   with linespoints ls 4 title "ProjectionCompound Cisco", \
     ""                                      using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 4 notitle
 EOF
 popd

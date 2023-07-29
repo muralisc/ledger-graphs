@@ -14,6 +14,7 @@ if [[ -z "$LEDGER_TERM" ]]; then
 fi
 
 pushd $FOLDER
+
 cat /dev/null > ledger_monthly_income.tmp
 cat /dev/null > ledger_monthly_expense.tmp
 CURRENT_MONTH_START=$(date +"%Y-%m-01")
