@@ -15,8 +15,8 @@ fi
 
 pushd $FOLDER
 
-cat /dev/null > ledger_monthly_income.tmp
-cat /dev/null > ledger_monthly_expense.tmp
+cat /dev/null > graph2_monthly_income.tmp
+cat /dev/null > graph2_monthly_expense.tmp
 CURRENT_MONTH_START=$(date +"%Y-%m-01")
 TIME_DIFF=1y
 START_TIME=$(dateadd $(date +"%Y-%m-01") -1y --format="%Y-%m-%d")
@@ -27,27 +27,28 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
       -X GBP \
       -jMn reg \
       --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-      '^Income' "$@" >> ledger_monthly_income.tmp
+      '^Income' "$@" >> graph2_monthly_income.tmp
   ledger -f $LEDGER_FILE \
       --begin $cdate --end $(dateadd $cdate 1mo) \
       -X GBP \
       -jMn reg \
-      --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" '^Expe' "$@" >> ledger_monthly_expense.tmp
+      --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
+      '^Expe' "$@" >> graph2_monthly_expense.tmp
 done
 
 
-(cat <<EOF) | python3 | sort > ledger_monthly_savings.tmp
+(cat <<EOF) | python3 | sort > graph2_monthly_savings.tmp
 #!/usr/local/bin/python3
 import csv
 from collections import defaultdict
 
 
 date_val = defaultdict(int)
-with open('ledger_monthly_income.tmp') as income:
+with open('graph2_monthly_income.tmp') as income:
     inc = csv.reader(income, delimiter=' ')
     for row in inc:
         date_val[row[0]] = int(row[1])
-with open('ledger_monthly_expense.tmp') as expense:
+with open('graph2_monthly_expense.tmp') as expense:
     inc = csv.reader(expense, delimiter=' ')
     for row in inc:
         date_val[row[0]] = date_val[row[0]] - int(row[1])
@@ -56,12 +57,12 @@ for k in date_val:
     print(k, date_val[k])
 EOF
 
-echo "Creating file $FOLDER/ledger_monthly_inc_exp.png"
+echo "Creating file $FOLDER/graph2_monthly_inc_exp.png"
 (cat <<EOF) | gnuplot
   # set terminal $LEDGER_TERM
   set terminal pngcairo size 1750,900 enhanced font 'Verdana,10'
   # set terminal canvas mousing size 1750, 900
-  set output "$FOLDER/ledger_monthly_inc_exp.png"
+  set output "$FOLDER/graph2_monthly_inc_exp.png"
   set xdata time
   set timefmt "%Y-%m-%d"
   set format x "%d/%m/%Y-%b"
@@ -76,10 +77,10 @@ echo "Creating file $FOLDER/ledger_monthly_inc_exp.png"
   set arrow 1 at xPos, graph 0 to xPos, graph 1 nohead lc "red" dt 4
   set label 1 at xPos, graph 1 "noticed avg exp is 4k" offset 0.5,-5.0
   plot \
-    "ledger_monthly_income.tmp" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \
-    "ledger_monthly_expense.tmp" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red", \
+    "graph2_monthly_income.tmp" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \
+    "graph2_monthly_expense.tmp" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red", \
                      '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle, \
-    "ledger_monthly_savings.tmp" using 1:2 with linespoints title "Income - Expense" ls 1 linecolor rgb "#dd0060ad", \
+    "graph2_monthly_savings.tmp" using 1:2 with linespoints title "Income - Expense" ls 1 linecolor rgb "#dd0060ad", \
                      '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor linestyle 1 notitle
 EOF
 popd
