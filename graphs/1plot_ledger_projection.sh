@@ -57,7 +57,8 @@ done > graph1_expense.tmp
 
 durMonths=12
 yearlyInterest=8
-dateEnd=2023-01 # $(date +"%Y-%m")
+# $(date +"%Y-%m")
+dateEnd=2021-12 # First year of joining meta
 dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
 echo "Calulating avg monthly savings from $dateBeg to $dateEnd"
 durationsav=$(ledger b Income Expense \
