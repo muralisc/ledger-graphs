@@ -13,10 +13,8 @@ if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1280,720 persist"
 fi
 
-SELECTED_PAYEE="${1:-@Deliveroo}"
 
 pushd $FOLDER
-cat /dev/null > ledger_monthly_payee.tmp
 cat /dev/null > ledger_monthly_allowance.tmp
 cat /dev/null > ledger_monthly_entertainment.tmp
 cat /dev/null > ledger_monthly_groceries.tmp
@@ -29,13 +27,6 @@ CURRENT_MONTH_START=$(date +"%Y-%m-01")
 TIME_DIFF=1y
 START_TIME=$(dateadd $(date +"%Y-%m-01") -1y --format="%Y-%m-%d")
 for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
-  ledger \
-    -f $LEDGER_FILE \
-    --begin $cdate --end $(dateadd $cdate 1mo) \
-    -X GBP \
-    -jMn reg \
-    --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(quantity(scrub(floor(display_amount))))\n" \
-    '^Expense' and $SELECTED_PAYEE >> ledger_monthly_payee.tmp
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) \
@@ -101,7 +92,6 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
   set style line 9 lt 1 lw 2 pt 13 pi -1 ps 1.5
   set title "Payee split $ledger_run_date"
   plot \
-    "ledger_monthly_payee.tmp" using 1:2 with linespoints title "$SELECTED_PAYEE" ls 1, \
     "ledger_monthly_allowance.tmp" using 1:2 with linespoints title "Expense:Allowance" ls 2 linecolor rgb "#ff0000", \
     "ledger_monthly_entertainment.tmp" using 1:2 with linespoints title "Expense:Entertainment" ls 3 linecolor rgb "#00aa00", \
     "ledger_monthly_groceries.tmp" using 1:2 with linespoints title "Expense:Groceries" ls 4 linecolor rgb "#0000ff", \
