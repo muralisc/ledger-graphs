@@ -1,9 +1,17 @@
 #!/bin/bash
-
-# Needs dateutils installed
-# sudo apt install dateutils
-
 # Forecasting info from : https://beyondrule4.jmmorrissey.com/forecasting
+
+CURRENT_FILE_PATH="${BASH_SOURCE[0]:-$0}"
+source "$(dirname "$CURRENT_FILE_PATH")/lib.sh"
+
+if ! command -v dateadd &> /dev/null
+then
+    echo "'dateadd' could not be found"
+    echo "  Needs dateutils installed"
+    echo "  sudo apt install dateutils"
+    exit 1
+fi
+
 
 export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
 export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
@@ -29,17 +37,14 @@ pushd $FOLDER
 # get_past_years_assets
 cat /dev/null > graph1_assets.tmp
 datev=$(date +"%Y-%m-%d")
-echo $datev
 loop=1
+echo "Calulating net yearly assets from $datev back 9 years"
 while (( loop < 9 )) ; do
-  bal=$(ledger b \
-    ^Assets \
-    --real \
-    --strict \
-    -X $CURRENCY \
-    --end $datev \
-    --balance-format="%(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
-  echo "$datev $bal"
+  FILTER="^Assets"
+  DATE_BEGIN=""
+  DATE_END="$datev"
+  bal=$(ledger_b $FILTER $CURRENCY "$DATE_BEGIN" $DATE_END)
+  echo "$datev $bal" # output to graph1_assets.tmp
   loop=$((loop+1))
   datev=$(dateadd $datev -1y --format="%Y-%m-%d")
 done > graph1_assets.tmp
@@ -50,13 +55,10 @@ cat /dev/null > graph1_expense.tmp
 datev=$(date +"%Y-%m-%d")
 loop=1
 while (( loop < 8 )) ; do
-  bal=$(ledger b \
-    ^Expense \
-    --real \
-    --strict \
-    -X $CURRENCY \
-    --end $datev \
-    --balance-format="%(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
+  FILTER="^Expense"
+  DATE_BEGIN=""
+  DATE_END="$datev"
+  bal=$(ledger_b $FILTER $CURRENCY "$DATE_BEGIN" $DATE_END)
   echo "$datev $bal"
   loop=$((loop+1))
   datev=$(dateadd $datev -1y --format="%Y-%m-%d")
@@ -64,7 +66,6 @@ done > graph1_expense.tmp
 
 durMonths=12
 yearlyInterest=8
-# $(date +"%Y-%m")
 dateEnd=2021-12 # First year of joining meta
 dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
 echo "Calulating avg monthly savings from $dateBeg to $dateEnd"
