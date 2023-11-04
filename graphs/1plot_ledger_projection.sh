@@ -64,10 +64,13 @@ while (( loop < 8 )) ; do
   datev=$(dateadd $datev -1y --format="%Y-%m-%d")
 done > graph1_expense.tmp
 
-durMonths=12
-yearlyInterest=8
+get_mothly_savings() {
+}
+
+LOOKBACK_MONTHS=12
+YEARLY_INTEREST=8
 dateEnd=2021-12 # First year of joining meta
-dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
+dateBeg=$(dateadd $dateEnd -${LOOKBACK_MONTHS}mo --format="%Y-%m")
 echo "Calulating avg monthly savings from $dateBeg to $dateEnd"
 durationsav=$(ledger b \
     Income Expense \
@@ -78,7 +81,7 @@ durationsav=$(ledger b \
     --begin $dateBeg \
     --end $dateEnd \
     --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
-monthsav=$((durationsav/$durMonths)) #600000
+monthsav=$((durationsav/$LOOKBACK_MONTHS)) #600000
 echo "Monthly Savings: $monthsav"
 
 echo "Calulating avg monthly savings from 2019-11 to 2020-11"
@@ -91,7 +94,7 @@ durationsav_old=$(ledger b \
     --begin 2019-11 \
     --end 2020-11 \
     --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1) # Cisco savings
-monthsav_old=$((durationsav_old/$durMonths)) # avg cisco savings
+monthsav_old=$((durationsav_old/$LOOKBACK_MONTHS)) # avg cisco savings
 echo "Monthly Savings Old: $monthsav_old"
 
 
@@ -107,7 +110,7 @@ cur=$(ledger b \
 datev="2020-11-01"
 while (( $(echo "$cur < $targe_amt" | bc -l) )); do
     echo "$datev $cur" ; 
-    cur=$(bc <<< "scale=2; $cur * (1 + $yearlyInterest/100) + ($monthsav * 12)")
+    cur=$(bc <<< "scale=2; $cur * (1 + $YEARLY_INTEREST/100) + ($monthsav * 12)")
     datev=$(dateadd $datev +12mo --format "%Y-%m-%d");  
 done > graph1_old_meta_compound.tmp
 
@@ -124,7 +127,7 @@ datev="2020-11-01"
 loop=1
 while (( $(echo "$cur < $targe_amt" | bc -l) )) && (( loop < 10 )) ; do 
   echo "$datev $cur" ; 
-  cur=$(bc <<< "scale=2; $cur * (1 + $yearlyInterest/100) + ($monthsav_old * 12)")
+  cur=$(bc <<< "scale=2; $cur * (1 + $YEARLY_INTEREST/100) + ($monthsav_old * 12)")
   datev=$(dateadd $datev +12mo --format "%Y-%m-%d");  
   loop=$((loop+1))
 done > graph1_old_cisco_compound.tmp
@@ -140,7 +143,7 @@ cur=$(ledger b \
 datev=$(dateadd now 0mo --format "%Y-%m-%d")
 while (( $(echo "$cur < $targe_amt" | bc -l) )); do
   echo "$datev $cur" ;
-  cur=$(bc <<< "scale=2; $cur * (1 + $yearlyInterest/100) + ($monthsav * 12)")
+  cur=$(bc <<< "scale=2; $cur * (1 + $YEARLY_INTEREST/100) + ($monthsav * 12)")
   datev=$(dateadd $datev +12mo --format "%Y-%m-%d");
 done > graph1_meta_compound.tmp
 
@@ -156,7 +159,7 @@ datev=$(dateadd now 0mo --format "%Y-%m-%d")
 loop=1
 while (( $(echo "$cur < $targe_amt" | bc -l) )) && (( loop < 10 )); do
   echo "$datev $cur" ;
-  cur=$(bc <<< "scale=2; $cur * (1 + $yearlyInterest/100) + ($monthsav_old * 12)")
+  cur=$(bc <<< "scale=2; $cur * (1 + $YEARLY_INTEREST/100) + ($monthsav_old * 12)")
   datev=$(dateadd $datev +12mo --format "%Y-%m-%d");
   loop=$((loop+1))
 done > graph1_cisco_compound.tmp
