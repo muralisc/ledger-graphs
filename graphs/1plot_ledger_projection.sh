@@ -64,38 +64,30 @@ while (( loop < 8 )) ; do
   datev=$(dateadd $datev -1y --format="%Y-%m-%d")
 done > graph1_expense.tmp
 
-get_mothly_savings() {
+get_past12_mothly_avg_savings() {
+    dateEnd=$1
+    YEARLY_INTEREST=$2
+    LOOKBACK_MONTHS=12
+    dateBeg=$(dateadd $dateEnd -${LOOKBACK_MONTHS}mo --format="%Y-%m")
+    FILTER="^Income ^Expense"
+    DATE_BEGIN="$dateBeg"
+    DATE_END="$dateEnd"
+    durationsav=$(ledger_b "$FILTER" $CURRENCY "$DATE_BEGIN" $DATE_END)
+    monthsav=$((durationsav/$LOOKBACK_MONTHS)) #600000
+    echo "$monthsav"
 }
 
-LOOKBACK_MONTHS=12
 YEARLY_INTEREST=8
 dateEnd=2021-12 # First year of joining meta
-dateBeg=$(dateadd $dateEnd -${LOOKBACK_MONTHS}mo --format="%Y-%m")
-echo "Calulating avg monthly savings from $dateBeg to $dateEnd"
-durationsav=$(ledger b \
-    Income Expense \
-    --real \
-    --strict \
-    -X $CURRENCY \
-    --collapse \
-    --begin $dateBeg \
-    --end $dateEnd \
-    --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
-monthsav=$((durationsav/$LOOKBACK_MONTHS)) #600000
+echo "Calulating avg monthly savings from -12m to $dateEnd"
+monthsav=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST)
 echo "Monthly Savings: $monthsav"
 
-echo "Calulating avg monthly savings from 2019-11 to 2020-11"
-durationsav_old=$(ledger b \
-    Income Expense \
-    --real \
-    --strict \
-    -X $CURRENCY \
-    --collapse \
-    --begin 2019-11 \
-    --end 2020-11 \
-    --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1) # Cisco savings
-monthsav_old=$((durationsav_old/$LOOKBACK_MONTHS)) # avg cisco savings
+dateEnd=2020-11 # Last year of cisco
+echo "Calulating avg monthly savings from -12m to $dateEnd"
+monthsav_old=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST) # avg cisco savings
 echo "Monthly Savings Old: $monthsav_old"
+
 
 
 # projection from end of cisco at meta rate
