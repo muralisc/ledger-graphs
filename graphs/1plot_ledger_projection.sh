@@ -8,8 +8,8 @@
 export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
 export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
 
-ledger_run_date=$(date +%Y-%m-%d)
-FOLDER="/var/tmp/ledger_1_${ledger_run_date}"
+LEDGER_RUN_DATE=$(date +%Y-%m-%d)
+FOLDER="/var/tmp/ledger_1_${LEDGER_RUN_DATE}"
 mkdir -p $FOLDER
 
 if [[ -z "$LEDGER_TERM" ]]; then
@@ -33,8 +33,10 @@ echo $datev
 loop=1
 while (( loop < 9 )) ; do
   bal=$(ledger b \
-    -R --strict \
-    -X $CURRENCY ^Assets \
+    ^Assets \
+    --real \
+    --strict \
+    -X $CURRENCY \
     --end $datev \
     --balance-format="%(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
   echo "$datev $bal"
@@ -42,14 +44,19 @@ while (( loop < 9 )) ; do
   datev=$(dateadd $datev -1y --format="%Y-%m-%d")
 done > graph1_assets.tmp
 
+
 # get_past_years_expense
 cat /dev/null > graph1_expense.tmp
 datev=$(date +"%Y-%m-%d")
 loop=1
 while (( loop < 8 )) ; do
   bal=$(ledger b \
-    -R --strict \
-    -X $CURRENCY ^Expense --end $datev --balance-format="%(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
+    ^Expense \
+    --real \
+    --strict \
+    -X $CURRENCY \
+    --end $datev \
+    --balance-format="%(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
   echo "$datev $bal"
   loop=$((loop+1))
   datev=$(dateadd $datev -1y --format="%Y-%m-%d")
@@ -61,24 +68,41 @@ yearlyInterest=8
 dateEnd=2021-12 # First year of joining meta
 dateBeg=$(dateadd $dateEnd -${durMonths}mo --format="%Y-%m")
 echo "Calulating avg monthly savings from $dateBeg to $dateEnd"
-durationsav=$(ledger b Income Expense \
-    -R --strict \
-    -X $CURRENCY -n --begin $dateBeg --end $dateEnd --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
+durationsav=$(ledger b \
+    Income Expense \
+    --real \
+    --strict \
+    -X $CURRENCY \
+    --collapse \
+    --begin $dateBeg \
+    --end $dateEnd \
+    --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1)
 monthsav=$((durationsav/$durMonths)) #600000
 echo "Monthly Savings: $monthsav"
 
 echo "Calulating avg monthly savings from 2019-11 to 2020-11"
-durationsav_old=$(ledger b Income Expense \
-    -R --strict \
-    -X $CURRENCY -n --begin 2019-11 --end 2020-11 --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1) # Cisco savings
+durationsav_old=$(ledger b \
+    Income Expense \
+    --real \
+    --strict \
+    -X $CURRENCY \
+    --collapse \
+    --begin 2019-11 \
+    --end 2020-11 \
+    --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n" | tail -1) # Cisco savings
 monthsav_old=$((durationsav_old/$durMonths)) # avg cisco savings
 echo "Monthly Savings Old: $monthsav_old"
 
 
 # projection from end of cisco at meta rate
-cur=$(ledger b Assets \
-    -R --strict \
-    -X $CURRENCY --end 2020-11 -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+cur=$(ledger b \
+    Assets \
+    --real \
+    --strict \
+    -X $CURRENCY \
+    --collapse \
+    --end 2020-11 \
+    --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
 datev="2020-11-01"
 while (( $(echo "$cur < $targe_amt" | bc -l) )); do
     echo "$datev $cur" ; 
@@ -87,9 +111,14 @@ while (( $(echo "$cur < $targe_amt" | bc -l) )); do
 done > graph1_old_meta_compound.tmp
 
 # Projection from end of cisco at cisco rate
-cur=$(ledger b Assets \
-    -R --strict \
-    -X $CURRENCY --end 2020-11 -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+cur=$(ledger b \
+    Assets \
+    --real \
+    --strict \
+    -X $CURRENCY \
+    --collapse \
+    --end 2020-11 \
+    --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
 datev="2020-11-01"
 loop=1
 while (( $(echo "$cur < $targe_amt" | bc -l) )) && (( loop < 10 )) ; do 
@@ -100,9 +129,13 @@ while (( $(echo "$cur < $targe_amt" | bc -l) )) && (( loop < 10 )) ; do
 done > graph1_old_cisco_compound.tmp
 
 # Project with Compound Interest
-cur=$(ledger b Assets \
-    -R --strict \
-    -X $CURRENCY -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+cur=$(ledger b \
+    Assets \
+    --real \
+    --strict \
+    -X $CURRENCY \
+    --collapse \
+    --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
 datev=$(dateadd now 0mo --format "%Y-%m-%d")
 while (( $(echo "$cur < $targe_amt" | bc -l) )); do
   echo "$datev $cur" ;
@@ -111,9 +144,13 @@ while (( $(echo "$cur < $targe_amt" | bc -l) )); do
 done > graph1_meta_compound.tmp
 
 # TODO : make function
-cur=$(ledger b Assets \
-    -R --strict \
-    -X $CURRENCY -n --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+cur=$(ledger b \
+    Assets \
+    --real \
+    --strict \
+    -X $CURRENCY \
+    --collapse \
+    --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
 datev=$(dateadd now 0mo --format "%Y-%m-%d")
 loop=1
 while (( $(echo "$cur < $targe_amt" | bc -l) )) && (( loop < 10 )); do
@@ -143,7 +180,7 @@ echo "Creating file in $FOLDER/ledger_projection.png"
   set mytics 2
   set key bottom right
   set grid xtics ytics mytics
-  set title "Wealthgrow in $CURRENCY on $ledger_run_date"
+  set title "Wealthgrow in $CURRENCY on $LEDGER_RUN_DATE"
   set ylabel "Amount"
   set style fill transparent solid 0.6 noborder
   #linestyle for 1
