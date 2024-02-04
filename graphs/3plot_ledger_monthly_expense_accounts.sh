@@ -24,8 +24,8 @@ cat /dev/null > ledger_monthly_posessions.tmp
 cat /dev/null > ledger_monthly_transport.tmp
 cat /dev/null > ledger_monthly_utilities.tmp
 CURRENT_MONTH_START=$(date +"%Y-%m-01")
-TIME_DIFF=1y
-START_TIME=$(dateadd $(date +"%Y-%m-01") -1y --format="%Y-%m-%d")
+TIME_DIFF=13mo
+START_TIME=$(dateadd $(date +"%Y-%m-01") -$TIME_DIFF --format="%Y-%m-%d")
 for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
   ledger \
     -f $LEDGER_FILE \
@@ -76,6 +76,7 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
   set terminal pngcairo size 1750,900 enhanced font 'Verdana,10'
   set output "$FOLDER/ledger_monthly_payee.png"
   set xdata time
+  set logscale y 2
   set timefmt "%Y-%m-%d"
   set format x "%d/%m/%Y-%b"
   set xtics nomirror scale 0 rotate by -55

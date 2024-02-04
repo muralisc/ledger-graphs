@@ -14,7 +14,7 @@ if [[ -z "$LEDGER_TERM" ]]; then
 fi
 
 SELECTED_PAYEE=("@Tesco" "or" "@Deliveroo" "or" "@Best Foods")
-SELECTED_PAYEE=("@Metropolitan")
+# SELECTED_PAYEE=("@Metropolitan")
 
 pushd $FOLDER
 cat /dev/null > ledger_monthly_custom.tmp

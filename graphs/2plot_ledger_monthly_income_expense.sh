@@ -18,8 +18,8 @@ pushd $FOLDER
 cat /dev/null > graph2_monthly_income.tmp
 cat /dev/null > graph2_monthly_expense.tmp
 CURRENT_MONTH_START=$(date +"%Y-%m-01")
-TIME_DIFF=1y
-START_TIME=$(dateadd $(date +"%Y-%m-01") -1y --format="%Y-%m-%d")
+TIME_DIFF=14mo
+START_TIME=$(dateadd $(date +"%Y-%m-01") -$TIME_DIFF --format="%Y-%m-%d")
 for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
   ledger \
       -f $LEDGER_FILE \
@@ -60,7 +60,7 @@ EOF
 echo "Creating file $FOLDER/graph2_monthly_inc_exp.png"
 (cat <<EOF) | gnuplot
   # set terminal $LEDGER_TERM
-  set terminal pngcairo size 1750,900 enhanced font 'Verdana,10'
+  set terminal pngcairo size 1750,900 enhanced font "Verdana,10"
   # set terminal canvas mousing size 1750, 900
   set output "$FOLDER/graph2_monthly_inc_exp.png"
   set xdata time
