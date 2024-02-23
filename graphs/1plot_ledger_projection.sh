@@ -72,36 +72,10 @@ projection graph1_old_meta_compound.tmp $avg_monthsav_2021_12 $targe_amt "2020-1
 projection graph1_old_cisco_compound.tmp $monthsav_old $targe_amt "2020-11-01"
 
 # Project from now at 2021 rate
-cur=$(ledger b \
-    Assets \
-    --real \
-    --strict \
-    -X $CURRENCY \
-    --collapse \
-    --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
-datev=$(date +%Y-%m-%d)
-while (( $(echo "$cur < $targe_amt" | bc -l) )); do
-  echo "$datev $cur" ;
-  cur=$(bc <<< "scale=2; $cur * (1 + $YEARLY_INTEREST/100) + ($avg_monthsav_2021_12 * 12)")
-  datev=$(dateadd $datev +12mo --format "%Y-%m-%d");
-done > graph1_meta_compound.tmp
+projection graph1_meta_compound.tmp $avg_monthsav_2021_12 $targe_amt "$(date +%Y-%m-%d)"
 
 # project from now at 2020 rate
-cur=$(ledger b \
-    Assets \
-    --real \
-    --strict \
-    -X $CURRENCY \
-    --collapse \
-    --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
-datev=$(date +%Y-%m-%d)
-loop=1
-while (( $(echo "$cur < $targe_amt" | bc -l) )) && (( loop < 10 )); do
-  echo "$datev $cur" ;
-  cur=$(bc <<< "scale=2; $cur * (1 + $YEARLY_INTEREST/100) + ($monthsav_old * 12)")
-  datev=$(dateadd $datev +12mo --format "%Y-%m-%d");
-  loop=$((loop+1))
-done > graph1_cisco_compound.tmp
+projection graph1_cisco_compound.tmp $monthsav_old $targe_amt "$(date +%Y-%m-%d)"
 
 
 echo "Creating file in $FOLDER/ledger_projection.png"
