@@ -30,3 +30,22 @@ function ledger_b() {
     | tail -1
     set +x
 }
+
+function net_yearly() {
+    FILENAME="$1"
+    FILTER="$2"
+    loop_max="$3"
+    CURRENCY="USD"
+    date_start=$(date +"%Y-%m-%d")
+
+    cat /dev/null > $FILENAME
+    loop=1
+    echo "Calulating net yearly $FILTER from $date_start back $loop_max years"
+    while (( loop < loop_max )) ; do
+      DATE_BEGIN=""
+      bal=$(ledger_b $FILTER $CURRENCY "$DATE_BEGIN" $date_start)
+      echo "$date_start $bal" # output to $FILENAME
+      loop=$((loop+1))
+      date_start=$(dateadd $date_start -1y --format="%Y-%m-%d")
+    done > $FILENAME
+}

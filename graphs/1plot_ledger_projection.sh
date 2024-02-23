@@ -35,34 +35,9 @@ pushd $FOLDER
 
 
 # get_past_years_assets
-cat /dev/null > graph1_assets.tmp
-datev=$(date +"%Y-%m-%d")
-loop=1
-echo "Calulating net yearly assets from $datev back 9 years"
-while (( loop < 9 )) ; do
-  FILTER="^Assets"
-  DATE_BEGIN=""
-  DATE_END="$datev"
-  bal=$(ledger_b $FILTER $CURRENCY "$DATE_BEGIN" $DATE_END)
-  echo "$datev $bal" # output to graph1_assets.tmp
-  loop=$((loop+1))
-  datev=$(dateadd $datev -1y --format="%Y-%m-%d")
-done > graph1_assets.tmp
-
-
+net_yearly "graph1_assets.tmp" "^Assets" "9"
 # get_past_years_expense
-cat /dev/null > graph1_expense.tmp
-datev=$(date +"%Y-%m-%d")
-loop=1
-while (( loop < 8 )) ; do
-  FILTER="^Expense"
-  DATE_BEGIN=""
-  DATE_END="$datev"
-  bal=$(ledger_b $FILTER $CURRENCY "$DATE_BEGIN" $DATE_END)
-  echo "$datev $bal"
-  loop=$((loop+1))
-  datev=$(dateadd $datev -1y --format="%Y-%m-%d")
-done > graph1_expense.tmp
+net_yearly "graph2_expense.tmp" "^Expense" "8"
 
 get_past12_mothly_avg_savings() {
     dateEnd=$1
@@ -79,12 +54,12 @@ get_past12_mothly_avg_savings() {
 
 YEARLY_INTEREST=8
 dateEnd=2021-12 # First year of joining meta
-echo "Calulating avg monthly savings from -12m to $dateEnd"
+echo "Calculating avg monthly savings from -12m to $dateEnd"
 monthsav=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST)
 echo "Monthly Savings: $monthsav"
 
 dateEnd=2020-11 # Last year of cisco
-echo "Calulating avg monthly savings from -12m to $dateEnd"
+echo "Calculating avg monthly savings from -12m to $dateEnd"
 monthsav_old=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST) # avg cisco savings
 echo "Monthly Savings Old: $monthsav_old"
 
