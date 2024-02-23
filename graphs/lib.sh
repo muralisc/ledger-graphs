@@ -49,3 +49,28 @@ function net_yearly() {
       date_start=$(dateadd $date_start -1y --format="%Y-%m-%d")
     done > $FILENAME
 }
+
+function projection() {
+    FILENAME="$1"
+    AVG_MONTH_SAV="$2"
+    TARGET_AMT="$3"
+    date_value="$4"
+    YEARLY_INTEREST=8
+
+    CURRENCY="USD"
+    cur_balence=$(ledger b \
+        Assets \
+        --real \
+        --strict \
+        -X $CURRENCY \
+        --collapse \
+        --end $date_value \
+        --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
+    loop=1
+    while (( $(echo "$cur_balence < $TARGET_AMT" | bc -l) )) && (( loop < 10 )) ; do
+        echo "$date_value $cur_balence" ; 
+        cur_balence=$(bc <<< "scale=2; $cur_balence * (1 + $YEARLY_INTEREST/100) + ($AVG_MONTH_SAV * 12)")
+        date_value=$(dateadd $date_value +12mo --format "%Y-%m-%d");  
+        loop=$((loop+1))
+    done > $FILENAME
+}
