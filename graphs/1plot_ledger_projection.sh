@@ -18,7 +18,7 @@ export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pr
 
 LEDGER_RUN_DATE=$(date +%Y-%m-%d)
 FOLDER="/var/tmp/ledger_1_${LEDGER_RUN_DATE}"
-mkdir -p $FOLDER
+mkdir -p "$FOLDER"
 
 if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1750,900 persist"
@@ -26,12 +26,12 @@ fi
 
 CURRENCY=USD
 yearlyexpenses=40000
-targe_amt=$((25*$yearlyexpenses))
-lean_FI=$((17*$yearlyexpenses))
-half_FI=$((12*$yearlyexpenses))
-FU_target=$((3*$yearlyexpenses))
+targe_amt=$((25*yearlyexpenses))
+lean_FI=$((17*yearlyexpenses))
+half_FI=$((12*yearlyexpenses))
+FU_target=$((3*yearlyexpenses))
 
-pushd $FOLDER
+pushd "$FOLDER" || return
 
 
 # get_past_years_assets
@@ -53,16 +53,16 @@ echo "Monthly Savings Old at $dateEnd : $monthsav_old"
 
 
 # projection from end of 2020-11 at 2021 rate
-projection graph1_old_meta_compound.tmp $avg_monthsav_2021_12 $targe_amt "2020-11-01"
+projection graph1_old_meta_compound.tmp "$avg_monthsav_2021_12" $targe_amt "2020-11-01"
 
 # Projection from end of 2020-11 at 2020 rate
-projection graph1_old_cisco_compound.tmp $monthsav_old $targe_amt "2020-11-01"
+projection graph1_old_cisco_compound.tmp "$monthsav_old" $targe_amt "2020-11-01"
 
 # Project from now at 2021 rate
-projection graph1_meta_compound.tmp $avg_monthsav_2021_12 $targe_amt "$(date +%Y-%m-%d)"
+projection graph1_meta_compound.tmp "$avg_monthsav_2021_12" $targe_amt "$(date +%Y-%m-%d)"
 
 # project from now at 2020 rate
-projection graph1_cisco_compound.tmp $monthsav_old $targe_amt "$(date +%Y-%m-%d)"
+projection graph1_cisco_compound.tmp "$monthsav_old" $targe_amt "$(date +%Y-%m-%d)"
 
 
 echo "Creating file in $FOLDER/ledger_projection.png"
@@ -114,6 +114,6 @@ echo "Creating file in $FOLDER/ledger_projection.png"
     "graph1_cisco_compound.tmp"       using 1:2   with linespoints ls 4 title "ProjectionCompound Cisco", \
     ""                                using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 4 notitle
 EOF
-popd
+popd || return
 
 #rm ledgeroutput*.tmp
