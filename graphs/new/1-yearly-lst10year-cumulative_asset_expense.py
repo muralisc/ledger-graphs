@@ -1,4 +1,4 @@
 from lib import LedgerCli
 
 l = LedgerCli()
-l.print()
+l.run("test.log")
