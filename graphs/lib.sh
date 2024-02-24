@@ -8,7 +8,7 @@ function ledger_b() {
     DATE_END=$4
 
     OPT_DATE_BEGIN=""
-    if [[ ! -z $DATE_BEGIN ]]; then
+    if [[ -n $DATE_BEGIN ]]; then
         OPT_DATE_BEGIN="--begin $DATE_BEGIN"
     fi
 
@@ -19,13 +19,13 @@ function ledger_b() {
 
     # set -x
     ledger b \
-        $FILTER \
+        "$FILTER" \
         --real \
         --strict \
-        -X $CURRENCY \
-        $OPT_DATE_BEGIN \
+        -X "$CURRENCY" \
+        "$OPT_DATE_BEGIN" \
         --collapse \
-        --end $DATE_END \
+        --end "$DATE_END" \
         --balance-format="%(abs(quantity(scrub(floor(display_total)))))\n" \
     | tail -1
     set +x
@@ -38,16 +38,16 @@ function net_yearly() {
     CURRENCY="USD"
     date_start=$(date +"%Y-%m-%d")
 
-    cat /dev/null > $FILENAME
+    cat /dev/null > "$FILENAME"
     loop=1
     echo "Calulating net yearly $FILTER from $date_start back $loop_max years"
     while (( loop < loop_max )) ; do
       DATE_BEGIN=""
-      bal=$(ledger_b $FILTER $CURRENCY "$DATE_BEGIN" $date_start)
+      bal=$(ledger_b "$FILTER" $CURRENCY "$DATE_BEGIN" "$date_start" )
       echo "$date_start $bal" # output to $FILENAME
       loop=$((loop+1))
-      date_start=$(dateadd $date_start -1y --format="%Y-%m-%d")
-    done > $FILENAME
+      date_start=$(dateadd "$date_start" -1y --format="%Y-%m-%d")
+    done > "$FILENAME"
 }
 
 get_past12_mothly_avg_savings() {
