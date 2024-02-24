@@ -39,29 +39,16 @@ net_yearly "graph1_assets.tmp" "^Assets" "9"
 # get_past_years_expense
 net_yearly "graph1_expense.tmp" "^Expense" "8"
 
-get_past12_mothly_avg_savings() {
-    dateEnd=$1
-    YEARLY_INTEREST=$2
-    LOOKBACK_MONTHS=12
-    dateBeg=$(dateadd $dateEnd -${LOOKBACK_MONTHS}mo --format="%Y-%m")
-    FILTER="^Income ^Expense"
-    DATE_BEGIN="$dateBeg"
-    DATE_END="$dateEnd"
-    durationsav=$(ledger_b "$FILTER" $CURRENCY "$DATE_BEGIN" $DATE_END)
-    monthsav=$((durationsav/$LOOKBACK_MONTHS)) #600000
-    echo "$monthsav"
-}
-
 YEARLY_INTEREST=8
 dateEnd=2021-12 # First year of joining meta
 echo "Calculating avg monthly savings from -12m to $dateEnd"
 avg_monthsav_2021_12=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST)
-echo "Monthly Savings: $avg_monthsav_2021_12"
+echo "Monthly Savings at $dateEnd : $avg_monthsav_2021_12"
 
 dateEnd=2020-11 # Last year of cisco
 echo "Calculating avg monthly savings from -12m to $dateEnd"
 monthsav_old=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST) # avg cisco savings
-echo "Monthly Savings Old: $monthsav_old"
+echo "Monthly Savings Old at $dateEnd : $monthsav_old"
 
 
 
@@ -79,9 +66,6 @@ projection graph1_cisco_compound.tmp $monthsav_old $targe_amt "$(date +%Y-%m-%d)
 
 
 echo "Creating file in $FOLDER/ledger_projection.png"
-#
-# Enabled the UserDir module in apache so we can access this form index.html
-#
 
 # echo $LEDGER_TERM
 (cat <<EOF) | gnuplot

@@ -50,6 +50,22 @@ function net_yearly() {
     done > $FILENAME
 }
 
+get_past12_mothly_avg_savings() {
+    dateEnd=$1
+    YEARLY_INTEREST=$2
+    LOOKBACK_MONTHS=12
+    CURRENCY="USD"
+
+    dateBeg=$(dateadd "$dateEnd" -${LOOKBACK_MONTHS}mo --format="%Y-%m")
+    FILTER="^Income ^Expense"
+    DATE_BEGIN="$dateBeg"
+    DATE_END="$dateEnd"
+    durationsav=$(ledger_b "$FILTER" $CURRENCY "$DATE_BEGIN" "$DATE_END" )
+    monthsav=$((durationsav/LOOKBACK_MONTHS)) #600000
+    echo "$monthsav"
+}
+
+
 function projection() {
     FILENAME="$1"
     AVG_MONTH_SAV="$2"
@@ -64,13 +80,13 @@ function projection() {
         --strict \
         -X $CURRENCY \
         --collapse \
-        --end $date_value \
+        --end "$date_value" \
         --balance-format=" %(abs(quantity(scrub(floor(display_total)))))\n")
     loop=1
     while (( $(echo "$cur_balence < $TARGET_AMT" | bc -l) )) && (( loop < 10 )) ; do
         echo "$date_value $cur_balence" ; 
         cur_balence=$(bc <<< "scale=2; $cur_balence * (1 + $YEARLY_INTEREST/100) + ($AVG_MONTH_SAV * 12)")
-        date_value=$(dateadd $date_value +12mo --format "%Y-%m-%d");  
+        date_value=$(dateadd "$date_value" +12mo --format "%Y-%m-%d");  
         loop=$((loop+1))
-    done > $FILENAME
+    done > "$FILENAME"
 }
