@@ -18,12 +18,16 @@ function ledger_b() {
     fi
 
     # set -x
+    # NOTE:
+    # 1. Cannot quote $FILTER below because that will break when filter 
+    #    has multiple tokens like "^Assets ^Expense"
+    # 2. Cannot quota $OPT_DATE_BEGIN because that will break ledger parsing
     ledger b \
-        "$FILTER" \
+        $FILTER \
         --real \
         --strict \
         -X "$CURRENCY" \
-        "$OPT_DATE_BEGIN" \
+        $OPT_DATE_BEGIN \
         --collapse \
         --end "$DATE_END" \
         --balance-format="%(abs(quantity(scrub(floor(display_total)))))\n" \
@@ -62,7 +66,7 @@ get_past12_mothly_avg_savings() {
     DATE_END="$dateEnd"
     durationsav=$(ledger_b "$FILTER" $CURRENCY "$DATE_BEGIN" "$DATE_END" )
     monthsav=$((durationsav/LOOKBACK_MONTHS)) #600000
-    echo "$monthsav"
+    echo $monthsav
 }
 
 
