@@ -69,7 +69,9 @@ echo "Creating file $FOLDER/graph2_monthly_inc_exp.png"
   set xtics nomirror scale 0 rotate by -55
   set grid ytics
   set title "Monthly Income and Expenses $ledger_run_date"
-  set ylabel "Amount"
+  set ylabel "Income, Income-Exp"
+  set y2label "Expense"
+  set y2tics textcolor rgb "red"
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
   set rmargin 10
   # last noted label
@@ -78,8 +80,8 @@ echo "Creating file $FOLDER/graph2_monthly_inc_exp.png"
   set label 1 at xPos, graph 1 "noticed avg exp is 4k" offset 0.5,-5.0
   plot \
     "graph2_monthly_income.tmp" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \
-    "graph2_monthly_expense.tmp" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red", \
-                     '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle, \
+    "graph2_monthly_expense.tmp" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red" axes x1y2, \
+                     '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle axes x1y2, \
     "graph2_monthly_savings.tmp" using 1:2 with linespoints title "Income - Expense" ls 1 linecolor rgb "#dd0060ad", \
                      '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor linestyle 1 notitle
 EOF
