@@ -17,7 +17,7 @@ export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger
 export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
 
 LEDGER_RUN_DATE=$(date +%Y-%m-%d)
-FOLDER="/var/tmp/ledger_1_${LEDGER_RUN_DATE}"
+FOLDER="/var/tmp/ledger/ledger_1_${LEDGER_RUN_DATE}"
 mkdir -p "$FOLDER"
 
 if [[ -z "$LEDGER_TERM" ]]; then
