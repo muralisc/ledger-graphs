@@ -44,6 +44,7 @@ echo "Creating file $FOLDER/graph5_yearly_inc_exp.png"
   set xdata time
   set timefmt "%Y-%m-%d"
   set format x "%d/%m/%Y-%b"
+  set format y "%.2s %c"
   set xtics nomirror scale 0 rotate by -55
   set grid back ls 12
   set title "Yearly Income and Expenses $ledger_run_date"

@@ -80,6 +80,7 @@ echo "Creating file $FOLDER/graph2_monthly_inc_exp.png"
   set label 1 at xPos, graph 1 "noticed avg exp is 4k" offset 0.5,-5.0
   plot \
     "graph2_monthly_income.tmp" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \
+                     '' using 1:2:2 with labels left font "Courier,12" rotate by 15 offset 1,1 textcolor "#ffaaaaaa" notitle, \
     "graph2_monthly_expense.tmp" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red" axes x1y2, \
                      '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle axes x1y2, \
     "graph2_monthly_savings.tmp" using 1:2 with linespoints title "Income - Expense" ls 1 linecolor rgb "#dd0060ad", \
