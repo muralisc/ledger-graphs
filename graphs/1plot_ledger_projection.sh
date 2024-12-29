@@ -24,7 +24,7 @@ if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1750,900 persist"
 fi
 
-CURRENCY=USD
+CURRENCY=GBP
 yearlyexpenses=40000
 targe_amt=$((25*yearlyexpenses))
 lean_FI=$((17*yearlyexpenses))
@@ -81,16 +81,22 @@ echo "Creating file in $FOLDER/ledger_projection.png"
   set mytics 2
   set key bottom right
   set grid xtics ytics mytics
-  set title "Wealthgrow in $CURRENCY on $LEDGER_RUN_DATE"
+  set title "Wealthgrow on $LEDGER_RUN_DATE"
   set ylabel "Amount"
   set style fill transparent solid 0.6 noborder
+
   #linestyle for 1
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
   #linestyle for 2
   set style line 2 lc rgb '#dd181f' lt 1 lw 2 pt 5 pi -1 ps 1.5
   #linestyle for 3
   set style line 3 lc rgb '#dd181f' lt 1 lw 2 pt 3 pi -1 ps 1.5
+
+  #linestyle for 5
+  set style line 5 lc rgb '#00181f' lt 1 lw 2 pt 15 pi -1 ps 1.5
+
   set pointintervalbox 3
+
   set arrow 1 from graph 0,first $half_FI to graph 1,first $half_FI nohead lc "red" dashtype 3 linewidth 2
   set label 1 at graph 0,first $half_FI "half FI" offset 0.5,1.0
   set arrow 2 from graph 0,first $targe_amt to graph 1,first $targe_amt nohead lc "red" dashtype 3 linewidth 2
@@ -102,13 +108,14 @@ echo "Creating file in $FOLDER/ledger_projection.png"
 
   plot \
     "graph1_assets.tmp"               using 1:2   with filledcurves x1 title "Assets" linecolor rgb "goldenrod", \
+    ""                                using 1:2   with points ls 5, \
     ""                      every 1   using 1:2:2 with labels font "Courier,12" rotate by 05 offset 0,0.5 textcolor linestyle 0 notitle, \
     "graph1_expense.tmp"              using 1:2   with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
     ""                                using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
     "graph1_old_meta_compound.tmp"    using 1:2   with linespoints ls 1 title "Job Change Projection Meta" ,\
-    ""                                using 1:2:2 with labels font "Courier,12" rotate by 10 offset -3,0 textcolor linestyle 0 notitle, \
+    ""                                using 1:2:2 with labels font "Courier,12" rotate by 1 offset 7,0 textcolor linestyle 0 notitle, \
     "graph1_meta_compound.tmp"        using 1:2   with linespoints ls 2 title "Current ProjectionCompound", \
-    ""                                using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 2 notitle, \
+    ""                                using 1:2:2 with labels font "Courier,12" offset 0,1 textcolor linestyle 2 notitle, \
     "graph1_old_cisco_compound.tmp"   using 1:2   with linespoints ls 3 title "Job Change Projection Cisco" ,\
     ""                                using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle, \
     "graph1_cisco_compound.tmp"       using 1:2   with linespoints ls 4 title "ProjectionCompound Cisco", \

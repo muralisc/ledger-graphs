@@ -47,7 +47,7 @@ echo "Creating file $FOLDER/graph5_yearly_inc_exp.png"
   set format y "%.2s %c"
   set xtics nomirror scale 0 rotate by -55
   set grid back ls 12
-  set title "Yearly Income and Expenses $ledger_run_date"
+  set title "Yearly Income and Expenses as on ${ledger_run_date}"
   set ylabel "Amount"
   set rmargin 10
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5

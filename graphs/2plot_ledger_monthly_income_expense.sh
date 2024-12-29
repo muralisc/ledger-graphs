@@ -67,12 +67,13 @@ echo "Creating file $FOLDER/graph2_monthly_inc_exp.png"
   set timefmt "%Y-%m-%d"
   set format x "%d/%m/%Y-%b"
   set xtics nomirror scale 0 rotate by -55
-  set grid ytics
+  set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
+  set style line 12 lc rgb '#88ffccff' lt 1 lw 1.5
+  set grid xtics ytics ls 12
   set title "Monthly Income and Expenses $ledger_run_date"
   set ylabel "Income, Income-Exp"
   set y2label "Expense"
   set y2tics textcolor rgb "red"
-  set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
   set rmargin 10
   # last noted label
   xPos = "2022-01-01"

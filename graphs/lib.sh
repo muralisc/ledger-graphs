@@ -39,7 +39,7 @@ function net_yearly() {
     FILENAME="$1"
     FILTER="$2"
     loop_max="$3"
-    CURRENCY="USD"
+    CURRENCY="GBP"
     date_start=$(date +"%Y-%m-%d")
 
     cat /dev/null > "$FILENAME"
@@ -58,7 +58,7 @@ get_past12_mothly_avg_savings() {
     dateEnd=$1
     YEARLY_INTEREST=$2
     LOOKBACK_MONTHS=12
-    CURRENCY="USD"
+    CURRENCY="GBP"
 
     dateBeg=$(dateadd "$dateEnd" -${LOOKBACK_MONTHS}mo --format="%Y-%m")
     FILTER="^Income ^Expense"
@@ -77,7 +77,7 @@ function projection() {
     date_value="$4"
     YEARLY_INTEREST=8
 
-    CURRENCY="USD"
+    CURRENCY="GBP"
     cur_balence=$(ledger b \
         Assets \
         --real \
