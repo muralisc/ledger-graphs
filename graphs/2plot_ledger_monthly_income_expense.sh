@@ -15,8 +15,8 @@ fi
 
 pushd $FOLDER
 
-cat /dev/null > graph2_monthly_income.tmp
-cat /dev/null > graph2_monthly_expense.tmp
+cat /dev/null > graph2_monthly_income.txt
+cat /dev/null > graph2_monthly_expense.txt
 CURRENT_MONTH_START=$(date +"%Y-%m-01")
 TIME_DIFF=14mo
 START_TIME=$(dateadd $(date +"%Y-%m-01") -$TIME_DIFF --format="%Y-%m-%d")
@@ -27,28 +27,28 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
       -X GBP \
       -jMn reg \
       --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-      '^Income' "$@" >> graph2_monthly_income.tmp
+      '^Income' "$@" >> graph2_monthly_income.txt
   ledger -f $LEDGER_FILE \
       --begin $cdate --end $(dateadd $cdate 1mo) \
       -X GBP \
       -jMn reg \
       --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-      '^Expe' "$@" >> graph2_monthly_expense.tmp
+      '^Expe' "$@" >> graph2_monthly_expense.txt
 done
 
 
-(cat <<EOF) | python3 | sort > graph2_monthly_savings.tmp
+(cat <<EOF) | python3 | sort > graph2_monthly_savings.txt
 #!/usr/local/bin/python3
 import csv
 from collections import defaultdict
 
 
 date_val = defaultdict(int)
-with open('graph2_monthly_income.tmp') as income:
+with open('graph2_monthly_income.txt') as income:
     inc = csv.reader(income, delimiter=' ')
     for row in inc:
         date_val[row[0]] = int(row[1])
-with open('graph2_monthly_expense.tmp') as expense:
+with open('graph2_monthly_expense.txt') as expense:
     inc = csv.reader(expense, delimiter=' ')
     for row in inc:
         date_val[row[0]] = date_val[row[0]] - int(row[1])
@@ -69,22 +69,23 @@ echo "Creating file $FOLDER/graph2_monthly_inc_exp.png"
   set xtics nomirror scale 0 rotate by -55
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
   set style line 12 lc rgb '#88ffccff' lt 1 lw 1.5
-  set grid xtics ytics ls 12
   set title "Monthly Income and Expenses $ledger_run_date"
-  set ylabel "Income, Income-Exp"
-  set y2label "Expense"
+  set ylabel "Income, Expense"
+  set logscale y 2
+
+  set y2label "(Income) - (Expense)"
   set y2tics textcolor rgb "red"
+  set grid xtics ytics ls 12
+
   set rmargin 10
-  # last noted label
-  xPos = "2022-01-01"
-  set arrow 1 at xPos, graph 0 to xPos, graph 1 nohead lc "red" dt 4
-  set label 1 at xPos, graph 1 "noticed avg exp is 4k" offset 0.5,-5.0
+
   plot \
-    "graph2_monthly_income.tmp" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \
-                     '' using 1:2:2 with labels left font "Courier,12" rotate by 15 offset 1,1 textcolor "#ffaaaaaa" notitle, \
-    "graph2_monthly_expense.tmp" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red" axes x1y2, \
-                     '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle axes x1y2, \
-    "graph2_monthly_savings.tmp" using 1:2 with linespoints title "Income - Expense" ls 1 linecolor rgb "#dd0060ad", \
-                     '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor linestyle 1 notitle
+    500000 title "noticed on 2022-01-01 avg exp is 4k" lw 2 , \
+    "graph2_monthly_income.txt" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \
+                     '' using 1:2:2 with labels left font "Courier,12" rotate by 15 offset 1,1 textcolor "#3d3ded" notitle, \
+    "graph2_monthly_expense.txt" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red", \
+                     '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle, \
+    "graph2_monthly_savings.txt" using 1:2 with linespoints title "Income - Expense" ls 1 linecolor rgb "#dd0060ad" axes x1y2, \
+                     '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor linestyle 1 notitle axes x1y2
 EOF
 popd
