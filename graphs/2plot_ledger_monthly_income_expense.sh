@@ -2,8 +2,11 @@
 
 # https://www.sundialdreams.com/report-scripts-for-ledger-cli-with-gnuplot/
 
-export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
-export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
+export LEDGER_FILE=$1
+export LEDGER_PRICE_DB=$2
+
+shift #unset $2
+shift #unset $1
 
 ledger_run_date=$(date +%Y-%m-%d)
 FOLDER="/var/tmp/ledger/ledger_2_${ledger_run_date}"
