@@ -20,13 +20,13 @@ fi
 
 pushd $FOLDER
 cat /dev/null > ledger_monthly_allowance.txt
-cat /dev/null > ledger_monthly_entertainment.tmp
-cat /dev/null > ledger_monthly_groceries.tmp
-cat /dev/null > ledger_monthly_health.tmp
-cat /dev/null > ledger_monthly_housing.tmp
-cat /dev/null > ledger_monthly_posessions.tmp
-cat /dev/null > ledger_monthly_transport.tmp
-cat /dev/null > ledger_monthly_utilities.tmp
+cat /dev/null > ledger_monthly_entertainment.txt
+cat /dev/null > ledger_monthly_groceries.txt
+cat /dev/null > ledger_monthly_health.txt
+cat /dev/null > ledger_monthly_housing.txt
+cat /dev/null > ledger_monthly_posessions.txt
+cat /dev/null > ledger_monthly_transport.txt
+cat /dev/null > ledger_monthly_utilities.txt
 
 cat /dev/null > graph3_monthly_expense.txt
 
@@ -61,49 +61,49 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Entertainment' >> ledger_monthly_entertainment.tmp
+    '^Expenses:Entertainment' >> ledger_monthly_entertainment.txt
 
   echo "monthly groceries"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Groceries' >> ledger_monthly_groceries.tmp
+    '^Expenses:Groceries' >> ledger_monthly_groceries.txt
 
   echo "monthly health"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Health' >> ledger_monthly_health.tmp
+    '^Expenses:Health' >> ledger_monthly_health.txt
 
   echo "monthly housing"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Housing' >> ledger_monthly_housing.tmp
+    '^Expenses:Housing' >> ledger_monthly_housing.txt
 
   echo "monthly posessions"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Posessions' >> ledger_monthly_posessions.tmp
+    '^Expenses:Posessions' >> ledger_monthly_posessions.txt
 
   echo "monthly transport"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Transport' >> ledger_monthly_transport.tmp
+    '^Expenses:Transport' >> ledger_monthly_transport.txt
 
   echo "monthly utilities"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Utilities' >> ledger_monthly_utilities.tmp
+    '^Expenses:Utilities' >> ledger_monthly_utilities.txt
 done
 
 echo "Creating $FOLDER/ledger_monthly_payee.png"
@@ -141,18 +141,18 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
     "graph3_monthly_expense.txt" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red" axes x1y2, \
                      '' using 1:2:2 with labels left font "Courier,12" rotate by 0 offset 1,0 textcolor "red" notitle axes x1y2, \
     "ledger_monthly_allowance.txt" using 1:2 with linespoints title "Expense:Allowance" ls 2 linecolor rgb "#ff0000", \
-    "ledger_monthly_entertainment.tmp" using 1:2 with linespoints title "Expense:Entertainment" ls 3 linecolor rgb "#00aa00", \
+    "ledger_monthly_entertainment.txt" using 1:2 with linespoints title "Expense:Entertainment" ls 3 linecolor rgb "#00aa00", \
                      '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#00aa00" notitle, \
-    "ledger_monthly_groceries.tmp" using 1:2 with linespoints title "Expense:Groceries" ls 4 linecolor rgb "#0000ff", \
+    "ledger_monthly_groceries.txt" using 1:2 with linespoints title "Expense:Groceries" ls 4 linecolor rgb "#0000ff", \
                      '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#0000ff" notitle, \
-    "ledger_monthly_health.tmp" using 1:2 with linespoints title "Expense:Health" ls 5 linecolor rgb "#FF5733", \
-    "ledger_monthly_housing.tmp" using 1:2 with linespoints title "Expense:Housing" ls 6 linecolor rgb "#af7ac5", \
+    "ledger_monthly_health.txt" using 1:2 with linespoints title "Expense:Health" ls 5 linecolor rgb "#FF5733", \
+    "ledger_monthly_housing.txt" using 1:2 with linespoints title "Expense:Housing" ls 6 linecolor rgb "#af7ac5", \
                      '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#3d3ded" notitle, \
-    "ledger_monthly_posessions.tmp" using 1:2 with linespoints title "Expense:Posessions" ls 7 linecolor rgb "#1abc9c", \
+    "ledger_monthly_posessions.txt" using 1:2 with linespoints title "Expense:Posessions" ls 7 linecolor rgb "#1abc9c", \
                      '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#1abc9c" notitle, \
-    "ledger_monthly_transport.tmp" using 1:2 with linespoints title "Expense:Transport" ls 8 linecolor rgb "#d4ac0d", \
+    "ledger_monthly_transport.txt" using 1:2 with linespoints title "Expense:Transport" ls 8 linecolor rgb "#d4ac0d", \
                      '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#d4ac0d" notitle, \
-    "ledger_monthly_utilities.tmp" using 1:2 with linespoints title "Expense:Utilities" ls 9 linecolor rgb "#283747", \
+    "ledger_monthly_utilities.txt" using 1:2 with linespoints title "Expense:Utilities" ls 9 linecolor rgb "#283747", \
                      '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#283747" notitle
 EOF
 popd
