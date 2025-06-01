@@ -2,8 +2,12 @@
 
 # https://www.sundialdreams.com/report-scripts-for-ledger-cli-with-gnuplot/
 
-export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
-export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
+export LEDGER_FILE=$1
+export LEDGER_PRICE_DB=$2
+
+shift #unset $2 if any
+shift #unset $1 if any
+
 
 ledger_run_date=$(date +%Y-%m-%d)
 FOLDER="/var/tmp/ledger/ledger_3_${ledger_run_date}"
@@ -15,7 +19,7 @@ fi
 
 
 pushd $FOLDER
-cat /dev/null > ledger_monthly_allowance.tmp
+cat /dev/null > ledger_monthly_allowance.txt
 cat /dev/null > ledger_monthly_entertainment.tmp
 cat /dev/null > ledger_monthly_groceries.tmp
 cat /dev/null > ledger_monthly_health.tmp
@@ -50,7 +54,7 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
     -X GBP \
     -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Allowance' >> ledger_monthly_allowance.tmp
+    '^Expenses:Allowance' >> ledger_monthly_allowance.txt
 
   echo "monthly entertainment"
   ledger \
@@ -136,7 +140,7 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
   plot \
     "graph3_monthly_expense.txt" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red" axes x1y2, \
                      '' using 1:2:2 with labels left font "Courier,12" rotate by 0 offset 1,0 textcolor "red" notitle axes x1y2, \
-    "ledger_monthly_allowance.tmp" using 1:2 with linespoints title "Expense:Allowance" ls 2 linecolor rgb "#ff0000", \
+    "ledger_monthly_allowance.txt" using 1:2 with linespoints title "Expense:Allowance" ls 2 linecolor rgb "#ff0000", \
     "ledger_monthly_entertainment.tmp" using 1:2 with linespoints title "Expense:Entertainment" ls 3 linecolor rgb "#00aa00", \
                      '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#00aa00" notitle, \
     "ledger_monthly_groceries.tmp" using 1:2 with linespoints title "Expense:Groceries" ls 4 linecolor rgb "#0000ff", \
