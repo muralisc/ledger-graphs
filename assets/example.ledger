@@ -1,11 +1,15 @@
-# Made with ledger-graphs/simulate-txns.sh on 'Sun Jun  1 09:54:27 AM BST 2025'
+# Made with ledger-graphs/simulate-txns.sh on 'Sun Jun  1 10:42:38 AM BST 2025'
 
 2015-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         724 GBP
+        Assets:Bank:HSBC:Savings         915 GBP
         Income:Salary
 
+2015-06-01 * "Allowance for 2015-06-01"
+        Assets:Bank:HSBC:Savings         -7 GBP
+        Expenses:Allowance
+
 2015-06-01 * "Entertainment for 2015-06-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Entertainment
 
 2015-06-01 * "Groceries for 2015-06-01"
@@ -13,45 +17,49 @@
         Expenses:Groceries
 
 2015-06-01 * "Health for 2015-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Health
 
 2015-06-01 * "Housing for 2015-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Housing
 
 2015-06-01 * "Posessions for 2015-06-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Posessions
 
 2015-06-01 * "Transport for 2015-06-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Transport
 
 2015-06-01 * "Utilities for 2015-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Utilities
 
 
 
 2015-07-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         877 GBP
+        Assets:Bank:HSBC:Savings         802 GBP
         Income:Salary
 
+2015-07-01 * "Allowance for 2015-07-01"
+        Assets:Bank:HSBC:Savings         -6 GBP
+        Expenses:Allowance
+
 2015-07-01 * "Entertainment for 2015-07-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2015-07-01 * "Groceries for 2015-07-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Groceries
 
 2015-07-01 * "Health for 2015-07-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Health
 
 2015-07-01 * "Housing for 2015-07-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Housing
 
 2015-07-01 * "Posessions for 2015-07-01"
@@ -59,207 +67,231 @@
         Expenses:Posessions
 
 2015-07-01 * "Transport for 2015-07-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Transport
 
 2015-07-01 * "Utilities for 2015-07-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Utilities
 
 
 
 2015-08-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         855 GBP
+        Assets:Bank:HSBC:Savings         996 GBP
         Income:Salary
 
-2015-08-01 * "Entertainment for 2015-08-01"
+2015-08-01 * "Allowance for 2015-08-01"
         Assets:Bank:HSBC:Savings         -12 GBP
+        Expenses:Allowance
+
+2015-08-01 * "Entertainment for 2015-08-01"
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Entertainment
 
 2015-08-01 * "Groceries for 2015-08-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2015-08-01 * "Health for 2015-08-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Health
 
 2015-08-01 * "Housing for 2015-08-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Housing
 
 2015-08-01 * "Posessions for 2015-08-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Posessions
 
 2015-08-01 * "Transport for 2015-08-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Transport
 
 2015-08-01 * "Utilities for 2015-08-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Utilities
 
 
 
 2015-09-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         763 GBP
+        Assets:Bank:HSBC:Savings         780 GBP
         Income:Salary
+
+2015-09-01 * "Allowance for 2015-09-01"
+        Assets:Bank:HSBC:Savings         -16 GBP
+        Expenses:Allowance
 
 2015-09-01 * "Entertainment for 2015-09-01"
         Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Entertainment
 
 2015-09-01 * "Groceries for 2015-09-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Groceries
 
 2015-09-01 * "Health for 2015-09-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Health
 
 2015-09-01 * "Housing for 2015-09-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Housing
 
 2015-09-01 * "Posessions for 2015-09-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Posessions
 
 2015-09-01 * "Transport for 2015-09-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Transport
 
 2015-09-01 * "Utilities for 2015-09-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Utilities
 
 
 
 2015-10-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         891 GBP
+        Assets:Bank:HSBC:Savings         861 GBP
         Income:Salary
 
+2015-10-01 * "Allowance for 2015-10-01"
+        Assets:Bank:HSBC:Savings         -18 GBP
+        Expenses:Allowance
+
 2015-10-01 * "Entertainment for 2015-10-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Entertainment
 
 2015-10-01 * "Groceries for 2015-10-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2015-10-01 * "Health for 2015-10-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Health
 
 2015-10-01 * "Housing for 2015-10-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Housing
 
 2015-10-01 * "Posessions for 2015-10-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Posessions
 
 2015-10-01 * "Transport for 2015-10-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Transport
 
 2015-10-01 * "Utilities for 2015-10-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Utilities
 
 
 
 2015-11-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         990 GBP
+        Assets:Bank:HSBC:Savings         976 GBP
         Income:Salary
 
+2015-11-01 * "Allowance for 2015-11-01"
+        Assets:Bank:HSBC:Savings         -3 GBP
+        Expenses:Allowance
+
 2015-11-01 * "Entertainment for 2015-11-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Entertainment
 
 2015-11-01 * "Groceries for 2015-11-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Groceries
 
 2015-11-01 * "Health for 2015-11-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Health
 
 2015-11-01 * "Housing for 2015-11-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Housing
 
 2015-11-01 * "Posessions for 2015-11-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Posessions
 
 2015-11-01 * "Transport for 2015-11-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Transport
 
 2015-11-01 * "Utilities for 2015-11-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Utilities
 
 
 
 2015-12-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         924 GBP
+        Assets:Bank:HSBC:Savings         839 GBP
         Income:Salary
 
+2015-12-01 * "Allowance for 2015-12-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Allowance
+
 2015-12-01 * "Entertainment for 2015-12-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Entertainment
 
 2015-12-01 * "Groceries for 2015-12-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Groceries
 
 2015-12-01 * "Health for 2015-12-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Health
 
 2015-12-01 * "Housing for 2015-12-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Housing
 
 2015-12-01 * "Posessions for 2015-12-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Posessions
 
 2015-12-01 * "Transport for 2015-12-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Transport
 
 2015-12-01 * "Utilities for 2015-12-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Utilities
 
 
 
 2016-01-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         951 GBP
+        Assets:Bank:HSBC:Savings         764 GBP
         Income:Salary
 
+2016-01-01 * "Allowance for 2016-01-01"
+        Assets:Bank:HSBC:Savings         -13 GBP
+        Expenses:Allowance
+
 2016-01-01 * "Entertainment for 2016-01-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Entertainment
 
 2016-01-01 * "Groceries for 2016-01-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Groceries
 
 2016-01-01 * "Health for 2016-01-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Health
 
 2016-01-01 * "Housing for 2016-01-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Housing
 
 2016-01-01 * "Posessions for 2016-01-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Posessions
 
 2016-01-01 * "Transport for 2016-01-01"
@@ -267,59 +299,67 @@
         Expenses:Transport
 
 2016-01-01 * "Utilities for 2016-01-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Utilities
 
 
 
 2016-02-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         877 GBP
+        Assets:Bank:HSBC:Savings         879 GBP
         Income:Salary
 
-2016-02-01 * "Entertainment for 2016-02-01"
+2016-02-01 * "Allowance for 2016-02-01"
         Assets:Bank:HSBC:Savings         -2 GBP
+        Expenses:Allowance
+
+2016-02-01 * "Entertainment for 2016-02-01"
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Entertainment
 
 2016-02-01 * "Groceries for 2016-02-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2016-02-01 * "Health for 2016-02-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Health
 
 2016-02-01 * "Housing for 2016-02-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Housing
 
 2016-02-01 * "Posessions for 2016-02-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Posessions
 
 2016-02-01 * "Transport for 2016-02-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Transport
 
 2016-02-01 * "Utilities for 2016-02-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2016-03-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         974 GBP
+        Assets:Bank:HSBC:Savings         989 GBP
         Income:Salary
 
+2016-03-01 * "Allowance for 2016-03-01"
+        Assets:Bank:HSBC:Savings         -4 GBP
+        Expenses:Allowance
+
 2016-03-01 * "Entertainment for 2016-03-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Entertainment
 
 2016-03-01 * "Groceries for 2016-03-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Groceries
 
 2016-03-01 * "Health for 2016-03-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Health
 
 2016-03-01 * "Housing for 2016-03-01"
@@ -327,233 +367,261 @@
         Expenses:Housing
 
 2016-03-01 * "Posessions for 2016-03-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Posessions
 
 2016-03-01 * "Transport for 2016-03-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Transport
 
 2016-03-01 * "Utilities for 2016-03-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Utilities
 
 
 
 2016-04-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         995 GBP
+        Assets:Bank:HSBC:Savings         790 GBP
         Income:Salary
 
+2016-04-01 * "Allowance for 2016-04-01"
+        Assets:Bank:HSBC:Savings         -18 GBP
+        Expenses:Allowance
+
 2016-04-01 * "Entertainment for 2016-04-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Entertainment
 
 2016-04-01 * "Groceries for 2016-04-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2016-04-01 * "Health for 2016-04-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Health
 
 2016-04-01 * "Housing for 2016-04-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Housing
 
 2016-04-01 * "Posessions for 2016-04-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Posessions
 
 2016-04-01 * "Transport for 2016-04-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Transport
 
 2016-04-01 * "Utilities for 2016-04-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Utilities
 
 
 
 2016-05-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         788 GBP
+        Assets:Bank:HSBC:Savings         970 GBP
         Income:Salary
 
+2016-05-01 * "Allowance for 2016-05-01"
+        Assets:Bank:HSBC:Savings         -17 GBP
+        Expenses:Allowance
+
 2016-05-01 * "Entertainment for 2016-05-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Entertainment
 
 2016-05-01 * "Groceries for 2016-05-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Groceries
 
 2016-05-01 * "Health for 2016-05-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Health
 
 2016-05-01 * "Housing for 2016-05-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Housing
 
 2016-05-01 * "Posessions for 2016-05-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Posessions
 
 2016-05-01 * "Transport for 2016-05-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Transport
 
 2016-05-01 * "Utilities for 2016-05-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Utilities
 
 
 
 2016-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         754 GBP
+        Assets:Bank:HSBC:Savings         781 GBP
         Income:Salary
 
+2016-06-01 * "Allowance for 2016-06-01"
+        Assets:Bank:HSBC:Savings         -17 GBP
+        Expenses:Allowance
+
 2016-06-01 * "Entertainment for 2016-06-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Entertainment
 
 2016-06-01 * "Groceries for 2016-06-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2016-06-01 * "Health for 2016-06-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2016-06-01 * "Housing for 2016-06-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Housing
 
 2016-06-01 * "Posessions for 2016-06-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Posessions
 
 2016-06-01 * "Transport for 2016-06-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Transport
 
 2016-06-01 * "Utilities for 2016-06-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Utilities
 
 
 
 2016-07-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         981 GBP
+        Assets:Bank:HSBC:Savings         921 GBP
         Income:Salary
 
-2016-07-01 * "Entertainment for 2016-07-01"
+2016-07-01 * "Allowance for 2016-07-01"
         Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Allowance
+
+2016-07-01 * "Entertainment for 2016-07-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Entertainment
 
 2016-07-01 * "Groceries for 2016-07-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Groceries
 
 2016-07-01 * "Health for 2016-07-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Health
 
 2016-07-01 * "Housing for 2016-07-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Housing
 
 2016-07-01 * "Posessions for 2016-07-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Posessions
 
 2016-07-01 * "Transport for 2016-07-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Transport
 
 2016-07-01 * "Utilities for 2016-07-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Utilities
 
 
 
 2016-08-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         995 GBP
+        Assets:Bank:HSBC:Savings         868 GBP
         Income:Salary
 
+2016-08-01 * "Allowance for 2016-08-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Allowance
+
 2016-08-01 * "Entertainment for 2016-08-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Entertainment
 
 2016-08-01 * "Groceries for 2016-08-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Groceries
 
 2016-08-01 * "Health for 2016-08-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Health
 
 2016-08-01 * "Housing for 2016-08-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Housing
 
 2016-08-01 * "Posessions for 2016-08-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Posessions
 
 2016-08-01 * "Transport for 2016-08-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Transport
 
 2016-08-01 * "Utilities for 2016-08-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Utilities
 
 
 
 2016-09-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         914 GBP
+        Assets:Bank:HSBC:Savings         707 GBP
         Income:Salary
 
+2016-09-01 * "Allowance for 2016-09-01"
+        Assets:Bank:HSBC:Savings         -4 GBP
+        Expenses:Allowance
+
 2016-09-01 * "Entertainment for 2016-09-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Entertainment
 
 2016-09-01 * "Groceries for 2016-09-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2016-09-01 * "Health for 2016-09-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Health
 
 2016-09-01 * "Housing for 2016-09-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2016-09-01 * "Posessions for 2016-09-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Posessions
 
 2016-09-01 * "Transport for 2016-09-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Transport
 
 2016-09-01 * "Utilities for 2016-09-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Utilities
 
 
 
 2016-10-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         835 GBP
+        Assets:Bank:HSBC:Savings         721 GBP
         Income:Salary
 
+2016-10-01 * "Allowance for 2016-10-01"
+        Assets:Bank:HSBC:Savings         -4 GBP
+        Expenses:Allowance
+
 2016-10-01 * "Entertainment for 2016-10-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Entertainment
 
 2016-10-01 * "Groceries for 2016-10-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Groceries
 
 2016-10-01 * "Health for 2016-10-01"
@@ -561,97 +629,109 @@
         Expenses:Health
 
 2016-10-01 * "Housing for 2016-10-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Housing
 
 2016-10-01 * "Posessions for 2016-10-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Posessions
 
 2016-10-01 * "Transport for 2016-10-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Transport
 
 2016-10-01 * "Utilities for 2016-10-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Utilities
 
 
 
 2016-11-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         980 GBP
+        Assets:Bank:HSBC:Savings         948 GBP
         Income:Salary
 
+2016-11-01 * "Allowance for 2016-11-01"
+        Assets:Bank:HSBC:Savings         -11 GBP
+        Expenses:Allowance
+
 2016-11-01 * "Entertainment for 2016-11-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Entertainment
 
 2016-11-01 * "Groceries for 2016-11-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2016-11-01 * "Health for 2016-11-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Health
 
 2016-11-01 * "Housing for 2016-11-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2016-11-01 * "Posessions for 2016-11-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Posessions
 
 2016-11-01 * "Transport for 2016-11-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Transport
 
 2016-11-01 * "Utilities for 2016-11-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Utilities
 
 
 
 2016-12-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         742 GBP
+        Assets:Bank:HSBC:Savings         758 GBP
         Income:Salary
 
+2016-12-01 * "Allowance for 2016-12-01"
+        Assets:Bank:HSBC:Savings         -13 GBP
+        Expenses:Allowance
+
 2016-12-01 * "Entertainment for 2016-12-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Entertainment
 
 2016-12-01 * "Groceries for 2016-12-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Groceries
 
 2016-12-01 * "Health for 2016-12-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Health
 
 2016-12-01 * "Housing for 2016-12-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Housing
 
 2016-12-01 * "Posessions for 2016-12-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Posessions
 
 2016-12-01 * "Transport for 2016-12-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Transport
 
 2016-12-01 * "Utilities for 2016-12-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Utilities
 
 
 
 2017-01-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         759 GBP
+        Assets:Bank:HSBC:Savings         823 GBP
         Income:Salary
 
+2017-01-01 * "Allowance for 2017-01-01"
+        Assets:Bank:HSBC:Savings         -9 GBP
+        Expenses:Allowance
+
 2017-01-01 * "Entertainment for 2017-01-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Entertainment
 
 2017-01-01 * "Groceries for 2017-01-01"
@@ -659,121 +739,133 @@
         Expenses:Groceries
 
 2017-01-01 * "Health for 2017-01-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Health
 
 2017-01-01 * "Housing for 2017-01-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Housing
 
 2017-01-01 * "Posessions for 2017-01-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Posessions
 
 2017-01-01 * "Transport for 2017-01-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Transport
 
 2017-01-01 * "Utilities for 2017-01-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Utilities
 
 
 
 2017-02-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         926 GBP
+        Assets:Bank:HSBC:Savings         787 GBP
         Income:Salary
 
+2017-02-01 * "Allowance for 2017-02-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Allowance
+
 2017-02-01 * "Entertainment for 2017-02-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Entertainment
 
 2017-02-01 * "Groceries for 2017-02-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Groceries
 
 2017-02-01 * "Health for 2017-02-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2017-02-01 * "Housing for 2017-02-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Housing
 
 2017-02-01 * "Posessions for 2017-02-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Posessions
 
 2017-02-01 * "Transport for 2017-02-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Transport
 
 2017-02-01 * "Utilities for 2017-02-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Utilities
 
 
 
 2017-03-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         779 GBP
+        Assets:Bank:HSBC:Savings         941 GBP
         Income:Salary
 
+2017-03-01 * "Allowance for 2017-03-01"
+        Assets:Bank:HSBC:Savings         -9 GBP
+        Expenses:Allowance
+
 2017-03-01 * "Entertainment for 2017-03-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Entertainment
 
 2017-03-01 * "Groceries for 2017-03-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Groceries
 
 2017-03-01 * "Health for 2017-03-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Health
 
 2017-03-01 * "Housing for 2017-03-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2017-03-01 * "Posessions for 2017-03-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Posessions
 
 2017-03-01 * "Transport for 2017-03-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Transport
 
 2017-03-01 * "Utilities for 2017-03-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Utilities
 
 
 
 2017-04-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         993 GBP
+        Assets:Bank:HSBC:Savings         797 GBP
         Income:Salary
 
+2017-04-01 * "Allowance for 2017-04-01"
+        Assets:Bank:HSBC:Savings         -15 GBP
+        Expenses:Allowance
+
 2017-04-01 * "Entertainment for 2017-04-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Entertainment
 
 2017-04-01 * "Groceries for 2017-04-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Groceries
 
 2017-04-01 * "Health for 2017-04-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Health
 
 2017-04-01 * "Housing for 2017-04-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Housing
 
 2017-04-01 * "Posessions for 2017-04-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Posessions
 
 2017-04-01 * "Transport for 2017-04-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Transport
 
 2017-04-01 * "Utilities for 2017-04-01"
@@ -783,215 +875,243 @@
 
 
 2017-05-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         999 GBP
+        Assets:Bank:HSBC:Savings         828 GBP
         Income:Salary
 
+2017-05-01 * "Allowance for 2017-05-01"
+        Assets:Bank:HSBC:Savings         -16 GBP
+        Expenses:Allowance
+
 2017-05-01 * "Entertainment for 2017-05-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Entertainment
 
 2017-05-01 * "Groceries for 2017-05-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Groceries
 
 2017-05-01 * "Health for 2017-05-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Health
 
 2017-05-01 * "Housing for 2017-05-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Housing
 
 2017-05-01 * "Posessions for 2017-05-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Posessions
 
 2017-05-01 * "Transport for 2017-05-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Transport
 
 2017-05-01 * "Utilities for 2017-05-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Utilities
 
 
 
 2017-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         852 GBP
+        Assets:Bank:HSBC:Savings         874 GBP
         Income:Salary
 
+2017-06-01 * "Allowance for 2017-06-01"
+        Assets:Bank:HSBC:Savings         -10 GBP
+        Expenses:Allowance
+
 2017-06-01 * "Entertainment for 2017-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Entertainment
 
 2017-06-01 * "Groceries for 2017-06-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2017-06-01 * "Health for 2017-06-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Health
 
 2017-06-01 * "Housing for 2017-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Housing
 
 2017-06-01 * "Posessions for 2017-06-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Posessions
 
 2017-06-01 * "Transport for 2017-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Transport
 
 2017-06-01 * "Utilities for 2017-06-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Utilities
 
 
 
 2017-07-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         957 GBP
+        Assets:Bank:HSBC:Savings         734 GBP
         Income:Salary
 
+2017-07-01 * "Allowance for 2017-07-01"
+        Assets:Bank:HSBC:Savings         -9 GBP
+        Expenses:Allowance
+
 2017-07-01 * "Entertainment for 2017-07-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Entertainment
 
 2017-07-01 * "Groceries for 2017-07-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2017-07-01 * "Health for 2017-07-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Health
 
 2017-07-01 * "Housing for 2017-07-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Housing
 
 2017-07-01 * "Posessions for 2017-07-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Posessions
 
 2017-07-01 * "Transport for 2017-07-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Transport
 
 2017-07-01 * "Utilities for 2017-07-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Utilities
 
 
 
 2017-08-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         725 GBP
+        Assets:Bank:HSBC:Savings         844 GBP
         Income:Salary
+
+2017-08-01 * "Allowance for 2017-08-01"
+        Assets:Bank:HSBC:Savings         -4 GBP
+        Expenses:Allowance
 
 2017-08-01 * "Entertainment for 2017-08-01"
         Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Entertainment
 
 2017-08-01 * "Groceries for 2017-08-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2017-08-01 * "Health for 2017-08-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Health
 
 2017-08-01 * "Housing for 2017-08-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Housing
 
 2017-08-01 * "Posessions for 2017-08-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Posessions
 
 2017-08-01 * "Transport for 2017-08-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Transport
 
 2017-08-01 * "Utilities for 2017-08-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Utilities
 
 
 
 2017-09-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         859 GBP
+        Assets:Bank:HSBC:Savings         710 GBP
         Income:Salary
 
+2017-09-01 * "Allowance for 2017-09-01"
+        Assets:Bank:HSBC:Savings         -15 GBP
+        Expenses:Allowance
+
 2017-09-01 * "Entertainment for 2017-09-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Entertainment
 
 2017-09-01 * "Groceries for 2017-09-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Groceries
 
 2017-09-01 * "Health for 2017-09-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Health
 
 2017-09-01 * "Housing for 2017-09-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Housing
 
 2017-09-01 * "Posessions for 2017-09-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Posessions
 
 2017-09-01 * "Transport for 2017-09-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Transport
 
 2017-09-01 * "Utilities for 2017-09-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Utilities
 
 
 
 2017-10-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         730 GBP
+        Assets:Bank:HSBC:Savings         727 GBP
         Income:Salary
 
+2017-10-01 * "Allowance for 2017-10-01"
+        Assets:Bank:HSBC:Savings         -10 GBP
+        Expenses:Allowance
+
 2017-10-01 * "Entertainment for 2017-10-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2017-10-01 * "Groceries for 2017-10-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2017-10-01 * "Health for 2017-10-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2017-10-01 * "Housing for 2017-10-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Housing
 
 2017-10-01 * "Posessions for 2017-10-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Posessions
 
 2017-10-01 * "Transport for 2017-10-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Transport
 
 2017-10-01 * "Utilities for 2017-10-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Utilities
 
 
 
 2017-11-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         829 GBP
+        Assets:Bank:HSBC:Savings         814 GBP
         Income:Salary
 
+2017-11-01 * "Allowance for 2017-11-01"
+        Assets:Bank:HSBC:Savings         -3 GBP
+        Expenses:Allowance
+
 2017-11-01 * "Entertainment for 2017-11-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Entertainment
 
 2017-11-01 * "Groceries for 2017-11-01"
@@ -999,189 +1119,209 @@
         Expenses:Groceries
 
 2017-11-01 * "Health for 2017-11-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Health
 
 2017-11-01 * "Housing for 2017-11-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Housing
 
 2017-11-01 * "Posessions for 2017-11-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Posessions
 
 2017-11-01 * "Transport for 2017-11-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Transport
 
 2017-11-01 * "Utilities for 2017-11-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Utilities
 
 
 
 2017-12-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         992 GBP
+        Assets:Bank:HSBC:Savings         877 GBP
         Income:Salary
 
+2017-12-01 * "Allowance for 2017-12-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Allowance
+
 2017-12-01 * "Entertainment for 2017-12-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Entertainment
 
 2017-12-01 * "Groceries for 2017-12-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Groceries
 
 2017-12-01 * "Health for 2017-12-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Health
 
 2017-12-01 * "Housing for 2017-12-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Housing
 
 2017-12-01 * "Posessions for 2017-12-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Posessions
 
 2017-12-01 * "Transport for 2017-12-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Transport
 
 2017-12-01 * "Utilities for 2017-12-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Utilities
 
 
 
 2018-01-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         979 GBP
+        Assets:Bank:HSBC:Savings         912 GBP
         Income:Salary
 
+2018-01-01 * "Allowance for 2018-01-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Allowance
+
 2018-01-01 * "Entertainment for 2018-01-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Entertainment
 
 2018-01-01 * "Groceries for 2018-01-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Groceries
 
 2018-01-01 * "Health for 2018-01-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Health
 
 2018-01-01 * "Housing for 2018-01-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Housing
 
 2018-01-01 * "Posessions for 2018-01-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Posessions
 
 2018-01-01 * "Transport for 2018-01-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Transport
 
 2018-01-01 * "Utilities for 2018-01-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2018-02-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         824 GBP
+        Assets:Bank:HSBC:Savings         929 GBP
         Income:Salary
 
+2018-02-01 * "Allowance for 2018-02-01"
+        Assets:Bank:HSBC:Savings         -7 GBP
+        Expenses:Allowance
+
 2018-02-01 * "Entertainment for 2018-02-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2018-02-01 * "Groceries for 2018-02-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Groceries
 
 2018-02-01 * "Health for 2018-02-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Health
 
 2018-02-01 * "Housing for 2018-02-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Housing
 
 2018-02-01 * "Posessions for 2018-02-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Posessions
 
 2018-02-01 * "Transport for 2018-02-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Transport
 
 2018-02-01 * "Utilities for 2018-02-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Utilities
 
 
 
 2018-03-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         756 GBP
+        Assets:Bank:HSBC:Savings         763 GBP
         Income:Salary
 
+2018-03-01 * "Allowance for 2018-03-01"
+        Assets:Bank:HSBC:Savings         -15 GBP
+        Expenses:Allowance
+
 2018-03-01 * "Entertainment for 2018-03-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Entertainment
 
 2018-03-01 * "Groceries for 2018-03-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Groceries
 
 2018-03-01 * "Health for 2018-03-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Health
 
 2018-03-01 * "Housing for 2018-03-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Housing
 
 2018-03-01 * "Posessions for 2018-03-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Posessions
 
 2018-03-01 * "Transport for 2018-03-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Transport
 
 2018-03-01 * "Utilities for 2018-03-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Utilities
 
 
 
 2018-04-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         749 GBP
+        Assets:Bank:HSBC:Savings         983 GBP
         Income:Salary
 
+2018-04-01 * "Allowance for 2018-04-01"
+        Assets:Bank:HSBC:Savings         -18 GBP
+        Expenses:Allowance
+
 2018-04-01 * "Entertainment for 2018-04-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Entertainment
 
 2018-04-01 * "Groceries for 2018-04-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2018-04-01 * "Health for 2018-04-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Health
 
 2018-04-01 * "Housing for 2018-04-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Housing
 
 2018-04-01 * "Posessions for 2018-04-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Posessions
 
 2018-04-01 * "Transport for 2018-04-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Transport
 
 2018-04-01 * "Utilities for 2018-04-01"
@@ -1194,96 +1334,108 @@
         Assets:Bank:HSBC:Savings         900 GBP
         Income:Salary
 
+2018-05-01 * "Allowance for 2018-05-01"
+        Assets:Bank:HSBC:Savings         -9 GBP
+        Expenses:Allowance
+
 2018-05-01 * "Entertainment for 2018-05-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Entertainment
 
 2018-05-01 * "Groceries for 2018-05-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Groceries
 
 2018-05-01 * "Health for 2018-05-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Health
 
 2018-05-01 * "Housing for 2018-05-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Housing
 
 2018-05-01 * "Posessions for 2018-05-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Posessions
 
 2018-05-01 * "Transport for 2018-05-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Transport
 
 2018-05-01 * "Utilities for 2018-05-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Utilities
 
 
 
 2018-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         988 GBP
+        Assets:Bank:HSBC:Savings         872 GBP
         Income:Salary
 
+2018-06-01 * "Allowance for 2018-06-01"
+        Assets:Bank:HSBC:Savings         -2 GBP
+        Expenses:Allowance
+
 2018-06-01 * "Entertainment for 2018-06-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Entertainment
 
 2018-06-01 * "Groceries for 2018-06-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Groceries
 
 2018-06-01 * "Health for 2018-06-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Health
 
 2018-06-01 * "Housing for 2018-06-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Housing
 
 2018-06-01 * "Posessions for 2018-06-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Posessions
 
 2018-06-01 * "Transport for 2018-06-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Transport
 
 2018-06-01 * "Utilities for 2018-06-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Utilities
 
 
 
 2018-07-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         854 GBP
+        Assets:Bank:HSBC:Savings         733 GBP
         Income:Salary
 
+2018-07-01 * "Allowance for 2018-07-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Allowance
+
 2018-07-01 * "Entertainment for 2018-07-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2018-07-01 * "Groceries for 2018-07-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Groceries
 
 2018-07-01 * "Health for 2018-07-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2018-07-01 * "Housing for 2018-07-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Housing
 
 2018-07-01 * "Posessions for 2018-07-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Posessions
 
 2018-07-01 * "Transport for 2018-07-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Transport
 
 2018-07-01 * "Utilities for 2018-07-01"
@@ -1293,95 +1445,107 @@
 
 
 2018-08-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         911 GBP
+        Assets:Bank:HSBC:Savings         969 GBP
         Income:Salary
 
+2018-08-01 * "Allowance for 2018-08-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Allowance
+
 2018-08-01 * "Entertainment for 2018-08-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Entertainment
 
 2018-08-01 * "Groceries for 2018-08-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Groceries
 
 2018-08-01 * "Health for 2018-08-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Health
 
 2018-08-01 * "Housing for 2018-08-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2018-08-01 * "Posessions for 2018-08-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Posessions
 
 2018-08-01 * "Transport for 2018-08-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Transport
 
 2018-08-01 * "Utilities for 2018-08-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Utilities
 
 
 
 2018-09-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         926 GBP
+        Assets:Bank:HSBC:Savings         821 GBP
         Income:Salary
 
+2018-09-01 * "Allowance for 2018-09-01"
+        Assets:Bank:HSBC:Savings         -13 GBP
+        Expenses:Allowance
+
 2018-09-01 * "Entertainment for 2018-09-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Entertainment
 
 2018-09-01 * "Groceries for 2018-09-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Groceries
 
 2018-09-01 * "Health for 2018-09-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2018-09-01 * "Housing for 2018-09-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Housing
 
 2018-09-01 * "Posessions for 2018-09-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Posessions
 
 2018-09-01 * "Transport for 2018-09-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Transport
 
 2018-09-01 * "Utilities for 2018-09-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Utilities
 
 
 
 2018-10-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         807 GBP
+        Assets:Bank:HSBC:Savings         790 GBP
         Income:Salary
 
+2018-10-01 * "Allowance for 2018-10-01"
+        Assets:Bank:HSBC:Savings         -5 GBP
+        Expenses:Allowance
+
 2018-10-01 * "Entertainment for 2018-10-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2018-10-01 * "Groceries for 2018-10-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Groceries
 
 2018-10-01 * "Health for 2018-10-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2018-10-01 * "Housing for 2018-10-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2018-10-01 * "Posessions for 2018-10-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Posessions
 
 2018-10-01 * "Transport for 2018-10-01"
@@ -1389,71 +1553,79 @@
         Expenses:Transport
 
 2018-10-01 * "Utilities for 2018-10-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Utilities
 
 
 
 2018-11-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         861 GBP
+        Assets:Bank:HSBC:Savings         974 GBP
         Income:Salary
 
+2018-11-01 * "Allowance for 2018-11-01"
+        Assets:Bank:HSBC:Savings         -4 GBP
+        Expenses:Allowance
+
 2018-11-01 * "Entertainment for 2018-11-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Entertainment
 
 2018-11-01 * "Groceries for 2018-11-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Groceries
 
 2018-11-01 * "Health for 2018-11-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Health
 
 2018-11-01 * "Housing for 2018-11-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Housing
 
 2018-11-01 * "Posessions for 2018-11-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Posessions
 
 2018-11-01 * "Transport for 2018-11-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Transport
 
 2018-11-01 * "Utilities for 2018-11-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Utilities
 
 
 
 2018-12-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         945 GBP
+        Assets:Bank:HSBC:Savings         754 GBP
         Income:Salary
 
+2018-12-01 * "Allowance for 2018-12-01"
+        Assets:Bank:HSBC:Savings         -12 GBP
+        Expenses:Allowance
+
 2018-12-01 * "Entertainment for 2018-12-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Entertainment
 
 2018-12-01 * "Groceries for 2018-12-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Groceries
 
 2018-12-01 * "Health for 2018-12-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Health
 
 2018-12-01 * "Housing for 2018-12-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Housing
 
 2018-12-01 * "Posessions for 2018-12-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Posessions
 
 2018-12-01 * "Transport for 2018-12-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Transport
 
 2018-12-01 * "Utilities for 2018-12-01"
@@ -1463,189 +1635,213 @@
 
 
 2019-01-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         896 GBP
+        Assets:Bank:HSBC:Savings         825 GBP
         Income:Salary
 
+2019-01-01 * "Allowance for 2019-01-01"
+        Assets:Bank:HSBC:Savings         -15 GBP
+        Expenses:Allowance
+
 2019-01-01 * "Entertainment for 2019-01-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Entertainment
 
 2019-01-01 * "Groceries for 2019-01-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Groceries
 
 2019-01-01 * "Health for 2019-01-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Health
 
 2019-01-01 * "Housing for 2019-01-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2019-01-01 * "Posessions for 2019-01-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Posessions
 
 2019-01-01 * "Transport for 2019-01-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Transport
 
 2019-01-01 * "Utilities for 2019-01-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Utilities
 
 
 
 2019-02-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         795 GBP
+        Assets:Bank:HSBC:Savings         978 GBP
         Income:Salary
 
+2019-02-01 * "Allowance for 2019-02-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Allowance
+
 2019-02-01 * "Entertainment for 2019-02-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Entertainment
 
 2019-02-01 * "Groceries for 2019-02-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Groceries
 
 2019-02-01 * "Health for 2019-02-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Health
 
 2019-02-01 * "Housing for 2019-02-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Housing
 
 2019-02-01 * "Posessions for 2019-02-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Posessions
 
 2019-02-01 * "Transport for 2019-02-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Transport
 
 2019-02-01 * "Utilities for 2019-02-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Utilities
 
 
 
 2019-03-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         993 GBP
+        Assets:Bank:HSBC:Savings         866 GBP
         Income:Salary
 
+2019-03-01 * "Allowance for 2019-03-01"
+        Assets:Bank:HSBC:Savings         -15 GBP
+        Expenses:Allowance
+
 2019-03-01 * "Entertainment for 2019-03-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Entertainment
 
 2019-03-01 * "Groceries for 2019-03-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2019-03-01 * "Health for 2019-03-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Health
 
 2019-03-01 * "Housing for 2019-03-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Housing
 
 2019-03-01 * "Posessions for 2019-03-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Posessions
 
 2019-03-01 * "Transport for 2019-03-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Transport
 
 2019-03-01 * "Utilities for 2019-03-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Utilities
 
 
 
 2019-04-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         836 GBP
+        Assets:Bank:HSBC:Savings         926 GBP
         Income:Salary
+
+2019-04-01 * "Allowance for 2019-04-01"
+        Assets:Bank:HSBC:Savings         -10 GBP
+        Expenses:Allowance
 
 2019-04-01 * "Entertainment for 2019-04-01"
         Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Entertainment
 
 2019-04-01 * "Groceries for 2019-04-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Groceries
 
 2019-04-01 * "Health for 2019-04-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Health
 
 2019-04-01 * "Housing for 2019-04-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2019-04-01 * "Posessions for 2019-04-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Posessions
 
 2019-04-01 * "Transport for 2019-04-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Transport
 
 2019-04-01 * "Utilities for 2019-04-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Utilities
 
 
 
 2019-05-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         811 GBP
+        Assets:Bank:HSBC:Savings         903 GBP
         Income:Salary
 
+2019-05-01 * "Allowance for 2019-05-01"
+        Assets:Bank:HSBC:Savings         -2 GBP
+        Expenses:Allowance
+
 2019-05-01 * "Entertainment for 2019-05-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Entertainment
 
 2019-05-01 * "Groceries for 2019-05-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2019-05-01 * "Health for 2019-05-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Health
 
 2019-05-01 * "Housing for 2019-05-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Housing
 
 2019-05-01 * "Posessions for 2019-05-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Posessions
 
 2019-05-01 * "Transport for 2019-05-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Transport
 
 2019-05-01 * "Utilities for 2019-05-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Utilities
 
 
 
 2019-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         825 GBP
+        Assets:Bank:HSBC:Savings         720 GBP
         Income:Salary
 
+2019-06-01 * "Allowance for 2019-06-01"
+        Assets:Bank:HSBC:Savings         -2 GBP
+        Expenses:Allowance
+
 2019-06-01 * "Entertainment for 2019-06-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Entertainment
 
 2019-06-01 * "Groceries for 2019-06-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2019-06-01 * "Health for 2019-06-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Health
 
 2019-06-01 * "Housing for 2019-06-01"
@@ -1653,113 +1849,125 @@
         Expenses:Housing
 
 2019-06-01 * "Posessions for 2019-06-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Posessions
 
 2019-06-01 * "Transport for 2019-06-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Transport
 
 2019-06-01 * "Utilities for 2019-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Utilities
 
 
 
 2019-07-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         916 GBP
+        Assets:Bank:HSBC:Savings         895 GBP
         Income:Salary
 
+2019-07-01 * "Allowance for 2019-07-01"
+        Assets:Bank:HSBC:Savings         -8 GBP
+        Expenses:Allowance
+
 2019-07-01 * "Entertainment for 2019-07-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Entertainment
 
 2019-07-01 * "Groceries for 2019-07-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2019-07-01 * "Health for 2019-07-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Health
 
 2019-07-01 * "Housing for 2019-07-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Housing
 
 2019-07-01 * "Posessions for 2019-07-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Posessions
 
 2019-07-01 * "Transport for 2019-07-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Transport
 
 2019-07-01 * "Utilities for 2019-07-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Utilities
 
 
 
 2019-08-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         776 GBP
+        Assets:Bank:HSBC:Savings         766 GBP
         Income:Salary
 
+2019-08-01 * "Allowance for 2019-08-01"
+        Assets:Bank:HSBC:Savings         -18 GBP
+        Expenses:Allowance
+
 2019-08-01 * "Entertainment for 2019-08-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Entertainment
 
 2019-08-01 * "Groceries for 2019-08-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Groceries
 
 2019-08-01 * "Health for 2019-08-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Health
 
 2019-08-01 * "Housing for 2019-08-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Housing
 
 2019-08-01 * "Posessions for 2019-08-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Posessions
 
 2019-08-01 * "Transport for 2019-08-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Transport
 
 2019-08-01 * "Utilities for 2019-08-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Utilities
 
 
 
 2019-09-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         906 GBP
+        Assets:Bank:HSBC:Savings         972 GBP
         Income:Salary
 
+2019-09-01 * "Allowance for 2019-09-01"
+        Assets:Bank:HSBC:Savings         -7 GBP
+        Expenses:Allowance
+
 2019-09-01 * "Entertainment for 2019-09-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Entertainment
 
 2019-09-01 * "Groceries for 2019-09-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2019-09-01 * "Health for 2019-09-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Health
 
 2019-09-01 * "Housing for 2019-09-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Housing
 
 2019-09-01 * "Posessions for 2019-09-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Posessions
 
 2019-09-01 * "Transport for 2019-09-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Transport
 
 2019-09-01 * "Utilities for 2019-09-01"
@@ -1769,163 +1977,183 @@
 
 
 2019-10-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         769 GBP
+        Assets:Bank:HSBC:Savings         888 GBP
         Income:Salary
 
+2019-10-01 * "Allowance for 2019-10-01"
+        Assets:Bank:HSBC:Savings         -8 GBP
+        Expenses:Allowance
+
 2019-10-01 * "Entertainment for 2019-10-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Entertainment
 
 2019-10-01 * "Groceries for 2019-10-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2019-10-01 * "Health for 2019-10-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Health
 
 2019-10-01 * "Housing for 2019-10-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Housing
 
 2019-10-01 * "Posessions for 2019-10-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Posessions
 
 2019-10-01 * "Transport for 2019-10-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Transport
 
 2019-10-01 * "Utilities for 2019-10-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2019-11-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         746 GBP
+        Assets:Bank:HSBC:Savings         931 GBP
         Income:Salary
 
+2019-11-01 * "Allowance for 2019-11-01"
+        Assets:Bank:HSBC:Savings         -8 GBP
+        Expenses:Allowance
+
 2019-11-01 * "Entertainment for 2019-11-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Entertainment
 
 2019-11-01 * "Groceries for 2019-11-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Groceries
 
 2019-11-01 * "Health for 2019-11-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Health
 
 2019-11-01 * "Housing for 2019-11-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Housing
 
 2019-11-01 * "Posessions for 2019-11-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Posessions
 
 2019-11-01 * "Transport for 2019-11-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Transport
 
 2019-11-01 * "Utilities for 2019-11-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Utilities
 
 
 
 2019-12-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         718 GBP
+        Assets:Bank:HSBC:Savings         834 GBP
         Income:Salary
 
+2019-12-01 * "Allowance for 2019-12-01"
+        Assets:Bank:HSBC:Savings         -18 GBP
+        Expenses:Allowance
+
 2019-12-01 * "Entertainment for 2019-12-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Entertainment
 
 2019-12-01 * "Groceries for 2019-12-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Groceries
 
 2019-12-01 * "Health for 2019-12-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2019-12-01 * "Housing for 2019-12-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Housing
 
 2019-12-01 * "Posessions for 2019-12-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Posessions
 
 2019-12-01 * "Transport for 2019-12-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Transport
 
 2019-12-01 * "Utilities for 2019-12-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Utilities
 
 
 
 2020-01-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         741 GBP
+        Assets:Bank:HSBC:Savings         995 GBP
         Income:Salary
 
+2020-01-01 * "Allowance for 2020-01-01"
+        Assets:Bank:HSBC:Savings         -18 GBP
+        Expenses:Allowance
+
 2020-01-01 * "Entertainment for 2020-01-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Entertainment
 
 2020-01-01 * "Groceries for 2020-01-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Groceries
 
 2020-01-01 * "Health for 2020-01-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Health
 
 2020-01-01 * "Housing for 2020-01-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Housing
 
 2020-01-01 * "Posessions for 2020-01-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Posessions
 
 2020-01-01 * "Transport for 2020-01-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Transport
 
 2020-01-01 * "Utilities for 2020-01-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Utilities
 
 
 
 2020-02-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         760 GBP
+        Assets:Bank:HSBC:Savings         961 GBP
         Income:Salary
 
+2020-02-01 * "Allowance for 2020-02-01"
+        Assets:Bank:HSBC:Savings         -10 GBP
+        Expenses:Allowance
+
 2020-02-01 * "Entertainment for 2020-02-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Entertainment
 
 2020-02-01 * "Groceries for 2020-02-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2020-02-01 * "Health for 2020-02-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Health
 
 2020-02-01 * "Housing for 2020-02-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Housing
 
 2020-02-01 * "Posessions for 2020-02-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Posessions
 
 2020-02-01 * "Transport for 2020-02-01"
@@ -1933,271 +2161,303 @@
         Expenses:Transport
 
 2020-02-01 * "Utilities for 2020-02-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Utilities
 
 
 
 2020-03-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         924 GBP
+        Assets:Bank:HSBC:Savings         801 GBP
         Income:Salary
+
+2020-03-01 * "Allowance for 2020-03-01"
+        Assets:Bank:HSBC:Savings         -17 GBP
+        Expenses:Allowance
 
 2020-03-01 * "Entertainment for 2020-03-01"
         Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Entertainment
 
 2020-03-01 * "Groceries for 2020-03-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Groceries
 
 2020-03-01 * "Health for 2020-03-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Health
 
 2020-03-01 * "Housing for 2020-03-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Housing
 
 2020-03-01 * "Posessions for 2020-03-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Posessions
 
 2020-03-01 * "Transport for 2020-03-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Transport
 
 2020-03-01 * "Utilities for 2020-03-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2020-04-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         924 GBP
+        Assets:Bank:HSBC:Savings         971 GBP
         Income:Salary
 
+2020-04-01 * "Allowance for 2020-04-01"
+        Assets:Bank:HSBC:Savings         -10 GBP
+        Expenses:Allowance
+
 2020-04-01 * "Entertainment for 2020-04-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Entertainment
 
 2020-04-01 * "Groceries for 2020-04-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Groceries
 
 2020-04-01 * "Health for 2020-04-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Health
 
 2020-04-01 * "Housing for 2020-04-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Housing
 
 2020-04-01 * "Posessions for 2020-04-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Posessions
 
 2020-04-01 * "Transport for 2020-04-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Transport
 
 2020-04-01 * "Utilities for 2020-04-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Utilities
 
 
 
 2020-05-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         870 GBP
+        Assets:Bank:HSBC:Savings         859 GBP
         Income:Salary
 
+2020-05-01 * "Allowance for 2020-05-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Allowance
+
 2020-05-01 * "Entertainment for 2020-05-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Entertainment
 
 2020-05-01 * "Groceries for 2020-05-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Groceries
 
 2020-05-01 * "Health for 2020-05-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Health
 
 2020-05-01 * "Housing for 2020-05-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Housing
 
 2020-05-01 * "Posessions for 2020-05-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Posessions
 
 2020-05-01 * "Transport for 2020-05-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Transport
 
 2020-05-01 * "Utilities for 2020-05-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Utilities
 
 
 
 2020-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         771 GBP
+        Assets:Bank:HSBC:Savings         857 GBP
         Income:Salary
 
+2020-06-01 * "Allowance for 2020-06-01"
+        Assets:Bank:HSBC:Savings         -15 GBP
+        Expenses:Allowance
+
 2020-06-01 * "Entertainment for 2020-06-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Entertainment
 
 2020-06-01 * "Groceries for 2020-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Groceries
 
 2020-06-01 * "Health for 2020-06-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Health
 
 2020-06-01 * "Housing for 2020-06-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Housing
 
 2020-06-01 * "Posessions for 2020-06-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Posessions
 
 2020-06-01 * "Transport for 2020-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Transport
 
 2020-06-01 * "Utilities for 2020-06-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Utilities
 
 
 
 2020-07-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         767 GBP
+        Assets:Bank:HSBC:Savings         983 GBP
         Income:Salary
 
+2020-07-01 * "Allowance for 2020-07-01"
+        Assets:Bank:HSBC:Savings         -4 GBP
+        Expenses:Allowance
+
 2020-07-01 * "Entertainment for 2020-07-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Entertainment
 
 2020-07-01 * "Groceries for 2020-07-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2020-07-01 * "Health for 2020-07-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2020-07-01 * "Housing for 2020-07-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Housing
 
 2020-07-01 * "Posessions for 2020-07-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Posessions
 
 2020-07-01 * "Transport for 2020-07-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Transport
 
 2020-07-01 * "Utilities for 2020-07-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Utilities
 
 
 
 2020-08-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         923 GBP
+        Assets:Bank:HSBC:Savings         794 GBP
         Income:Salary
 
+2020-08-01 * "Allowance for 2020-08-01"
+        Assets:Bank:HSBC:Savings         -5 GBP
+        Expenses:Allowance
+
 2020-08-01 * "Entertainment for 2020-08-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Entertainment
 
 2020-08-01 * "Groceries for 2020-08-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2020-08-01 * "Health for 2020-08-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Health
 
 2020-08-01 * "Housing for 2020-08-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2020-08-01 * "Posessions for 2020-08-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Posessions
 
 2020-08-01 * "Transport for 2020-08-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Transport
 
 2020-08-01 * "Utilities for 2020-08-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Utilities
 
 
 
 2020-09-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         906 GBP
+        Assets:Bank:HSBC:Savings         995 GBP
         Income:Salary
 
+2020-09-01 * "Allowance for 2020-09-01"
+        Assets:Bank:HSBC:Savings         -15 GBP
+        Expenses:Allowance
+
 2020-09-01 * "Entertainment for 2020-09-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Entertainment
 
 2020-09-01 * "Groceries for 2020-09-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Groceries
 
 2020-09-01 * "Health for 2020-09-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Health
 
 2020-09-01 * "Housing for 2020-09-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Housing
 
 2020-09-01 * "Posessions for 2020-09-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Posessions
 
 2020-09-01 * "Transport for 2020-09-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Transport
 
 2020-09-01 * "Utilities for 2020-09-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Utilities
 
 
 
 2020-10-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         979 GBP
+        Assets:Bank:HSBC:Savings         760 GBP
         Income:Salary
 
+2020-10-01 * "Allowance for 2020-10-01"
+        Assets:Bank:HSBC:Savings         -11 GBP
+        Expenses:Allowance
+
 2020-10-01 * "Entertainment for 2020-10-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Entertainment
 
 2020-10-01 * "Groceries for 2020-10-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Groceries
 
 2020-10-01 * "Health for 2020-10-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Health
 
 2020-10-01 * "Housing for 2020-10-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2020-10-01 * "Posessions for 2020-10-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Posessions
 
 2020-10-01 * "Transport for 2020-10-01"
@@ -2205,17 +2465,21 @@
         Expenses:Transport
 
 2020-10-01 * "Utilities for 2020-10-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Utilities
 
 
 
 2020-11-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         732 GBP
+        Assets:Bank:HSBC:Savings         975 GBP
         Income:Salary
 
+2020-11-01 * "Allowance for 2020-11-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Allowance
+
 2020-11-01 * "Entertainment for 2020-11-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Entertainment
 
 2020-11-01 * "Groceries for 2020-11-01"
@@ -2223,37 +2487,41 @@
         Expenses:Groceries
 
 2020-11-01 * "Health for 2020-11-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Health
 
 2020-11-01 * "Housing for 2020-11-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Housing
 
 2020-11-01 * "Posessions for 2020-11-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Posessions
 
 2020-11-01 * "Transport for 2020-11-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Transport
 
 2020-11-01 * "Utilities for 2020-11-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Utilities
 
 
 
 2020-12-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         744 GBP
+        Assets:Bank:HSBC:Savings         907 GBP
         Income:Salary
 
+2020-12-01 * "Allowance for 2020-12-01"
+        Assets:Bank:HSBC:Savings         -7 GBP
+        Expenses:Allowance
+
 2020-12-01 * "Entertainment for 2020-12-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Entertainment
 
 2020-12-01 * "Groceries for 2020-12-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Groceries
 
 2020-12-01 * "Health for 2020-12-01"
@@ -2261,11 +2529,11 @@
         Expenses:Health
 
 2020-12-01 * "Housing for 2020-12-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2020-12-01 * "Posessions for 2020-12-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Posessions
 
 2020-12-01 * "Transport for 2020-12-01"
@@ -2273,67 +2541,75 @@
         Expenses:Transport
 
 2020-12-01 * "Utilities for 2020-12-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Utilities
 
 
 
 2021-01-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         700 GBP
+        Assets:Bank:HSBC:Savings         759 GBP
         Income:Salary
 
+2021-01-01 * "Allowance for 2021-01-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Allowance
+
 2021-01-01 * "Entertainment for 2021-01-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Entertainment
 
 2021-01-01 * "Groceries for 2021-01-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2021-01-01 * "Health for 2021-01-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Health
 
 2021-01-01 * "Housing for 2021-01-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Housing
 
 2021-01-01 * "Posessions for 2021-01-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Posessions
 
 2021-01-01 * "Transport for 2021-01-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Transport
 
 2021-01-01 * "Utilities for 2021-01-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Utilities
 
 
 
 2021-02-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         820 GBP
+        Assets:Bank:HSBC:Savings         901 GBP
         Income:Salary
 
+2021-02-01 * "Allowance for 2021-02-01"
+        Assets:Bank:HSBC:Savings         -8 GBP
+        Expenses:Allowance
+
 2021-02-01 * "Entertainment for 2021-02-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Entertainment
 
 2021-02-01 * "Groceries for 2021-02-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Groceries
 
 2021-02-01 * "Health for 2021-02-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Health
 
 2021-02-01 * "Housing for 2021-02-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Housing
 
 2021-02-01 * "Posessions for 2021-02-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Posessions
 
 2021-02-01 * "Transport for 2021-02-01"
@@ -2341,407 +2617,455 @@
         Expenses:Transport
 
 2021-02-01 * "Utilities for 2021-02-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Utilities
 
 
 
 2021-03-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         740 GBP
+        Assets:Bank:HSBC:Savings         937 GBP
         Income:Salary
 
+2021-03-01 * "Allowance for 2021-03-01"
+        Assets:Bank:HSBC:Savings         -2 GBP
+        Expenses:Allowance
+
 2021-03-01 * "Entertainment for 2021-03-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Entertainment
 
 2021-03-01 * "Groceries for 2021-03-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Groceries
 
 2021-03-01 * "Health for 2021-03-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Health
 
 2021-03-01 * "Housing for 2021-03-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Housing
 
 2021-03-01 * "Posessions for 2021-03-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Posessions
 
 2021-03-01 * "Transport for 2021-03-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Transport
 
 2021-03-01 * "Utilities for 2021-03-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Utilities
 
 
 
 2021-04-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         731 GBP
+        Assets:Bank:HSBC:Savings         750 GBP
         Income:Salary
 
+2021-04-01 * "Allowance for 2021-04-01"
+        Assets:Bank:HSBC:Savings         -2 GBP
+        Expenses:Allowance
+
 2021-04-01 * "Entertainment for 2021-04-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2021-04-01 * "Groceries for 2021-04-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Groceries
 
 2021-04-01 * "Health for 2021-04-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Health
 
 2021-04-01 * "Housing for 2021-04-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Housing
 
 2021-04-01 * "Posessions for 2021-04-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Posessions
 
 2021-04-01 * "Transport for 2021-04-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Transport
 
 2021-04-01 * "Utilities for 2021-04-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Utilities
 
 
 
 2021-05-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         733 GBP
+        Assets:Bank:HSBC:Savings         826 GBP
         Income:Salary
 
+2021-05-01 * "Allowance for 2021-05-01"
+        Assets:Bank:HSBC:Savings         -10 GBP
+        Expenses:Allowance
+
 2021-05-01 * "Entertainment for 2021-05-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Entertainment
 
 2021-05-01 * "Groceries for 2021-05-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Groceries
 
 2021-05-01 * "Health for 2021-05-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Health
 
 2021-05-01 * "Housing for 2021-05-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Housing
 
 2021-05-01 * "Posessions for 2021-05-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Posessions
 
 2021-05-01 * "Transport for 2021-05-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Transport
 
 2021-05-01 * "Utilities for 2021-05-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Utilities
 
 
 
 2021-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         708 GBP
+        Assets:Bank:HSBC:Savings         828 GBP
         Income:Salary
 
+2021-06-01 * "Allowance for 2021-06-01"
+        Assets:Bank:HSBC:Savings         -7 GBP
+        Expenses:Allowance
+
 2021-06-01 * "Entertainment for 2021-06-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Entertainment
 
 2021-06-01 * "Groceries for 2021-06-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2021-06-01 * "Health for 2021-06-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2021-06-01 * "Housing for 2021-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Housing
 
 2021-06-01 * "Posessions for 2021-06-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Posessions
 
 2021-06-01 * "Transport for 2021-06-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Transport
 
 2021-06-01 * "Utilities for 2021-06-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Utilities
 
 
 
 2021-07-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         830 GBP
+        Assets:Bank:HSBC:Savings         928 GBP
         Income:Salary
 
+2021-07-01 * "Allowance for 2021-07-01"
+        Assets:Bank:HSBC:Savings         -18 GBP
+        Expenses:Allowance
+
 2021-07-01 * "Entertainment for 2021-07-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Entertainment
 
 2021-07-01 * "Groceries for 2021-07-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2021-07-01 * "Health for 2021-07-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Health
 
 2021-07-01 * "Housing for 2021-07-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Housing
 
 2021-07-01 * "Posessions for 2021-07-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Posessions
 
 2021-07-01 * "Transport for 2021-07-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Transport
 
 2021-07-01 * "Utilities for 2021-07-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Utilities
 
 
 
 2021-08-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         716 GBP
+        Assets:Bank:HSBC:Savings         756 GBP
         Income:Salary
 
+2021-08-01 * "Allowance for 2021-08-01"
+        Assets:Bank:HSBC:Savings         -16 GBP
+        Expenses:Allowance
+
 2021-08-01 * "Entertainment for 2021-08-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Entertainment
 
 2021-08-01 * "Groceries for 2021-08-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2021-08-01 * "Health for 2021-08-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Health
 
 2021-08-01 * "Housing for 2021-08-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Housing
 
 2021-08-01 * "Posessions for 2021-08-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Posessions
 
 2021-08-01 * "Transport for 2021-08-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Transport
 
 2021-08-01 * "Utilities for 2021-08-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Utilities
 
 
 
 2021-09-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         894 GBP
+        Assets:Bank:HSBC:Savings         793 GBP
         Income:Salary
 
+2021-09-01 * "Allowance for 2021-09-01"
+        Assets:Bank:HSBC:Savings         -11 GBP
+        Expenses:Allowance
+
 2021-09-01 * "Entertainment for 2021-09-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Entertainment
 
 2021-09-01 * "Groceries for 2021-09-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Groceries
 
 2021-09-01 * "Health for 2021-09-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Health
 
 2021-09-01 * "Housing for 2021-09-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2021-09-01 * "Posessions for 2021-09-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Posessions
 
 2021-09-01 * "Transport for 2021-09-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Transport
 
 2021-09-01 * "Utilities for 2021-09-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Utilities
 
 
 
 2021-10-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         900 GBP
+        Assets:Bank:HSBC:Savings         720 GBP
         Income:Salary
 
+2021-10-01 * "Allowance for 2021-10-01"
+        Assets:Bank:HSBC:Savings         -13 GBP
+        Expenses:Allowance
+
 2021-10-01 * "Entertainment for 2021-10-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Entertainment
 
 2021-10-01 * "Groceries for 2021-10-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2021-10-01 * "Health for 2021-10-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Health
 
 2021-10-01 * "Housing for 2021-10-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Housing
 
 2021-10-01 * "Posessions for 2021-10-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Posessions
 
 2021-10-01 * "Transport for 2021-10-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Transport
 
 2021-10-01 * "Utilities for 2021-10-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Utilities
 
 
 
 2021-11-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         982 GBP
+        Assets:Bank:HSBC:Savings         714 GBP
         Income:Salary
 
+2021-11-01 * "Allowance for 2021-11-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Allowance
+
 2021-11-01 * "Entertainment for 2021-11-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Entertainment
 
 2021-11-01 * "Groceries for 2021-11-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Groceries
 
 2021-11-01 * "Health for 2021-11-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Health
 
 2021-11-01 * "Housing for 2021-11-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2021-11-01 * "Posessions for 2021-11-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Posessions
 
 2021-11-01 * "Transport for 2021-11-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Transport
 
 2021-11-01 * "Utilities for 2021-11-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2021-12-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         766 GBP
+        Assets:Bank:HSBC:Savings         924 GBP
         Income:Salary
 
+2021-12-01 * "Allowance for 2021-12-01"
+        Assets:Bank:HSBC:Savings         -15 GBP
+        Expenses:Allowance
+
 2021-12-01 * "Entertainment for 2021-12-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Entertainment
 
 2021-12-01 * "Groceries for 2021-12-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Groceries
 
 2021-12-01 * "Health for 2021-12-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Health
 
 2021-12-01 * "Housing for 2021-12-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Housing
 
 2021-12-01 * "Posessions for 2021-12-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Posessions
 
 2021-12-01 * "Transport for 2021-12-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Transport
 
 2021-12-01 * "Utilities for 2021-12-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2022-01-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         705 GBP
+        Assets:Bank:HSBC:Savings         978 GBP
         Income:Salary
 
+2022-01-01 * "Allowance for 2022-01-01"
+        Assets:Bank:HSBC:Savings         -13 GBP
+        Expenses:Allowance
+
 2022-01-01 * "Entertainment for 2022-01-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Entertainment
 
 2022-01-01 * "Groceries for 2022-01-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Groceries
 
 2022-01-01 * "Health for 2022-01-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Health
 
 2022-01-01 * "Housing for 2022-01-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Housing
 
 2022-01-01 * "Posessions for 2022-01-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Posessions
 
 2022-01-01 * "Transport for 2022-01-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Transport
 
 2022-01-01 * "Utilities for 2022-01-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Utilities
 
 
 
 2022-02-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         796 GBP
+        Assets:Bank:HSBC:Savings         805 GBP
         Income:Salary
 
+2022-02-01 * "Allowance for 2022-02-01"
+        Assets:Bank:HSBC:Savings         -16 GBP
+        Expenses:Allowance
+
 2022-02-01 * "Entertainment for 2022-02-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Entertainment
 
 2022-02-01 * "Groceries for 2022-02-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Groceries
 
 2022-02-01 * "Health for 2022-02-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Health
 
 2022-02-01 * "Housing for 2022-02-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2022-02-01 * "Posessions for 2022-02-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Posessions
 
 2022-02-01 * "Transport for 2022-02-01"
@@ -2749,233 +3073,261 @@
         Expenses:Transport
 
 2022-02-01 * "Utilities for 2022-02-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Utilities
 
 
 
 2022-03-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         769 GBP
+        Assets:Bank:HSBC:Savings         878 GBP
         Income:Salary
 
+2022-03-01 * "Allowance for 2022-03-01"
+        Assets:Bank:HSBC:Savings         -2 GBP
+        Expenses:Allowance
+
 2022-03-01 * "Entertainment for 2022-03-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Entertainment
 
 2022-03-01 * "Groceries for 2022-03-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Groceries
 
 2022-03-01 * "Health for 2022-03-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Health
 
 2022-03-01 * "Housing for 2022-03-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2022-03-01 * "Posessions for 2022-03-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Posessions
 
 2022-03-01 * "Transport for 2022-03-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Transport
 
 2022-03-01 * "Utilities for 2022-03-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
-        Expenses:Utilities
-
-
-
-2022-04-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         932 GBP
-        Income:Salary
-
-2022-04-01 * "Entertainment for 2022-04-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
-        Expenses:Entertainment
-
-2022-04-01 * "Groceries for 2022-04-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
-        Expenses:Groceries
-
-2022-04-01 * "Health for 2022-04-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
-        Expenses:Health
-
-2022-04-01 * "Housing for 2022-04-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
-        Expenses:Housing
-
-2022-04-01 * "Posessions for 2022-04-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
-        Expenses:Posessions
-
-2022-04-01 * "Transport for 2022-04-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
-        Expenses:Transport
-
-2022-04-01 * "Utilities for 2022-04-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
-        Expenses:Utilities
-
-
-
-2022-05-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         749 GBP
-        Income:Salary
-
-2022-05-01 * "Entertainment for 2022-05-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
-        Expenses:Entertainment
-
-2022-05-01 * "Groceries for 2022-05-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
-        Expenses:Groceries
-
-2022-05-01 * "Health for 2022-05-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
-        Expenses:Health
-
-2022-05-01 * "Housing for 2022-05-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
-        Expenses:Housing
-
-2022-05-01 * "Posessions for 2022-05-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
-        Expenses:Posessions
-
-2022-05-01 * "Transport for 2022-05-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
-        Expenses:Transport
-
-2022-05-01 * "Utilities for 2022-05-01"
         Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Utilities
 
 
 
-2022-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         714 GBP
+2022-04-01 * "Interest for Mar 2025"
+        Assets:Bank:HSBC:Savings         798 GBP
         Income:Salary
+
+2022-04-01 * "Allowance for 2022-04-01"
+        Assets:Bank:HSBC:Savings         -3 GBP
+        Expenses:Allowance
+
+2022-04-01 * "Entertainment for 2022-04-01"
+        Assets:Bank:HSBC:Savings         -4 GBP
+        Expenses:Entertainment
+
+2022-04-01 * "Groceries for 2022-04-01"
+        Assets:Bank:HSBC:Savings         -9 GBP
+        Expenses:Groceries
+
+2022-04-01 * "Health for 2022-04-01"
+        Assets:Bank:HSBC:Savings         -18 GBP
+        Expenses:Health
+
+2022-04-01 * "Housing for 2022-04-01"
+        Assets:Bank:HSBC:Savings         -7 GBP
+        Expenses:Housing
+
+2022-04-01 * "Posessions for 2022-04-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Posessions
+
+2022-04-01 * "Transport for 2022-04-01"
+        Assets:Bank:HSBC:Savings         -8 GBP
+        Expenses:Transport
+
+2022-04-01 * "Utilities for 2022-04-01"
+        Assets:Bank:HSBC:Savings         -16 GBP
+        Expenses:Utilities
+
+
+
+2022-05-01 * "Interest for Mar 2025"
+        Assets:Bank:HSBC:Savings         985 GBP
+        Income:Salary
+
+2022-05-01 * "Allowance for 2022-05-01"
+        Assets:Bank:HSBC:Savings         -17 GBP
+        Expenses:Allowance
+
+2022-05-01 * "Entertainment for 2022-05-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Entertainment
+
+2022-05-01 * "Groceries for 2022-05-01"
+        Assets:Bank:HSBC:Savings         -10 GBP
+        Expenses:Groceries
+
+2022-05-01 * "Health for 2022-05-01"
+        Assets:Bank:HSBC:Savings         -3 GBP
+        Expenses:Health
+
+2022-05-01 * "Housing for 2022-05-01"
+        Assets:Bank:HSBC:Savings         -8 GBP
+        Expenses:Housing
+
+2022-05-01 * "Posessions for 2022-05-01"
+        Assets:Bank:HSBC:Savings         -7 GBP
+        Expenses:Posessions
+
+2022-05-01 * "Transport for 2022-05-01"
+        Assets:Bank:HSBC:Savings         -16 GBP
+        Expenses:Transport
+
+2022-05-01 * "Utilities for 2022-05-01"
+        Assets:Bank:HSBC:Savings         -11 GBP
+        Expenses:Utilities
+
+
+
+2022-06-01 * "Interest for Mar 2025"
+        Assets:Bank:HSBC:Savings         800 GBP
+        Income:Salary
+
+2022-06-01 * "Allowance for 2022-06-01"
+        Assets:Bank:HSBC:Savings         -9 GBP
+        Expenses:Allowance
 
 2022-06-01 * "Entertainment for 2022-06-01"
         Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Entertainment
 
 2022-06-01 * "Groceries for 2022-06-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Groceries
 
 2022-06-01 * "Health for 2022-06-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Health
 
 2022-06-01 * "Housing for 2022-06-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2022-06-01 * "Posessions for 2022-06-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Posessions
 
 2022-06-01 * "Transport for 2022-06-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Transport
 
 2022-06-01 * "Utilities for 2022-06-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2022-07-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         702 GBP
+        Assets:Bank:HSBC:Savings         798 GBP
         Income:Salary
 
+2022-07-01 * "Allowance for 2022-07-01"
+        Assets:Bank:HSBC:Savings         -16 GBP
+        Expenses:Allowance
+
 2022-07-01 * "Entertainment for 2022-07-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Entertainment
 
 2022-07-01 * "Groceries for 2022-07-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Groceries
 
 2022-07-01 * "Health for 2022-07-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Health
 
 2022-07-01 * "Housing for 2022-07-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Housing
 
 2022-07-01 * "Posessions for 2022-07-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Posessions
 
 2022-07-01 * "Transport for 2022-07-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Transport
 
 2022-07-01 * "Utilities for 2022-07-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Utilities
 
 
 
 2022-08-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         853 GBP
+        Assets:Bank:HSBC:Savings         965 GBP
         Income:Salary
 
+2022-08-01 * "Allowance for 2022-08-01"
+        Assets:Bank:HSBC:Savings         -12 GBP
+        Expenses:Allowance
+
 2022-08-01 * "Entertainment for 2022-08-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Entertainment
 
 2022-08-01 * "Groceries for 2022-08-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2022-08-01 * "Health for 2022-08-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2022-08-01 * "Housing for 2022-08-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Housing
 
 2022-08-01 * "Posessions for 2022-08-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Posessions
 
 2022-08-01 * "Transport for 2022-08-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Transport
 
 2022-08-01 * "Utilities for 2022-08-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Utilities
 
 
 
 2022-09-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         743 GBP
+        Assets:Bank:HSBC:Savings         751 GBP
         Income:Salary
 
+2022-09-01 * "Allowance for 2022-09-01"
+        Assets:Bank:HSBC:Savings         -9 GBP
+        Expenses:Allowance
+
 2022-09-01 * "Entertainment for 2022-09-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Entertainment
 
 2022-09-01 * "Groceries for 2022-09-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Groceries
 
 2022-09-01 * "Health for 2022-09-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Health
 
 2022-09-01 * "Housing for 2022-09-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Housing
 
 2022-09-01 * "Posessions for 2022-09-01"
@@ -2983,37 +3335,41 @@
         Expenses:Posessions
 
 2022-09-01 * "Transport for 2022-09-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Transport
 
 2022-09-01 * "Utilities for 2022-09-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Utilities
 
 
 
 2022-10-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         936 GBP
+        Assets:Bank:HSBC:Savings         700 GBP
         Income:Salary
 
+2022-10-01 * "Allowance for 2022-10-01"
+        Assets:Bank:HSBC:Savings         -16 GBP
+        Expenses:Allowance
+
 2022-10-01 * "Entertainment for 2022-10-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Entertainment
 
 2022-10-01 * "Groceries for 2022-10-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2022-10-01 * "Health for 2022-10-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Health
 
 2022-10-01 * "Housing for 2022-10-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Housing
 
 2022-10-01 * "Posessions for 2022-10-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Posessions
 
 2022-10-01 * "Transport for 2022-10-01"
@@ -3021,51 +3377,59 @@
         Expenses:Transport
 
 2022-10-01 * "Utilities for 2022-10-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Utilities
 
 
 
 2022-11-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         896 GBP
+        Assets:Bank:HSBC:Savings         759 GBP
         Income:Salary
 
+2022-11-01 * "Allowance for 2022-11-01"
+        Assets:Bank:HSBC:Savings         -8 GBP
+        Expenses:Allowance
+
 2022-11-01 * "Entertainment for 2022-11-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Entertainment
 
 2022-11-01 * "Groceries for 2022-11-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Groceries
 
 2022-11-01 * "Health for 2022-11-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Health
 
 2022-11-01 * "Housing for 2022-11-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Housing
 
 2022-11-01 * "Posessions for 2022-11-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Posessions
 
 2022-11-01 * "Transport for 2022-11-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Transport
 
 2022-11-01 * "Utilities for 2022-11-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Utilities
 
 
 
 2022-12-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         724 GBP
+        Assets:Bank:HSBC:Savings         710 GBP
         Income:Salary
 
+2022-12-01 * "Allowance for 2022-12-01"
+        Assets:Bank:HSBC:Savings         -8 GBP
+        Expenses:Allowance
+
 2022-12-01 * "Entertainment for 2022-12-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Entertainment
 
 2022-12-01 * "Groceries for 2022-12-01"
@@ -3073,37 +3437,41 @@
         Expenses:Groceries
 
 2022-12-01 * "Health for 2022-12-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2022-12-01 * "Housing for 2022-12-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Housing
 
 2022-12-01 * "Posessions for 2022-12-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Posessions
 
 2022-12-01 * "Transport for 2022-12-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Transport
 
 2022-12-01 * "Utilities for 2022-12-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Utilities
 
 
 
 2023-01-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         987 GBP
+        Assets:Bank:HSBC:Savings         707 GBP
         Income:Salary
 
+2023-01-01 * "Allowance for 2023-01-01"
+        Assets:Bank:HSBC:Savings         -7 GBP
+        Expenses:Allowance
+
 2023-01-01 * "Entertainment for 2023-01-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Entertainment
 
 2023-01-01 * "Groceries for 2023-01-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Groceries
 
 2023-01-01 * "Health for 2023-01-01"
@@ -3115,241 +3483,269 @@
         Expenses:Housing
 
 2023-01-01 * "Posessions for 2023-01-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Posessions
 
 2023-01-01 * "Transport for 2023-01-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Transport
 
 2023-01-01 * "Utilities for 2023-01-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Utilities
 
 
 
 2023-02-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         751 GBP
+        Assets:Bank:HSBC:Savings         710 GBP
         Income:Salary
 
+2023-02-01 * "Allowance for 2023-02-01"
+        Assets:Bank:HSBC:Savings         -10 GBP
+        Expenses:Allowance
+
 2023-02-01 * "Entertainment for 2023-02-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Entertainment
 
 2023-02-01 * "Groceries for 2023-02-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2023-02-01 * "Health for 2023-02-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2023-02-01 * "Housing for 2023-02-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Housing
 
 2023-02-01 * "Posessions for 2023-02-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Posessions
 
 2023-02-01 * "Transport for 2023-02-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Transport
 
 2023-02-01 * "Utilities for 2023-02-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Utilities
 
 
 
 2023-03-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         805 GBP
+        Assets:Bank:HSBC:Savings         883 GBP
         Income:Salary
 
+2023-03-01 * "Allowance for 2023-03-01"
+        Assets:Bank:HSBC:Savings         -6 GBP
+        Expenses:Allowance
+
 2023-03-01 * "Entertainment for 2023-03-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Entertainment
 
 2023-03-01 * "Groceries for 2023-03-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Groceries
 
 2023-03-01 * "Health for 2023-03-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2023-03-01 * "Housing for 2023-03-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2023-03-01 * "Posessions for 2023-03-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Posessions
 
 2023-03-01 * "Transport for 2023-03-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Transport
 
 2023-03-01 * "Utilities for 2023-03-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2023-04-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         854 GBP
+        Assets:Bank:HSBC:Savings         745 GBP
         Income:Salary
 
+2023-04-01 * "Allowance for 2023-04-01"
+        Assets:Bank:HSBC:Savings         -3 GBP
+        Expenses:Allowance
+
 2023-04-01 * "Entertainment for 2023-04-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Entertainment
 
 2023-04-01 * "Groceries for 2023-04-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Groceries
 
 2023-04-01 * "Health for 2023-04-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Health
 
 2023-04-01 * "Housing for 2023-04-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2023-04-01 * "Posessions for 2023-04-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Posessions
 
 2023-04-01 * "Transport for 2023-04-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Transport
 
 2023-04-01 * "Utilities for 2023-04-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Utilities
 
 
 
 2023-05-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         804 GBP
+        Assets:Bank:HSBC:Savings         763 GBP
         Income:Salary
 
+2023-05-01 * "Allowance for 2023-05-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Allowance
+
 2023-05-01 * "Entertainment for 2023-05-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Entertainment
 
 2023-05-01 * "Groceries for 2023-05-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Groceries
 
 2023-05-01 * "Health for 2023-05-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Health
 
 2023-05-01 * "Housing for 2023-05-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Housing
 
 2023-05-01 * "Posessions for 2023-05-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Posessions
 
 2023-05-01 * "Transport for 2023-05-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Transport
 
 2023-05-01 * "Utilities for 2023-05-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Utilities
 
 
 
 2023-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         809 GBP
+        Assets:Bank:HSBC:Savings         904 GBP
         Income:Salary
 
+2023-06-01 * "Allowance for 2023-06-01"
+        Assets:Bank:HSBC:Savings         -8 GBP
+        Expenses:Allowance
+
 2023-06-01 * "Entertainment for 2023-06-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Entertainment
 
 2023-06-01 * "Groceries for 2023-06-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Groceries
 
 2023-06-01 * "Health for 2023-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Health
 
 2023-06-01 * "Housing for 2023-06-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Housing
 
 2023-06-01 * "Posessions for 2023-06-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Posessions
 
 2023-06-01 * "Transport for 2023-06-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Transport
 
 2023-06-01 * "Utilities for 2023-06-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Utilities
 
 
 
 2023-07-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         879 GBP
+        Assets:Bank:HSBC:Savings         900 GBP
         Income:Salary
 
-2023-07-01 * "Entertainment for 2023-07-01"
+2023-07-01 * "Allowance for 2023-07-01"
         Assets:Bank:HSBC:Savings         -5 GBP
+        Expenses:Allowance
+
+2023-07-01 * "Entertainment for 2023-07-01"
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Entertainment
 
 2023-07-01 * "Groceries for 2023-07-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Groceries
 
 2023-07-01 * "Health for 2023-07-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Health
 
 2023-07-01 * "Housing for 2023-07-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2023-07-01 * "Posessions for 2023-07-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Posessions
 
 2023-07-01 * "Transport for 2023-07-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Transport
 
 2023-07-01 * "Utilities for 2023-07-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Utilities
 
 
 
 2023-08-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         739 GBP
+        Assets:Bank:HSBC:Savings         706 GBP
         Income:Salary
 
+2023-08-01 * "Allowance for 2023-08-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Allowance
+
 2023-08-01 * "Entertainment for 2023-08-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Entertainment
 
 2023-08-01 * "Groceries for 2023-08-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2023-08-01 * "Health for 2023-08-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Health
 
 2023-08-01 * "Housing for 2023-08-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2023-08-01 * "Posessions for 2023-08-01"
@@ -3357,105 +3753,117 @@
         Expenses:Posessions
 
 2023-08-01 * "Transport for 2023-08-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Transport
 
 2023-08-01 * "Utilities for 2023-08-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Utilities
 
 
 
 2023-09-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         881 GBP
+        Assets:Bank:HSBC:Savings         740 GBP
         Income:Salary
 
+2023-09-01 * "Allowance for 2023-09-01"
+        Assets:Bank:HSBC:Savings         -9 GBP
+        Expenses:Allowance
+
 2023-09-01 * "Entertainment for 2023-09-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Entertainment
 
 2023-09-01 * "Groceries for 2023-09-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Groceries
 
 2023-09-01 * "Health for 2023-09-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Health
 
 2023-09-01 * "Housing for 2023-09-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Housing
 
 2023-09-01 * "Posessions for 2023-09-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Posessions
 
 2023-09-01 * "Transport for 2023-09-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Transport
 
 2023-09-01 * "Utilities for 2023-09-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Utilities
 
 
 
 2023-10-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         830 GBP
+        Assets:Bank:HSBC:Savings         873 GBP
         Income:Salary
 
+2023-10-01 * "Allowance for 2023-10-01"
+        Assets:Bank:HSBC:Savings         -12 GBP
+        Expenses:Allowance
+
 2023-10-01 * "Entertainment for 2023-10-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2023-10-01 * "Groceries for 2023-10-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Groceries
 
 2023-10-01 * "Health for 2023-10-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Health
 
 2023-10-01 * "Housing for 2023-10-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Housing
 
 2023-10-01 * "Posessions for 2023-10-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Posessions
 
 2023-10-01 * "Transport for 2023-10-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Transport
 
 2023-10-01 * "Utilities for 2023-10-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2023-11-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         715 GBP
+        Assets:Bank:HSBC:Savings         750 GBP
         Income:Salary
 
+2023-11-01 * "Allowance for 2023-11-01"
+        Assets:Bank:HSBC:Savings         -12 GBP
+        Expenses:Allowance
+
 2023-11-01 * "Entertainment for 2023-11-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Entertainment
 
 2023-11-01 * "Groceries for 2023-11-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Groceries
 
 2023-11-01 * "Health for 2023-11-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Health
 
 2023-11-01 * "Housing for 2023-11-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Housing
 
 2023-11-01 * "Posessions for 2023-11-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Posessions
 
 2023-11-01 * "Transport for 2023-11-01"
@@ -3463,21 +3871,25 @@
         Expenses:Transport
 
 2023-11-01 * "Utilities for 2023-11-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Utilities
 
 
 
 2023-12-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         731 GBP
+        Assets:Bank:HSBC:Savings         813 GBP
         Income:Salary
+
+2023-12-01 * "Allowance for 2023-12-01"
+        Assets:Bank:HSBC:Savings         -11 GBP
+        Expenses:Allowance
 
 2023-12-01 * "Entertainment for 2023-12-01"
         Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Entertainment
 
 2023-12-01 * "Groceries for 2023-12-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Groceries
 
 2023-12-01 * "Health for 2023-12-01"
@@ -3485,71 +3897,79 @@
         Expenses:Health
 
 2023-12-01 * "Housing for 2023-12-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Housing
 
 2023-12-01 * "Posessions for 2023-12-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Posessions
 
 2023-12-01 * "Transport for 2023-12-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Transport
 
 2023-12-01 * "Utilities for 2023-12-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2024-01-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         808 GBP
+        Assets:Bank:HSBC:Savings         876 GBP
         Income:Salary
 
+2024-01-01 * "Allowance for 2024-01-01"
+        Assets:Bank:HSBC:Savings         -18 GBP
+        Expenses:Allowance
+
 2024-01-01 * "Entertainment for 2024-01-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Entertainment
 
 2024-01-01 * "Groceries for 2024-01-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Groceries
 
 2024-01-01 * "Health for 2024-01-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Health
 
 2024-01-01 * "Housing for 2024-01-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Housing
 
 2024-01-01 * "Posessions for 2024-01-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Posessions
 
 2024-01-01 * "Transport for 2024-01-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Transport
 
 2024-01-01 * "Utilities for 2024-01-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Utilities
 
 
 
 2024-02-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         951 GBP
+        Assets:Bank:HSBC:Savings         788 GBP
         Income:Salary
 
+2024-02-01 * "Allowance for 2024-02-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Allowance
+
 2024-02-01 * "Entertainment for 2024-02-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Entertainment
 
 2024-02-01 * "Groceries for 2024-02-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2024-02-01 * "Health for 2024-02-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Health
 
 2024-02-01 * "Housing for 2024-02-01"
@@ -3557,11 +3977,11 @@
         Expenses:Housing
 
 2024-02-01 * "Posessions for 2024-02-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Posessions
 
 2024-02-01 * "Transport for 2024-02-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Transport
 
 2024-02-01 * "Utilities for 2024-02-01"
@@ -3571,197 +3991,221 @@
 
 
 2024-03-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         752 GBP
+        Assets:Bank:HSBC:Savings         952 GBP
         Income:Salary
 
+2024-03-01 * "Allowance for 2024-03-01"
+        Assets:Bank:HSBC:Savings         -11 GBP
+        Expenses:Allowance
+
 2024-03-01 * "Entertainment for 2024-03-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2024-03-01 * "Groceries for 2024-03-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Groceries
 
 2024-03-01 * "Health for 2024-03-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Health
 
 2024-03-01 * "Housing for 2024-03-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2024-03-01 * "Posessions for 2024-03-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Posessions
 
 2024-03-01 * "Transport for 2024-03-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Transport
 
 2024-03-01 * "Utilities for 2024-03-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Utilities
 
 
 
 2024-04-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         882 GBP
+        Assets:Bank:HSBC:Savings         837 GBP
         Income:Salary
 
+2024-04-01 * "Allowance for 2024-04-01"
+        Assets:Bank:HSBC:Savings         -18 GBP
+        Expenses:Allowance
+
 2024-04-01 * "Entertainment for 2024-04-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Entertainment
 
 2024-04-01 * "Groceries for 2024-04-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Groceries
 
 2024-04-01 * "Health for 2024-04-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Health
 
 2024-04-01 * "Housing for 2024-04-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Housing
 
 2024-04-01 * "Posessions for 2024-04-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Posessions
 
 2024-04-01 * "Transport for 2024-04-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Transport
 
 2024-04-01 * "Utilities for 2024-04-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Utilities
 
 
 
 2024-05-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         845 GBP
+        Assets:Bank:HSBC:Savings         848 GBP
         Income:Salary
 
+2024-05-01 * "Allowance for 2024-05-01"
+        Assets:Bank:HSBC:Savings         -2 GBP
+        Expenses:Allowance
+
 2024-05-01 * "Entertainment for 2024-05-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Entertainment
 
 2024-05-01 * "Groceries for 2024-05-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Groceries
 
 2024-05-01 * "Health for 2024-05-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Health
 
 2024-05-01 * "Housing for 2024-05-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Housing
 
 2024-05-01 * "Posessions for 2024-05-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Posessions
 
 2024-05-01 * "Transport for 2024-05-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Transport
 
 2024-05-01 * "Utilities for 2024-05-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Utilities
 
 
 
 2024-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         719 GBP
+        Assets:Bank:HSBC:Savings         785 GBP
         Income:Salary
 
+2024-06-01 * "Allowance for 2024-06-01"
+        Assets:Bank:HSBC:Savings         -6 GBP
+        Expenses:Allowance
+
 2024-06-01 * "Entertainment for 2024-06-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Entertainment
 
 2024-06-01 * "Groceries for 2024-06-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Groceries
 
 2024-06-01 * "Health for 2024-06-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Health
 
 2024-06-01 * "Housing for 2024-06-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Housing
 
 2024-06-01 * "Posessions for 2024-06-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Posessions
 
 2024-06-01 * "Transport for 2024-06-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Transport
 
 2024-06-01 * "Utilities for 2024-06-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Utilities
 
 
 
 2024-07-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         934 GBP
+        Assets:Bank:HSBC:Savings         854 GBP
         Income:Salary
 
+2024-07-01 * "Allowance for 2024-07-01"
+        Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Allowance
+
 2024-07-01 * "Entertainment for 2024-07-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Entertainment
 
 2024-07-01 * "Groceries for 2024-07-01"
-        Assets:Bank:HSBC:Savings         -12 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Groceries
 
 2024-07-01 * "Health for 2024-07-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Health
 
 2024-07-01 * "Housing for 2024-07-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Housing
 
 2024-07-01 * "Posessions for 2024-07-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Posessions
 
 2024-07-01 * "Transport for 2024-07-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Transport
 
 2024-07-01 * "Utilities for 2024-07-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Utilities
 
 
 
 2024-08-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         878 GBP
+        Assets:Bank:HSBC:Savings         908 GBP
         Income:Salary
 
-2024-08-01 * "Entertainment for 2024-08-01"
+2024-08-01 * "Allowance for 2024-08-01"
         Assets:Bank:HSBC:Savings         -5 GBP
+        Expenses:Allowance
+
+2024-08-01 * "Entertainment for 2024-08-01"
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Entertainment
 
 2024-08-01 * "Groceries for 2024-08-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Groceries
 
 2024-08-01 * "Health for 2024-08-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Health
 
 2024-08-01 * "Housing for 2024-08-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Housing
 
 2024-08-01 * "Posessions for 2024-08-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -16 GBP
         Expenses:Posessions
 
 2024-08-01 * "Transport for 2024-08-01"
@@ -3769,25 +4213,29 @@
         Expenses:Transport
 
 2024-08-01 * "Utilities for 2024-08-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Utilities
 
 
 
 2024-09-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         741 GBP
+        Assets:Bank:HSBC:Savings         964 GBP
         Income:Salary
 
+2024-09-01 * "Allowance for 2024-09-01"
+        Assets:Bank:HSBC:Savings         -3 GBP
+        Expenses:Allowance
+
 2024-09-01 * "Entertainment for 2024-09-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Entertainment
 
 2024-09-01 * "Groceries for 2024-09-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2024-09-01 * "Health for 2024-09-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Health
 
 2024-09-01 * "Housing for 2024-09-01"
@@ -3795,7 +4243,7 @@
         Expenses:Housing
 
 2024-09-01 * "Posessions for 2024-09-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -4 GBP
         Expenses:Posessions
 
 2024-09-01 * "Transport for 2024-09-01"
@@ -3803,59 +4251,67 @@
         Expenses:Transport
 
 2024-09-01 * "Utilities for 2024-09-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Utilities
 
 
 
 2024-10-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         805 GBP
+        Assets:Bank:HSBC:Savings         932 GBP
         Income:Salary
 
+2024-10-01 * "Allowance for 2024-10-01"
+        Assets:Bank:HSBC:Savings         -16 GBP
+        Expenses:Allowance
+
 2024-10-01 * "Entertainment for 2024-10-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -17 GBP
         Expenses:Entertainment
 
 2024-10-01 * "Groceries for 2024-10-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2024-10-01 * "Health for 2024-10-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Health
 
 2024-10-01 * "Housing for 2024-10-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Housing
 
 2024-10-01 * "Posessions for 2024-10-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Posessions
 
 2024-10-01 * "Transport for 2024-10-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Transport
 
 2024-10-01 * "Utilities for 2024-10-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -19 GBP
         Expenses:Utilities
 
 
 
 2024-11-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         848 GBP
+        Assets:Bank:HSBC:Savings         826 GBP
         Income:Salary
 
+2024-11-01 * "Allowance for 2024-11-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Allowance
+
 2024-11-01 * "Entertainment for 2024-11-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Entertainment
 
 2024-11-01 * "Groceries for 2024-11-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Groceries
 
 2024-11-01 * "Health for 2024-11-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Health
 
 2024-11-01 * "Housing for 2024-11-01"
@@ -3863,127 +4319,143 @@
         Expenses:Housing
 
 2024-11-01 * "Posessions for 2024-11-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Posessions
 
 2024-11-01 * "Transport for 2024-11-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Transport
 
 2024-11-01 * "Utilities for 2024-11-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Utilities
 
 
 
 2024-12-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         706 GBP
+        Assets:Bank:HSBC:Savings         930 GBP
         Income:Salary
 
+2024-12-01 * "Allowance for 2024-12-01"
+        Assets:Bank:HSBC:Savings         -17 GBP
+        Expenses:Allowance
+
 2024-12-01 * "Entertainment for 2024-12-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2024-12-01 * "Groceries for 2024-12-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Groceries
 
 2024-12-01 * "Health for 2024-12-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Health
 
 2024-12-01 * "Housing for 2024-12-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Housing
 
 2024-12-01 * "Posessions for 2024-12-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Posessions
 
 2024-12-01 * "Transport for 2024-12-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Transport
 
 2024-12-01 * "Utilities for 2024-12-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Utilities
 
 
 
 2025-01-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         899 GBP
+        Assets:Bank:HSBC:Savings         946 GBP
         Income:Salary
 
+2025-01-01 * "Allowance for 2025-01-01"
+        Assets:Bank:HSBC:Savings         -15 GBP
+        Expenses:Allowance
+
 2025-01-01 * "Entertainment for 2025-01-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2025-01-01 * "Groceries for 2025-01-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Groceries
 
 2025-01-01 * "Health for 2025-01-01"
-        Assets:Bank:HSBC:Savings         -3 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Health
 
 2025-01-01 * "Housing for 2025-01-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Housing
 
 2025-01-01 * "Posessions for 2025-01-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Posessions
 
 2025-01-01 * "Transport for 2025-01-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Transport
 
 2025-01-01 * "Utilities for 2025-01-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Utilities
 
 
 
 2025-02-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         822 GBP
+        Assets:Bank:HSBC:Savings         924 GBP
         Income:Salary
 
-2025-02-01 * "Entertainment for 2025-02-01"
+2025-02-01 * "Allowance for 2025-02-01"
         Assets:Bank:HSBC:Savings         -19 GBP
+        Expenses:Allowance
+
+2025-02-01 * "Entertainment for 2025-02-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Entertainment
 
 2025-02-01 * "Groceries for 2025-02-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Groceries
 
 2025-02-01 * "Health for 2025-02-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Health
 
 2025-02-01 * "Housing for 2025-02-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Housing
 
 2025-02-01 * "Posessions for 2025-02-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -7 GBP
         Expenses:Posessions
 
 2025-02-01 * "Transport for 2025-02-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Transport
 
 2025-02-01 * "Utilities for 2025-02-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Utilities
 
 
 
 2025-03-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         996 GBP
+        Assets:Bank:HSBC:Savings         812 GBP
         Income:Salary
 
+2025-03-01 * "Allowance for 2025-03-01"
+        Assets:Bank:HSBC:Savings         -14 GBP
+        Expenses:Allowance
+
 2025-03-01 * "Entertainment for 2025-03-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Entertainment
 
 2025-03-01 * "Groceries for 2025-03-01"
@@ -3991,113 +4463,125 @@
         Expenses:Groceries
 
 2025-03-01 * "Health for 2025-03-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Health
 
 2025-03-01 * "Housing for 2025-03-01"
-        Assets:Bank:HSBC:Savings         -13 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Housing
 
 2025-03-01 * "Posessions for 2025-03-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Posessions
 
 2025-03-01 * "Transport for 2025-03-01"
-        Assets:Bank:HSBC:Savings         -7 GBP
+        Assets:Bank:HSBC:Savings         -15 GBP
         Expenses:Transport
 
 2025-03-01 * "Utilities for 2025-03-01"
-        Assets:Bank:HSBC:Savings         -19 GBP
+        Assets:Bank:HSBC:Savings         -13 GBP
         Expenses:Utilities
 
 
 
 2025-04-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         882 GBP
+        Assets:Bank:HSBC:Savings         971 GBP
         Income:Salary
 
+2025-04-01 * "Allowance for 2025-04-01"
+        Assets:Bank:HSBC:Savings         -9 GBP
+        Expenses:Allowance
+
 2025-04-01 * "Entertainment for 2025-04-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Entertainment
 
 2025-04-01 * "Groceries for 2025-04-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -11 GBP
         Expenses:Groceries
 
 2025-04-01 * "Health for 2025-04-01"
-        Assets:Bank:HSBC:Savings         -8 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Health
 
 2025-04-01 * "Housing for 2025-04-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Housing
 
 2025-04-01 * "Posessions for 2025-04-01"
-        Assets:Bank:HSBC:Savings         -2 GBP
+        Assets:Bank:HSBC:Savings         -10 GBP
         Expenses:Posessions
 
 2025-04-01 * "Transport for 2025-04-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -9 GBP
         Expenses:Transport
 
 2025-04-01 * "Utilities for 2025-04-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Utilities
 
 
 
 2025-05-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         839 GBP
+        Assets:Bank:HSBC:Savings         958 GBP
         Income:Salary
 
+2025-05-01 * "Allowance for 2025-05-01"
+        Assets:Bank:HSBC:Savings         -16 GBP
+        Expenses:Allowance
+
 2025-05-01 * "Entertainment for 2025-05-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -5 GBP
         Expenses:Entertainment
 
 2025-05-01 * "Groceries for 2025-05-01"
-        Assets:Bank:HSBC:Savings         -6 GBP
+        Assets:Bank:HSBC:Savings         -2 GBP
         Expenses:Groceries
 
 2025-05-01 * "Health for 2025-05-01"
-        Assets:Bank:HSBC:Savings         -15 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Health
 
 2025-05-01 * "Housing for 2025-05-01"
-        Assets:Bank:HSBC:Savings         -10 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Housing
 
 2025-05-01 * "Posessions for 2025-05-01"
-        Assets:Bank:HSBC:Savings         -14 GBP
+        Assets:Bank:HSBC:Savings         -12 GBP
         Expenses:Posessions
 
 2025-05-01 * "Transport for 2025-05-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -3 GBP
         Expenses:Transport
 
 2025-05-01 * "Utilities for 2025-05-01"
-        Assets:Bank:HSBC:Savings         -4 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Utilities
 
 
 
 2025-06-01 * "Interest for Mar 2025"
-        Assets:Bank:HSBC:Savings         970 GBP
+        Assets:Bank:HSBC:Savings         876 GBP
         Income:Salary
 
+2025-06-01 * "Allowance for 2025-06-01"
+        Assets:Bank:HSBC:Savings         -9 GBP
+        Expenses:Allowance
+
 2025-06-01 * "Entertainment for 2025-06-01"
-        Assets:Bank:HSBC:Savings         -5 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Entertainment
 
 2025-06-01 * "Groceries for 2025-06-01"
-        Assets:Bank:HSBC:Savings         -17 GBP
+        Assets:Bank:HSBC:Savings         -14 GBP
         Expenses:Groceries
 
 2025-06-01 * "Health for 2025-06-01"
-        Assets:Bank:HSBC:Savings         -18 GBP
+        Assets:Bank:HSBC:Savings         -8 GBP
         Expenses:Health
 
 2025-06-01 * "Housing for 2025-06-01"
-        Assets:Bank:HSBC:Savings         -9 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Housing
 
 2025-06-01 * "Posessions for 2025-06-01"
@@ -4105,11 +4589,11 @@
         Expenses:Posessions
 
 2025-06-01 * "Transport for 2025-06-01"
-        Assets:Bank:HSBC:Savings         -11 GBP
+        Assets:Bank:HSBC:Savings         -6 GBP
         Expenses:Transport
 
 2025-06-01 * "Utilities for 2025-06-01"
-        Assets:Bank:HSBC:Savings         -16 GBP
+        Assets:Bank:HSBC:Savings         -18 GBP
         Expenses:Utilities
 
 
