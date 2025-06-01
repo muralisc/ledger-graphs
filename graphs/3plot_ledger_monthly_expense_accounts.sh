@@ -102,7 +102,7 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
-    --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
+    --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount))))) %(abs(quantity(scrub(floor(display_amount))))).util\n" \
     '^Expenses:Utilities' >> ledger_monthly_utilities.txt
 done
 
@@ -156,6 +156,6 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
     "ledger_monthly_transport.txt" using 1:2 with linespoints title "Expense:Transport" ls 8 linecolor rgb "#d4ac0d", \
                      '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#d4ac0d" notitle, \
     "ledger_monthly_utilities.txt" using 1:2 with linespoints title "Expense:Utilities" ls 9 linecolor rgb "#283747", \
-                     '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#283747" notitle
+                     '' using 1:2:3 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#283747" notitle
 EOF
 popd
