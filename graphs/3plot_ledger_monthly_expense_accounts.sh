@@ -106,7 +106,10 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
     '^Expenses:Utilities' >> ledger_monthly_utilities.txt
 done
 
-min_exp=$(awk 'BEGIN{min=1000}{if ($2<0+min) min=$2} END{print min}' ledger_monthly_entertainment.txt)
+min_exp=1000
+min_exp=$(awk 'BEGIN{min='$min_exp'}{if ($2<0+min) min=$2} END{print min}' ledger_monthly_entertainment.txt)
+min_exp=$(awk 'BEGIN{min='$min_exp'}{if ($2<0+min) min=$2} END{print min}' ledger_monthly_posessions.txt)
+min_exp=$(awk 'BEGIN{min='$min_exp'}{if ($2<0+min) min=$2} END{print min}' ledger_monthly_health.txt)
 max_exp=$(awk 'BEGIN{max=0}{if ($2>0+max) max=$2} END{print max}' ledger_monthly_housing.txt)
 
 echo "Creating $FOLDER/ledger_monthly_payee.png"

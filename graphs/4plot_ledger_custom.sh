@@ -13,11 +13,11 @@ if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1280,720 persist"
 fi
 
-SELECTED_PAYEE=("@Tesco" "or" "@Deliveroo" "or" "@Best Foods")
+SELECTED_PAYEE=("@Tesco" "or" "@Deliveroo" "or" "@Best Foods" "or" "payee" '/OCADO /')
 # SELECTED_PAYEE=("@Metropolitan")
 
 pushd $FOLDER
-cat /dev/null > ledger_monthly_custom.tmp
+cat /dev/null > ledger_monthly_custom.txt
 CURRENT_MONTH_START=$(date +"%Y-%m-01")
 TIME_DIFF=1y
 START_TIME=$(dateadd $(date +"%Y-%m-01") -1y --format="%Y-%m-%d")
@@ -28,7 +28,7 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
     -X GBP \
     -jMn reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(quantity(scrub(floor(display_amount))))\n" \
-    '^Expense' and \( "${SELECTED_PAYEE[@]}" \) >> ledger_monthly_custom.tmp
+    '^Expense' and \( "${SELECTED_PAYEE[@]}" \) >> ledger_monthly_custom.txt
 done
 
 echo "Creating $FOLDER/ledger_monthly_custom.png"
@@ -43,7 +43,7 @@ echo "Creating $FOLDER/ledger_monthly_custom.png"
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
   set title "Payee custom $ledger_run_date"
   plot \
-    "ledger_monthly_custom.tmp" using 1:2   with linespoints title "${SELECTED_PAYEE[@]//@/}" ls 1, \
+    "ledger_monthly_custom.txt" using 1:2   with linespoints title "${SELECTED_PAYEE[@]//@/}" ls 1, \
     ""                          using 1:2:2 with labels font "Courier,12" offset 0,0.9 textcolor linestyle 0 notitle
 EOF
 popd
