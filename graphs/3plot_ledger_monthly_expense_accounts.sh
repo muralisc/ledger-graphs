@@ -29,6 +29,7 @@ cat /dev/null > graph3_monthly_expense.txt
 CURRENT_MONTH_START=$(date +"%Y-%m-01")
 TIME_DIFF=13mo
 START_TIME=$(dateadd $(date +"%Y-%m-01") -$TIME_DIFF --format="%Y-%m-%d")
+
 for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
 
   BLUE=$(tput setaf 4)  
@@ -110,6 +111,10 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
   set timefmt "%Y-%m-%d"
   set format x "%d/%m/%Y-%b"
   set xtics nomirror scale 0 rotate by -55
+  set timefmt '%Y-%m-%d'
+  set xrange [*:'$CURRENT_MONTH_START']
+  set yrange [200:2200]
+  set y2range [-5000:6000]
   set grid ytics
 
   set ylabel "Cost of Expense::SubItems"
@@ -128,19 +133,22 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
   set style line 9 lt 1 lw 2 pt 13 pi -1 ps 1.5
   set title "Payee split $ledger_run_date"
 
-  set label 1 at $START_TIME, graph 1 "line to center graphs" offset 0.5,-1000.0
   plot \
     "graph3_monthly_expense.txt" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red" axes x1y2, \
-    25000 title "line" lw 2 , \
+                     '' using 1:2:2 with labels left font "Courier,12" rotate by 0 offset 1,0 textcolor "red" notitle axes x1y2, \
     "ledger_monthly_allowance.tmp" using 1:2 with linespoints title "Expense:Allowance" ls 2 linecolor rgb "#ff0000", \
     "ledger_monthly_entertainment.tmp" using 1:2 with linespoints title "Expense:Entertainment" ls 3 linecolor rgb "#00aa00", \
+                     '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#00aa00" notitle, \
     "ledger_monthly_groceries.tmp" using 1:2 with linespoints title "Expense:Groceries" ls 4 linecolor rgb "#0000ff", \
+                     '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#0000ff" notitle, \
     "ledger_monthly_health.tmp" using 1:2 with linespoints title "Expense:Health" ls 5 linecolor rgb "#FF5733", \
     "ledger_monthly_housing.tmp" using 1:2 with linespoints title "Expense:Housing" ls 6 linecolor rgb "#af7ac5", \
-                     '' using 1:2:2 with labels left font "Courier,4" rotate by 15 offset 1,1 textcolor "#3d3ded" notitle, \
+                     '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#3d3ded" notitle, \
     "ledger_monthly_posessions.tmp" using 1:2 with linespoints title "Expense:Posessions" ls 7 linecolor rgb "#1abc9c", \
+                     '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#1abc9c" notitle, \
     "ledger_monthly_transport.tmp" using 1:2 with linespoints title "Expense:Transport" ls 8 linecolor rgb "#d4ac0d", \
+                     '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#d4ac0d" notitle, \
     "ledger_monthly_utilities.tmp" using 1:2 with linespoints title "Expense:Utilities" ls 9 linecolor rgb "#283747", \
-                     '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#3d3ded" notitle
+                     '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#283747" notitle
 EOF
 popd
