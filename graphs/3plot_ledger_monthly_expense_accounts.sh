@@ -44,7 +44,7 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
       --begin $cdate --end $(dateadd $cdate 1mo) \
       -X GBP \
       -jMn reg \
-      --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
+      --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount))))) %(abs(quantity(scrub(floor(display_amount))))).exp\n" \
       '^Expe' "$@" >> graph3_monthly_expense.txt
 
   echo "monthly allowance"
@@ -106,6 +106,9 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
     '^Expenses:Utilities' >> ledger_monthly_utilities.txt
 done
 
+min_exp=$(awk 'BEGIN{min=1000}{if ($2<0+min) min=$2} END{print min}' ledger_monthly_entertainment.txt)
+max_exp=$(awk 'BEGIN{max=0}{if ($2>0+max) max=$2} END{print max}' ledger_monthly_housing.txt)
+
 echo "Creating $FOLDER/ledger_monthly_payee.png"
 (cat <<EOF) | gnuplot
   set terminal pngcairo size 1750,900 enhanced font 'Verdana,10'
@@ -117,7 +120,7 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
   set xtics nomirror scale 0 rotate by -55
   set timefmt '%Y-%m-%d'
   set xrange [*:'$CURRENT_MONTH_START']
-  set yrange [200:2200]
+  set yrange [$min_exp:$max_exp]
   set y2range [-5000:6000]
   set grid ytics
 
@@ -139,7 +142,7 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
 
   plot \
     "graph3_monthly_expense.txt" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red" axes x1y2, \
-                     '' using 1:2:2 with labels left font "Courier,12" rotate by 0 offset 1,0 textcolor "red" notitle axes x1y2, \
+                     '' using 1:2:3 with labels left font "Courier,12" rotate by 0 offset 1,0 textcolor "red" notitle axes x1y2, \
     "ledger_monthly_allowance.txt" using 1:2 with linespoints title "Expense:Allowance" ls 2 linecolor rgb "#ff0000", \
     "ledger_monthly_entertainment.txt" using 1:2 with linespoints title "Expense:Entertainment" ls 3 linecolor rgb "#00aa00", \
                      '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#00aa00" notitle, \

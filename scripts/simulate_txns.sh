@@ -15,6 +15,7 @@ RANDOM_SAL="$(($SALARY_MIN + $RANDOM % ($SALARY_MAX-$SALARY_MIN)))"
 DEFAULT_EXPENSE_MIN=2
 DEFAULT_EXPENSE_MAX=20
 
+RANDOM_ALO_EXP="$(($DEFAULT_EXPENSE_MIN + $RANDOM % ($DEFAULT_EXPENSE_MAX-$DEFAULT_EXPENSE_MIN)))"
 RANDOM_ENT_EXP="$(($DEFAULT_EXPENSE_MIN + $RANDOM % ($DEFAULT_EXPENSE_MAX-$DEFAULT_EXPENSE_MIN)))"
 RANDOM_GRO_EXP="$(($DEFAULT_EXPENSE_MIN + $RANDOM % ($DEFAULT_EXPENSE_MAX-$DEFAULT_EXPENSE_MIN)))"
 RANDOM_HEA_EXP="$(($DEFAULT_EXPENSE_MIN + $RANDOM % ($DEFAULT_EXPENSE_MAX-$DEFAULT_EXPENSE_MIN)))"
@@ -27,6 +28,10 @@ echo "
 $cdate * \"Interest for Mar 2025\"
         Assets:Bank:HSBC:Savings         $RANDOM_SAL GBP
         Income:Salary
+
+$cdate * \"Allowance for $cdate\"
+        Assets:Bank:HSBC:Savings         -$RANDOM_ALO_EXP GBP
+        Expenses:Allowance
 
 $cdate * \"Entertainment for $cdate\"
         Assets:Bank:HSBC:Savings         -$RANDOM_ENT_EXP GBP
