@@ -83,7 +83,6 @@ echo "Creating file $FOLDER/graph2_monthly_inc_exp.png"
   set rmargin 10
 
   plot \
-    500000 title "noticed on 2022-01-01 avg exp is 4k" lw 2 , \
     "graph2_monthly_income.txt" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \
                      '' using 1:2:2 with labels left font "Courier,12" rotate by 15 offset 1,1 textcolor "#3d3ded" notitle, \
     "graph2_monthly_expense.txt" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red", \
