@@ -26,7 +26,8 @@ fi
 
 CURRENCY=GBP
 yearlyexpenses=40000
-targe_amt=$((25*yearlyexpenses))
+targe_amt=$((40*yearlyexpenses))
+financialInd=$((25*yearlyexpenses))
 lean_FI=$((17*yearlyexpenses))
 half_FI=$((12*yearlyexpenses))
 FU_target=$((3*yearlyexpenses))
@@ -99,12 +100,14 @@ echo "Creating file in $FOLDER/ledger_projection.png"
 
   set arrow 1 from graph 0,first $half_FI to graph 1,first $half_FI nohead lc "red" dashtype 3 linewidth 2
   set label 1 at graph 0,first $half_FI "half FI" offset 0.5,1.0
-  set arrow 2 from graph 0,first $targe_amt to graph 1,first $targe_amt nohead lc "red" dashtype 3 linewidth 2
-  set label 2 at graph 0,first $targe_amt "FI" offset 0.5,1.0
+  set arrow 2 from graph 0,first $financialInd to graph 1,first $financialInd nohead lc "red" dashtype 3 linewidth 2
+  set label 2 at graph 0,first $financialInd "FI" offset 0.5,1.0
   set arrow 3 from graph 0,first $FU_target to graph 1,first $FU_target nohead linestyle 3
   set label 3 at graph 0,first $FU_target "FU" offset 0.5,1.0
   set arrow 4 from graph 0,first $lean_FI to graph 1,first $lean_FI nohead linestyle 4
   set label 4 at graph 0,first $lean_FI "Lean FI" offset 0.5,1.0
+  set arrow 5 from graph 0,first $targe_amt to graph 1,first $targe_amt nohead lc "red" dashtype 3 linewidth 2
+  set label 5 at graph 0,first $targe_amt "Target" offset 0.5,1.0
 
   plot \
     "graph1_assets.tmp"               using 1:2   with filledcurves x1 title "Assets" linecolor rgb "goldenrod", \
