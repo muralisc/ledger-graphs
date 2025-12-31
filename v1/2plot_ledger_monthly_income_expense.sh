@@ -9,8 +9,10 @@ shift #unset $2 if any
 shift #unset $1 if any
 
 ledger_run_date=$(date +%Y-%m-%d)
-FOLDER="/var/tmp/ledger/ledger_2_${ledger_run_date}"
+FOLDER="/var/tmp/ledger/ledger_monthly_income_expense"
+rm -rfv $FOLDER
 mkdir -p $FOLDER
+echo "$ledger_run_date" > "$FOLDER/ledger_run_date.txt"
 
 if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1280,720 persist"

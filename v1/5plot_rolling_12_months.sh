@@ -4,8 +4,10 @@ export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger
 export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
 
 ledger_run_date=$(date +%Y-%m-%d)
-FOLDER="/var/tmp/ledger/ledger_5_${ledger_run_date}"
+FOLDER="/var/tmp/ledger/ledger_rolling_12_months"
+rm -rfv $FOLDER
 mkdir -p $FOLDER
+echo "$ledger_run_date" > "$FOLDER/ledger_run_date.txt"
 
 if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1280,720 persist"
