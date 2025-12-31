@@ -28,14 +28,17 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
       -X GBP \
       -jsn reg \
       --plot-amount-format="$cdate %(abs(quantity(scrub(floor(display_amount)))))\n" \
-      '^Income' "$@" >> graph5_yearly_income.tmp
+      '^Income' "$@" >> graph5_yearly_income-parallel.tmp &
   ledger -f $LEDGER_FILE \
       --begin $(dateadd $cdate -1y) --end $cdate\
       -X GBP \
       -jsn reg \
       --plot-amount-format="$cdate %(abs(quantity(scrub(floor(display_amount))))) %(quantity(floor(display_amount*30)))\n" \
-      '^Expe' "$@" >> graph5_yearly_expense.tmp
+      '^Expe' "$@" >> graph5_yearly_expense-parallel.tmp &
 done
+wait
+sort graph5_yearly_income-parallel.tmp > graph5_yearly_income.tmp
+sort graph5_yearly_expense-parallel.tmp > graph5_yearly_expense.tmp
 
 echo "Creating file $FOLDER/graph5_yearly_inc_exp.png"
 (cat <<EOF) | gnuplot

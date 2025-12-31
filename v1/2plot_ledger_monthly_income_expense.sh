@@ -32,14 +32,17 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
       -X GBP \
       -jMn reg \
       --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-      '^Income' "$@" >> graph2_monthly_income.txt
+      '^Income' "$@" >> graph2_monthly_income-parallel.txt &
   ledger -f $LEDGER_FILE \
       --begin $cdate --end $(dateadd $cdate 1mo) \
       -X GBP \
       -jMn reg \
       --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-      '^Expe' "$@" >> graph2_monthly_expense.txt
+      '^Expe' "$@" >> graph2_monthly_expense-parallel.txt &
 done
+wait
+sort graph2_monthly_income-parallel.txt > graph2_monthly_income.txt
+sort graph2_monthly_expense-parallel.txt > graph2_monthly_expense.txt
 
 
 (cat <<EOF) | python3 | sort > graph2_monthly_savings.txt
@@ -71,6 +74,7 @@ echo "Creating file $FOLDER/graph2_monthly_inc_exp.png"
   set xdata time
   set timefmt "%Y-%m-%d"
   set format x "%d/%m/%Y-%b"
+  set format y "%'.0f"
   set xtics nomirror scale 0 rotate by -55
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
   set style line 12 lc rgb '#88ffccff' lt 1 lw 1.5
@@ -83,6 +87,7 @@ echo "Creating file $FOLDER/graph2_monthly_inc_exp.png"
   set grid xtics ytics ls 12
 
   set rmargin 10
+  set decimal locale
 
   plot \
     "graph2_monthly_income.txt" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \

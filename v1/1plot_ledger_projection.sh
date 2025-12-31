@@ -25,8 +25,8 @@ if [[ -z "$LEDGER_TERM" ]]; then
 fi
 
 CURRENCY=GBP
-yearlyexpenses=40000
-targe_amt=$((40*yearlyexpenses))
+yearlyexpenses=46000
+targe_amt=$((2*25*yearlyexpenses))
 financialInd=$((25*yearlyexpenses))
 lean_FI=$((17*yearlyexpenses))
 half_FI=$((12*yearlyexpenses))
@@ -36,9 +36,10 @@ pushd "$FOLDER" || return
 
 
 # get_past_years_assets
-net_yearly "graph1_assets.tmp" "^Assets" "9"
+net_yearly "graph1_assets.tmp" "^Assets" "9" &
 # get_past_years_expense
-net_yearly "graph1_expense.tmp" "^Expense" "8"
+net_yearly "graph1_expense.tmp" "^Expense" "8" &
+wait
 
 YEARLY_INTEREST=8
 dateEnd=2021-12 # First year of joining meta
@@ -54,16 +55,18 @@ echo "Monthly Savings Old at $dateEnd : $monthsav_old"
 
 
 # projection from end of 2020-11 at 2021 rate
-projection graph1_old_meta_compound.tmp "$avg_monthsav_2021_12" $targe_amt "2020-11-01"
+projection graph1_old_meta_compound.tmp "$avg_monthsav_2021_12" $targe_amt "2020-11-01" &
 
 # Projection from end of 2020-11 at 2020 rate
-projection graph1_old_cisco_compound.tmp "$monthsav_old" $targe_amt "2020-11-01"
+projection graph1_old_cisco_compound.tmp "$monthsav_old" $targe_amt "2020-11-01" &
 
 # Project from now at 2021 rate
-projection graph1_meta_compound.tmp "$avg_monthsav_2021_12" $targe_amt "$(date +%Y-%m-%d)"
+projection graph1_meta_compound.tmp "$avg_monthsav_2021_12" $targe_amt "$(date +%Y-%m-%d)" &
 
 # project from now at 2020 rate
-projection graph1_cisco_compound.tmp "$monthsav_old" $targe_amt "$(date +%Y-%m-%d)"
+projection graph1_cisco_compound.tmp "$monthsav_old" $targe_amt "$(date +%Y-%m-%d)" &
+
+wait
 
 
 echo "Creating file in $FOLDER/ledger_projection.png"
@@ -92,7 +95,6 @@ echo "Creating file in $FOLDER/ledger_projection.png"
   set style line 2 lc rgb '#dd181f' lt 1 lw 2 pt 5 pi -1 ps 1.5
   #linestyle for 3
   set style line 3 lc rgb '#dd181f' lt 1 lw 2 pt 3 pi -1 ps 1.5
-
   #linestyle for 5
   set style line 5 lc rgb '#00181f' lt 1 lw 2 pt 15 pi -1 ps 1.5
 
@@ -115,11 +117,11 @@ echo "Creating file in $FOLDER/ledger_projection.png"
     ""                      every 1   using 1:2:2 with labels font "Courier,12" rotate by 05 offset 0,0.5 textcolor linestyle 0 notitle, \
     "graph1_expense.tmp"              using 1:2   with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
     ""                                using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
-    "graph1_old_meta_compound.tmp"    using 1:2   with linespoints ls 1 title "Job Change Projection Meta" ,\
+    "graph1_old_meta_compound.tmp"    using 1:2   with linespoints ls 1 title "Job Change ProjectionCompound Meta" ,\
     ""                                using 1:2:2 with labels font "Courier,12" rotate by 1 offset 7,0 textcolor linestyle 0 notitle, \
-    "graph1_meta_compound.tmp"        using 1:2   with linespoints ls 2 title "Current ProjectionCompound", \
+    "graph1_meta_compound.tmp"        using 1:2   with linespoints ls 2 title "ProjectionCompound Meta", \
     ""                                using 1:2:2 with labels font "Courier,12" offset 0,1 textcolor linestyle 2 notitle, \
-    "graph1_old_cisco_compound.tmp"   using 1:2   with linespoints ls 3 title "Job Change Projection Cisco" ,\
+    "graph1_old_cisco_compound.tmp"   using 1:2   with linespoints ls 3 title "Job Change ProjectionCompound Cisco" ,\
     ""                                using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle, \
     "graph1_cisco_compound.tmp"       using 1:2   with linespoints ls 4 title "ProjectionCompound Cisco", \
     ""                                using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 4 notitle
