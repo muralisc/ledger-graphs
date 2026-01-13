@@ -19,6 +19,7 @@ fi
 
 
 pushd $FOLDER
+rm -rf *txt;
 cat /dev/null > ledger_monthly_allowance.txt
 cat /dev/null > ledger_monthly_entertainment.txt
 cat /dev/null > ledger_monthly_groceries.txt
@@ -27,7 +28,6 @@ cat /dev/null > ledger_monthly_housing.txt
 cat /dev/null > ledger_monthly_posessions.txt
 cat /dev/null > ledger_monthly_transport.txt
 cat /dev/null > ledger_monthly_utilities.txt
-
 cat /dev/null > graph3_monthly_expense.txt
 
 CURRENT_MONTH_START=$(date +"%Y-%m-01")
@@ -41,11 +41,11 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
 
   echo "monthly expense"
   ledger -f $LEDGER_FILE \
-      --begin $cdate --end $(dateadd $cdate 1mo) \
-      -X GBP \
-      -jMn reg \
-      --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount))))) %(abs(quantity(scrub(floor(display_amount))))).exp\n" \
-      '^Expe' "$@" >> graph3_monthly_expense.txt
+    --begin $cdate --end $(dateadd $cdate 1mo) \
+    -X GBP \
+    -jMn reg \
+    --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
+    '^Expe' "$@" >> graph3_monthly_expense.txt &
 
   echo "monthly allowance"
   ledger \
@@ -54,62 +54,73 @@ for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
     -X GBP \
     -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Allowance' >> ledger_monthly_allowance.txt
+    '^Expenses:Allowance' >> ledger_monthly_allowance.txt &
 
   echo "monthly entertainment"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Entertainment' >> ledger_monthly_entertainment.txt
+    '^Expenses:Entertainment' >> ledger_monthly_entertainment.txt &
 
   echo "monthly groceries"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Groceries' >> ledger_monthly_groceries.txt
+    '^Expenses:Groceries' >> ledger_monthly_groceries.txt &
 
   echo "monthly health"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Health' >> ledger_monthly_health.txt
+    '^Expenses:Health' >> ledger_monthly_health.txt &
 
   echo "monthly housing"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Housing' >> ledger_monthly_housing.txt
+    '^Expenses:Housing' >> ledger_monthly_housing.txt &
 
   echo "monthly posessions"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Posessions' >> ledger_monthly_posessions.txt
+    '^Expenses:Posessions' >> ledger_monthly_posessions.txt &
 
   echo "monthly transport"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
     --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
-    '^Expenses:Transport' >> ledger_monthly_transport.txt
+    '^Expenses:Transport' >> ledger_monthly_transport.txt &
 
   echo "monthly utilities"
   ledger \
     -f $LEDGER_FILE \
     --begin $cdate --end $(dateadd $cdate 1mo) -X GBP -jM reg \
-    --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount))))) %(abs(quantity(scrub(floor(display_amount))))).util\n" \
-    '^Expenses:Utilities' >> ledger_monthly_utilities.txt
+    --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_amount)))))\n" \
+    '^Expenses:Utilities' >> ledger_monthly_utilities.txt &
+  wait
 done
 
+awk '{sum+=$2; avg=sum/NR; print $1, avg, avg; date=$1; ma=avg} END{print date, ma, ma ".expense"}' graph3_monthly_expense.txt > graph3_monthly_expense_moving_average.txt
+awk '{sum+=$2; print $1, sum/NR}' ledger_monthly_utilities.txt > ledger_monthly_utilities_moving_avg.txt
+awk '{sum+=$2; print $1, sum/NR}' ledger_monthly_housing.txt > ledger_monthly_housing_moving_avg.txt
+awk '{sum+=$2; print $1, sum/NR}' ledger_monthly_health.txt > ledger_monthly_health_moving_avg.txt
+awk '{sum+=$2; print $1, sum/NR}' ledger_monthly_allowance.txt > ledger_monthly_allowance_moving_avg.txt
+awk '{sum+=$2; avg=sum/NR; print $1, avg, avg; date=$1; ma=avg} END{print date, ma, ma ".transport"}' ledger_monthly_transport.txt > ledger_monthly_transport_moving_avg.txt
+awk '{sum+=$2; print $1, sum/NR}' ledger_monthly_posessions.txt > ledger_monthly_posessions_moving_avg.txt
+awk '{sum+=$2; print $1, sum/NR}' ledger_monthly_entertainment.txt > ledger_monthly_entertainment_moving_avg.txt
+awk '{sum+=$2; print $1, sum/NR}' ledger_monthly_groceries.txt > ledger_monthly_groceries_moving_avg.txt
+
 min_exp=1000
-min_exp=$(awk 'BEGIN{min='$min_exp'}{if ($2<0+min) min=$2} END{print min}' ledger_monthly_entertainment.txt)
-min_exp=$(awk 'BEGIN{min='$min_exp'}{if ($2<0+min) min=$2} END{print min}' ledger_monthly_posessions.txt)
-max_exp=$(awk 'BEGIN{max=0}{if ($2>0+max) max=$2} END{print max}' ledger_monthly_housing.txt)
+min_exp=$(awk 'BEGIN{min='$min_exp'}{if ($2<0+min) min=$2} END{print min}' ledger_monthly_entertainment_moving_avg.txt)
+min_exp=$(awk 'BEGIN{min='$min_exp'}{if ($2<0+min) min=$2} END{print min}' ledger_monthly_posessions_moving_avg.txt)
+max_exp=$(awk 'BEGIN{max=0}{if ($2>0+max) max=$2} END{print max}' ledger_monthly_housing_moving_avg.txt)
 
 echo "Creating $FOLDER/ledger_monthly_payee.png"
 (cat <<EOF) | gnuplot
@@ -143,21 +154,21 @@ echo "Creating $FOLDER/ledger_monthly_payee.png"
   set title "Payee split $ledger_run_date"
 
   plot \
-    "graph3_monthly_expense.txt" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red" axes x1y2, \
+    "graph3_monthly_expense_moving_average.txt" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red" axes x1y2, \
                      '' using 1:2:3 with labels left font "Courier,12" rotate by 0 offset 1,0 textcolor "red" notitle axes x1y2, \
-    "ledger_monthly_allowance.txt" using 1:2 with linespoints title "Expense:Allowance" ls 2 linecolor rgb "#ff0000", \
-    "ledger_monthly_entertainment.txt" using 1:2 with linespoints title "Expense:Entertainment" ls 3 linecolor rgb "#00aa00", \
+    "ledger_monthly_allowance_moving_avg.txt" using 1:2 with linespoints title "Expense:Allowance" ls 2 linecolor rgb "#ff0000", \
+    "ledger_monthly_entertainment_moving_avg.txt" using 1:2 with linespoints title "Expense:Entertainment" ls 3 linecolor rgb "#00aa00", \
                      '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#00aa00" notitle, \
-    "ledger_monthly_groceries.txt" using 1:2 with linespoints title "Expense:Groceries" ls 4 linecolor rgb "#0000ff", \
+    "ledger_monthly_groceries_moving_avg.txt" using 1:2 with linespoints title "Expense:Groceries" ls 4 linecolor rgb "#0000ff", \
                      '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#0000ff" notitle, \
-    "ledger_monthly_health.txt" using 1:2 with linespoints title "Expense:Health" ls 5 linecolor rgb "#FF5733", \
-    "ledger_monthly_housing.txt" using 1:2 with linespoints title "Expense:Housing" ls 6 linecolor rgb "#af7ac5", \
+    "ledger_monthly_health_moving_avg.txt" using 1:2 with linespoints title "Expense:Health" ls 5 linecolor rgb "#FF5733", \
+    "ledger_monthly_housing_moving_avg.txt" using 1:2 with linespoints title "Expense:Housing" ls 6 linecolor rgb "#af7ac5", \
                      '' using 1:2:2 with labels left font "Courier,8" rotate by 15 offset 1,1 textcolor "#3d3ded" notitle, \
-    "ledger_monthly_posessions.txt" using 1:2 with linespoints title "Expense:Posessions" ls 7 linecolor rgb "#1abc9c", \
+    "ledger_monthly_posessions_moving_avg.txt" using 1:2 with linespoints title "Expense:Posessions" ls 7 linecolor rgb "#1abc9c", \
                      '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#1abc9c" notitle, \
-    "ledger_monthly_transport.txt" using 1:2 with linespoints title "Expense:Transport" ls 8 linecolor rgb "#d4ac0d", \
-                     '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#d4ac0d" notitle, \
-    "ledger_monthly_utilities.txt" using 1:2 with linespoints title "Expense:Utilities" ls 9 linecolor rgb "#283747", \
-                     '' using 1:2:3 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#283747" notitle
+    "ledger_monthly_transport_moving_avg.txt" using 1:2 with linespoints title "Expense:Transport" ls 8 linecolor rgb "#d4ac0d", \
+                     '' using 1:2:3 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#d4ac0d" notitle, \
+    "ledger_monthly_utilities_moving_avg.txt" using 1:2 with linespoints title "Expense:Utilities" ls 9 linecolor rgb "#283747", \
+                     '' using 1:2:2 with labels left font "Courier,14" rotate by 15 offset 1,1 textcolor "#283747" notitle
 EOF
 popd
