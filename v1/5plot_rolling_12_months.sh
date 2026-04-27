@@ -53,6 +53,7 @@ echo "Creating file $FOLDER/graph5_yearly_inc_exp.png"
   set xtics nomirror scale 0 rotate by -55
   set grid back ls 12
   set title "Yearly Income and Expenses as on ${ledger_run_date}"
+  set decimal locale "en_US.UTF-8"
   set ylabel "Amount"
   set rmargin 10
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
@@ -60,7 +61,7 @@ echo "Creating file $FOLDER/graph5_yearly_inc_exp.png"
     "graph5_yearly_income.tmp" using 1:2 with linespoints title "Income" ls 1 linecolor rgb "#ad8c11", \
                      '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle, \
     "graph5_yearly_expense.tmp" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red", \
-                     '' using 1:2:2 with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle, \
+                     '' using 1:2:(sprintf("%'g", \$2)) with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle, \
                      '' using 1:3   with linespoints title "Expense x 30" ls 1 linecolor rgb "red"
 EOF
 popd
