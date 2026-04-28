@@ -88,6 +88,7 @@ echo "Creating file in $FOLDER/ledger_projection.png"
   set title "Wealthgrow on $LEDGER_RUN_DATE"
   set ylabel "Amount"
   set style fill transparent solid 0.6 noborder
+  set decimal locale "en_US.UTF-8"
 
   #linestyle for 1
   set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
