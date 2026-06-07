@@ -13,8 +13,11 @@ then
 fi
 
 
-export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
-export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
+export LEDGER_FILE=$1
+export LEDGER_PRICE_DB=$2
+
+shift #unset $2 if any
+shift #unset $1 if any
 
 LEDGER_RUN_DATE=$(date +%Y-%m-%d)
 FOLDER="/var/tmp/ledger/ledger_1_${LEDGER_RUN_DATE}"
@@ -25,12 +28,12 @@ if [[ -z "$LEDGER_TERM" ]]; then
 fi
 
 CURRENCY=GBP
-yearlyexpenses=46000
-targe_amt=$((2*25*yearlyexpenses))
-financialInd=$((25*yearlyexpenses))
-lean_FI=$((17*yearlyexpenses))
-half_FI=$((12*yearlyexpenses))
-FU_target=$((3*yearlyexpenses))
+yearly_expenses_gbp=46000
+targe_amt=$((2*25*yearly_expenses_gbp))
+financialInd=$((25*yearly_expenses_gbp))
+lean_FI=$((17*yearly_expenses_gbp))
+half_FI=$((12*yearly_expenses_gbp))
+FU_target=$((3*yearly_expenses_gbp))
 
 pushd "$FOLDER" || return
 

@@ -1,7 +1,10 @@
+#!/bin/bash
 
+export LEDGER_FILE=$1
+export LEDGER_PRICE_DB=$2
 
-export LEDGER_FILE=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/ledger.main.txt
-export LEDGER_PRICE_DB=$HOME/shared_folders/minimal/Pensieve/textfiles/ledger/pricedb.txt
+shift #unset $2 if any
+shift #unset $1 if any
 
 ledger_run_date=$(date +%Y-%m-%d)
 FOLDER="/var/tmp/ledger/ledger_rolling_12_months"
