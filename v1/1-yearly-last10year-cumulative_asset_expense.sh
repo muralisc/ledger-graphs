@@ -28,12 +28,14 @@ if [[ -z "$LEDGER_TERM" ]]; then
 fi
 
 CURRENCY=GBP
-yearly_expenses_gbp=46000
+yearly_expenses_gbp=${YEARLY_EXPENSES_GBP:-46000}
 targe_amt=$((2*25*yearly_expenses_gbp))
 financialInd=$((25*yearly_expenses_gbp))
 lean_FI=$((17*yearly_expenses_gbp))
 half_FI=$((12*yearly_expenses_gbp))
 FU_target=$((3*yearly_expenses_gbp))
+
+LEDGER_RUN_DATE=${LEDGER_RUN_DATE:-$(date +%Y-%m-%d)}
 
 pushd "$FOLDER" || return
 
@@ -45,28 +47,28 @@ net_yearly "graph1_expense.tmp" "^Expense" "8" &
 wait
 
 YEARLY_INTEREST=8
-dateEnd=2021-12 # First year of joining meta
+dateEnd=${MILESTONE_DATE_NEW_JOB:-2021-12}
 echo "Calculating avg monthly savings from -12m to $dateEnd"
-avg_monthsav_2021_12=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST)
-echo "Monthly Savings at $dateEnd : $avg_monthsav_2021_12"
+avg_monthsav_new_job=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST)
+echo "Monthly Savings at $dateEnd : $avg_monthsav_new_job"
 
-dateEnd=2020-11 # Last year of cisco
+dateEnd=${MILESTONE_DATE_OLD_JOB:-2020-11}
 echo "Calculating avg monthly savings from -12m to $dateEnd"
-monthsav_old=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST) # avg cisco savings
+monthsav_old=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST)
 echo "Monthly Savings Old at $dateEnd : $monthsav_old"
 
 
 
-# projection from end of 2020-11 at 2021 rate
-projection graph1_old_meta_compound.tmp "$avg_monthsav_2021_12" $targe_amt "2020-11-01" &
+# projection from end of old-job milestone at new-job rate
+projection graph1_old_meta_compound.tmp "$avg_monthsav_new_job" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
 
-# Projection from end of 2020-11 at 2020 rate
-projection graph1_old_cisco_compound.tmp "$monthsav_old" $targe_amt "2020-11-01" &
+# Projection from end of old-job milestone at old-job rate
+projection graph1_old_cisco_compound.tmp "$monthsav_old" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
 
-# Project from now at 2021 rate
-projection graph1_meta_compound.tmp "$avg_monthsav_2021_12" $targe_amt "$(date +%Y-%m-%d)" &
+# Project from now at new-job rate
+projection graph1_meta_compound.tmp "$avg_monthsav_new_job" $targe_amt "$(date +%Y-%m-%d)" &
 
-# project from now at 2020 rate
+# Project from now at old-job rate
 projection graph1_cisco_compound.tmp "$monthsav_old" $targe_amt "$(date +%Y-%m-%d)" &
 
 wait
