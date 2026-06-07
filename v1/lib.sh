@@ -40,7 +40,7 @@ function net_yearly() {
     FILTER="$2"
     loop_max="$3"
     CURRENCY="GBP"
-    date_start=$(date +"%Y-%m-%d")
+    date_start=${LEDGER_TEST_DATE:-$(date +"%Y-%m-%d")}
 
     cat /dev/null > "$FILENAME"
     loop=1

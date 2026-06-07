@@ -8,7 +8,7 @@ shift #unset $3 if any
 shift #unset $2 if any
 shift #unset $1 if any
 
-ledger_run_date=$(date +%Y-%m-%d)
+ledger_run_date=${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}
 mkdir -p "$FOLDER"
 echo "$ledger_run_date" > "$FOLDER/ledger_run_date.txt"
 
@@ -20,9 +20,9 @@ pushd $FOLDER
 cat /dev/null > graph5_yearly_income.tmp
 cat /dev/null > graph5_yearly_expense.tmp
 
-CURRENT_MONTH_START=$(date +"%Y-%m-01")
+CURRENT_MONTH_START=$(date -d "$ledger_run_date" +"%Y-%m-01")
 TIME_DIFF=1y
-START_TIME=$(dateadd $(date +"%Y-%m-01") -1y --format="%Y-%m-%d")
+START_TIME=$(dateadd "$CURRENT_MONTH_START" -1y --format="%Y-%m-%d")
 
 for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
   ledger \

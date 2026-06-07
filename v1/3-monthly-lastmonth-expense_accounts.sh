@@ -11,7 +11,7 @@ shift #unset $2 if any
 shift #unset $1 if any
 
 
-ledger_run_date=$(date +%Y-%m-%d)
+ledger_run_date=${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}
 mkdir -p "$FOLDER"
 
 if [[ -z "$LEDGER_TERM" ]]; then
@@ -31,9 +31,9 @@ cat /dev/null > ledger_monthly_transport.txt
 cat /dev/null > ledger_monthly_utilities.txt
 cat /dev/null > graph3_monthly_expense.txt
 
-CURRENT_MONTH_START=$(date +"%Y-%m-01")
+CURRENT_MONTH_START=$(date -d "$ledger_run_date" +"%Y-%m-01")
 TIME_DIFF=13mo
-START_TIME=$(dateadd $(date +"%Y-%m-01") -$TIME_DIFF --format="%Y-%m-%d")
+START_TIME=$(dateadd "$CURRENT_MONTH_START" -$TIME_DIFF --format="%Y-%m-%d")
 
 for cdate in $(dateseq $START_TIME 1mo $CURRENT_MONTH_START); do
 

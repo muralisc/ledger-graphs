@@ -7,7 +7,7 @@ shift #unset $2 if any
 shift #unset $1 if any
 
 
-ledger_run_date=$(date +%Y-%m-%d)
+ledger_run_date=${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}
 mkdir -p "$FOLDER"
 if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1280,720 persist"

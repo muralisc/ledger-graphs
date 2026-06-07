@@ -35,7 +35,7 @@ lean_FI=$((17*yearly_expenses_gbp))
 half_FI=$((12*yearly_expenses_gbp))
 FU_target=$((3*yearly_expenses_gbp))
 
-LEDGER_RUN_DATE=${LEDGER_RUN_DATE:-$(date +%Y-%m-%d)}
+LEDGER_RUN_DATE=${LEDGER_RUN_DATE:-${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}}
 
 pushd "$FOLDER" || return
 
@@ -66,10 +66,10 @@ projection graph1_old_meta_compound.tmp "$avg_monthsav_new_job" $targe_amt "${MI
 projection graph1_old_cisco_compound.tmp "$monthsav_old" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
 
 # Project from now at new-job rate
-projection graph1_meta_compound.tmp "$avg_monthsav_new_job" $targe_amt "$(date +%Y-%m-%d)" &
+projection graph1_meta_compound.tmp "$avg_monthsav_new_job" $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
 
 # Project from now at old-job rate
-projection graph1_cisco_compound.tmp "$monthsav_old" $targe_amt "$(date +%Y-%m-%d)" &
+projection graph1_cisco_compound.tmp "$monthsav_old" $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
 
 wait
 
