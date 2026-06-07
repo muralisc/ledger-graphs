@@ -63,13 +63,13 @@ echo "Monthly Savings Old at $dateEnd : $monthsav_old"
 projection graph1_newjob_compound_from_old_job_milestone.tmp "$avg_monthsav_new_job" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
 
 # Projection from end of old-job milestone at old-job rate
-projection graph1_old_cisco_compound.tmp "$monthsav_old" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
+projection graph1_oldjob_compound_from_old_job_milestone.tmp "$monthsav_old" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
 
 # Project from now at new-job rate
 projection graph1_newjob_compound_from_now.tmp "$avg_monthsav_new_job" $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
 
 # Project from now at old-job rate
-projection graph1_cisco_compound.tmp "$monthsav_old" $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
+projection graph1_oldjob_compound_from_now.tmp "$monthsav_old" $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
 
 wait
 
@@ -127,9 +127,9 @@ echo "Creating file in $FOLDER/ledger_projection.png"
     ""                                using 1:2:2 with labels font "Courier,12" rotate by 1 offset 7,0 textcolor linestyle 0 notitle, \
     "graph1_newjob_compound_from_now.tmp" using 1:2   with linespoints ls 2 title "ProjectionCompound at NewJob Rate", \
     ""                                using 1:2:2 with labels font "Courier,12" offset 0,1 textcolor linestyle 2 notitle, \
-    "graph1_old_cisco_compound.tmp"   using 1:2   with linespoints ls 3 title "Job Change ProjectionCompound at OldJob Rate" ,\
+    "graph1_oldjob_compound_from_old_job_milestone.tmp"   using 1:2   with linespoints ls 3 title "Job Change ProjectionCompound at OldJob Rate" ,\
     ""                                using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle, \
-    "graph1_cisco_compound.tmp"       using 1:2   with linespoints ls 4 title "ProjectionCompound at OldJob Rate", \
+    "graph1_oldjob_compound_from_now.tmp"       using 1:2   with linespoints ls 4 title "ProjectionCompound at OldJob Rate", \
     ""                                using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 4 notitle
 EOF
 popd || return
