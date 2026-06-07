@@ -38,13 +38,4429 @@ account Income:SBI:Interest
 account Income:Schwab:Interest
 
 ; ── Opening balances ──────────────────────────────────────────────────────
-2024-06-01 * "Opening Balance"
+2016-06-01 * "Opening Balance"
     Assets:Bank:HSBC:Savings    10000 GBP
     Assets:Bank:SBI:Savings     500000 INR
     Assets:Investments:CharlesSchwab:Cash    5000 USD
     Equity:OpeningBalance
 
 ; ── Monthly bulk transactions ─────────────────────────────────────────────
+2016-06-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2016-06-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2016-06-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2016-06-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2016-06-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2016-06-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2016-06-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2016-06-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2016-06-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2016-06-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2016-06-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2016-07-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2016-07-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2016-07-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2016-07-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2016-07-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2016-07-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2016-07-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2016-07-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2016-07-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2016-07-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2016-07-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2016-07-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2016-08-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2016-08-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2016-08-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2016-08-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2016-08-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2016-08-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2016-08-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2016-08-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2016-08-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2016-08-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2016-08-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2016-08-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2016-09-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2016-09-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2016-09-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2016-09-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2016-09-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2016-09-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2016-09-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2016-09-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2016-09-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2016-09-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2016-09-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2016-10-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2016-10-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2016-10-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2016-10-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2016-10-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2016-10-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2016-10-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2016-10-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2016-10-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2016-10-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2016-10-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2016-11-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2016-11-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2016-11-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2016-11-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2016-11-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2016-11-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2016-11-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2016-11-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2016-11-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2016-11-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2016-11-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2016-11-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2016-12-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2016-12-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2016-12-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2016-12-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2016-12-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2016-12-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2016-12-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2016-12-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2016-12-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2016-12-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2016-12-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-01-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-01-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-01-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-01-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-01-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-01-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-01-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-01-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-01-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-01-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-01-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-01-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2017-02-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-02-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-02-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-02-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-02-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-02-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-02-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-02-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-02-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-02-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-02-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-02-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2017-03-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-03-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-03-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-03-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-03-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-03-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-03-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-03-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-03-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-03-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-03-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-04-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-04-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-04-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-04-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-04-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-04-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-04-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-04-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-04-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-04-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-04-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-05-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-05-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-05-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-05-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-05-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-05-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-05-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-05-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-05-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-05-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-05-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-05-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2017-06-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-06-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-06-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-06-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-06-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-06-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-06-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-06-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-06-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-06-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-06-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-07-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-07-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-07-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-07-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-07-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-07-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-07-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-07-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-07-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-07-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-07-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-07-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2017-08-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-08-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-08-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-08-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-08-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-08-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-08-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-08-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-08-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-08-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-08-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-08-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2017-09-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-09-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-09-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-09-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-09-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-09-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-09-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-09-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-09-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-09-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-09-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-10-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-10-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-10-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-10-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-10-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-10-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-10-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-10-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-10-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-10-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-10-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-11-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-11-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-11-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-11-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-11-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-11-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-11-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-11-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-11-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-11-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-11-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2017-11-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2017-12-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2017-12-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2017-12-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2017-12-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2017-12-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2017-12-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2017-12-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2017-12-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2017-12-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2017-12-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2017-12-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-01-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-01-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-01-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-01-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-01-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-01-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-01-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-01-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-01-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-01-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-01-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-01-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2018-02-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-02-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-02-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-02-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-02-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-02-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-02-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-02-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-02-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-02-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-02-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-02-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2018-03-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-03-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-03-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-03-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-03-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-03-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-03-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-03-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-03-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-03-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-03-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-04-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-04-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-04-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-04-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-04-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-04-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-04-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-04-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-04-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-04-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-04-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-05-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-05-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-05-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-05-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-05-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-05-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-05-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-05-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-05-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-05-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-05-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-05-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2018-06-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-06-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-06-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-06-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-06-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-06-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-06-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-06-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-06-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-06-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-06-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-07-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-07-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-07-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-07-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-07-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-07-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-07-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-07-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-07-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-07-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-07-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-07-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2018-08-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-08-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-08-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-08-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-08-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-08-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-08-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-08-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-08-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-08-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-08-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-08-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2018-09-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-09-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-09-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-09-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-09-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-09-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-09-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-09-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-09-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-09-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-09-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-10-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-10-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-10-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-10-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-10-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-10-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-10-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-10-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-10-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-10-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-10-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-11-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-11-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-11-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-11-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-11-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-11-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-11-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-11-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-11-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-11-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-11-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2018-11-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2018-12-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2018-12-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2018-12-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2018-12-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2018-12-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2018-12-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2018-12-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2018-12-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2018-12-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2018-12-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2018-12-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-01-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-01-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-01-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-01-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-01-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-01-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-01-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-01-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-01-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-01-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-01-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-01-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2019-02-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-02-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-02-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-02-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-02-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-02-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-02-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-02-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-02-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-02-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-02-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-02-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2019-03-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-03-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-03-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-03-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-03-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-03-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-03-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-03-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-03-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-03-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-03-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-04-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-04-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-04-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-04-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-04-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-04-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-04-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-04-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-04-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-04-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-04-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-05-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-05-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-05-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-05-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-05-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-05-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-05-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-05-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-05-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-05-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-05-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-05-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2019-06-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-06-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-06-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-06-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-06-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-06-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-06-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-06-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-06-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-06-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-06-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-07-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-07-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-07-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-07-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-07-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-07-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-07-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-07-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-07-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-07-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-07-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-07-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2019-08-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-08-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-08-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-08-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-08-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-08-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-08-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-08-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-08-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-08-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-08-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-08-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2019-09-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-09-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-09-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-09-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-09-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-09-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-09-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-09-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-09-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-09-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-09-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-10-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-10-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-10-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-10-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-10-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-10-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-10-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-10-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-10-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-10-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-10-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-11-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-11-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-11-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-11-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-11-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-11-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-11-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-11-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-11-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-11-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-11-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2019-11-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2019-12-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2019-12-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2019-12-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2019-12-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2019-12-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2019-12-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2019-12-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2019-12-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2019-12-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2019-12-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2019-12-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-01-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-01-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-01-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-01-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-01-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-01-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-01-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-01-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-01-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-01-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-01-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-01-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2020-02-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-02-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-02-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-02-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-02-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-02-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-02-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-02-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-02-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-02-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-02-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-02-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2020-03-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-03-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-03-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-03-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-03-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-03-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-03-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-03-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-03-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-03-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-03-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-04-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-04-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-04-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-04-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-04-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-04-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-04-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-04-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-04-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-04-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-04-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-05-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-05-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-05-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-05-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-05-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-05-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-05-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-05-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-05-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-05-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-05-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-05-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2020-06-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-06-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-06-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-06-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-06-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-06-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-06-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-06-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-06-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-06-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-06-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-07-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-07-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-07-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-07-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-07-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-07-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-07-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-07-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-07-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-07-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-07-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-07-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2020-08-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-08-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-08-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-08-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-08-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-08-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-08-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-08-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-08-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-08-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-08-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-08-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2020-09-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-09-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-09-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-09-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-09-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-09-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-09-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-09-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-09-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-09-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-09-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-10-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-10-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-10-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-10-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-10-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-10-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-10-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-10-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-10-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-10-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-10-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-11-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-11-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-11-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-11-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-11-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-11-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-11-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-11-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-11-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-11-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-11-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2020-11-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2020-12-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2020-12-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2020-12-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2020-12-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2020-12-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2020-12-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2020-12-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2020-12-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2020-12-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2020-12-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2020-12-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-01-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-01-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-01-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-01-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-01-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-01-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-01-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-01-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-01-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-01-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-01-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-01-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2021-02-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-02-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-02-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-02-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-02-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-02-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-02-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-02-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-02-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-02-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-02-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-02-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2021-03-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-03-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-03-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-03-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-03-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-03-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-03-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-03-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-03-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-03-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-03-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-04-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-04-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-04-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-04-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-04-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-04-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-04-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-04-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-04-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-04-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-04-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-05-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-05-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-05-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-05-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-05-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-05-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-05-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-05-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-05-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-05-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-05-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-05-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2021-06-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-06-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-06-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-06-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-06-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-06-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-06-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-06-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-06-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-06-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-06-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-07-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-07-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-07-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-07-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-07-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-07-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-07-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-07-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-07-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-07-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-07-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-07-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2021-08-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-08-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-08-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-08-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-08-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-08-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-08-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-08-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-08-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-08-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-08-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-08-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2021-09-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-09-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-09-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-09-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-09-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-09-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-09-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-09-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-09-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-09-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-09-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-10-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-10-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-10-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-10-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-10-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-10-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-10-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-10-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-10-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-10-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-10-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-11-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-11-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-11-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-11-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-11-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-11-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-11-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-11-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-11-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-11-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-11-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2021-11-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2021-12-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2021-12-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2021-12-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2021-12-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2021-12-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2021-12-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2021-12-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2021-12-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2021-12-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2021-12-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2021-12-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-01-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-01-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-01-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-01-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-01-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-01-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-01-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-01-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-01-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-01-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-01-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-01-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2022-02-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-02-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-02-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-02-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-02-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-02-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-02-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-02-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-02-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-02-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-02-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-02-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2022-03-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-03-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-03-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-03-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-03-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-03-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-03-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-03-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-03-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-03-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-03-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-04-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-04-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-04-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-04-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-04-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-04-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-04-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-04-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-04-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-04-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-04-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-05-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-05-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-05-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-05-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-05-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-05-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-05-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-05-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-05-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-05-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-05-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-05-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2022-06-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-06-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-06-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-06-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-06-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-06-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-06-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-06-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-06-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-06-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-06-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-07-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-07-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-07-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-07-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-07-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-07-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-07-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-07-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-07-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-07-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-07-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-07-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2022-08-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-08-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-08-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-08-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-08-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-08-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-08-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-08-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-08-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-08-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-08-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-08-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2022-09-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-09-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-09-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-09-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-09-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-09-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-09-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-09-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-09-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-09-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-09-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-10-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-10-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-10-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-10-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-10-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-10-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-10-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-10-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-10-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-10-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-10-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-11-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-11-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-11-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-11-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-11-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-11-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-11-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-11-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-11-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-11-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-11-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2022-11-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2022-12-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2022-12-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2022-12-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2022-12-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2022-12-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2022-12-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2022-12-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2022-12-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2022-12-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2022-12-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2022-12-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-01-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-01-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-01-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-01-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-01-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-01-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-01-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-01-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-01-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-01-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-01-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-01-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2023-02-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-02-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-02-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-02-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-02-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-02-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-02-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-02-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-02-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-02-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-02-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-02-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2023-03-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-03-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-03-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-03-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-03-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-03-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-03-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-03-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-03-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-03-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-03-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-04-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-04-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-04-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-04-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-04-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-04-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-04-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-04-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-04-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-04-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-04-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-05-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-05-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-05-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-05-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-05-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-05-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-05-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-05-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-05-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-05-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-05-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-05-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2023-06-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-06-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-06-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-06-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-06-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-06-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-06-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-06-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-06-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-06-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-06-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-07-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-07-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-07-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-07-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-07-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-07-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-07-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-07-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-07-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-07-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-07-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-07-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2023-08-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-08-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-08-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-08-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-08-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-08-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-08-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-08-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-08-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-08-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-08-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-08-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2023-09-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-09-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-09-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-09-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-09-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-09-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-09-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-09-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-09-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-09-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-09-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-10-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-10-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-10-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-10-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-10-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-10-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-10-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-10-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-10-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-10-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-10-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-11-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-11-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-11-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-11-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-11-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-11-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-11-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-11-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-11-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-11-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-11-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2023-11-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2023-12-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2023-12-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2023-12-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2023-12-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2023-12-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2023-12-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2023-12-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2023-12-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2023-12-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2023-12-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2023-12-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2024-01-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2024-01-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2024-01-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2024-01-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2024-01-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2024-01-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2024-01-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2024-01-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2024-01-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2024-01-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2024-01-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2024-01-01 * "Buy GOOG"
+    Assets:Investments:CharlesSchwab:GOOG    1 GOOG @ 175 USD
+    Assets:Investments:CharlesSchwab:Cash    -175 USD
+
+2024-02-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2024-02-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2024-02-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2024-02-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2024-02-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2024-02-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2024-02-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2024-02-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2024-02-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2024-02-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2024-02-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2024-02-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
+2024-03-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2024-03-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2024-03-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2024-03-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2024-03-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2024-03-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2024-03-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2024-03-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2024-03-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2024-03-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2024-03-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2024-04-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2024-04-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2024-04-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2024-04-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2024-04-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2024-04-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2024-04-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2024-04-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2024-04-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2024-04-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2024-04-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2024-05-01 * "Salary"
+    Assets:Bank:HSBC:Savings    3000 GBP
+    Income:Salary
+
+2024-05-01 * "Rent"
+    Assets:Bank:HSBC:Savings    -900 GBP
+    Expenses:Housing
+
+2024-05-01 * "Supermarket"
+    Assets:Bank:HSBC:Savings    -350 GBP
+    Expenses:Groceries
+
+2024-05-01 * "Electricity+Gas"
+    Assets:Bank:HSBC:Savings    -140 GBP
+    Expenses:Utilities
+
+2024-05-01 * "Train pass"
+    Assets:Bank:HSBC:Savings    -180 GBP
+    Expenses:Transport
+
+2024-05-01 * "Gym"
+    Assets:Bank:HSBC:Savings    -40 GBP
+    Expenses:Health
+
+2024-05-01 * "Allowance"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Allowance
+
+2024-05-01 * "Netflix+Spotify"
+    Assets:Bank:HSBC:Savings    -50 GBP
+    Expenses:Entertainment
+
+2024-05-01 * "Online purchase"
+    Assets:Bank:HSBC:Savings    -80 GBP
+    Expenses:Posessions
+
+2024-05-01 * "SBI Savings Interest"
+    Assets:Bank:SBI:Savings    1250 INR
+    Income:SBI:Interest
+
+2024-05-01 * "Schwab Interest"
+    Assets:Investments:CharlesSchwab:Cash    17 USD
+    Income:Schwab:Interest
+
+2024-05-01 * "Buy VUAG ETF"
+    Assets:Investments:Fidelity:ISA:VUAG    10 VUAG @ 90 GBP
+    Assets:Bank:HSBC:Savings    -900 GBP
+
 2024-06-01 * "Salary"
     Assets:Bank:HSBC:Savings    3000 GBP
     Income:Salary

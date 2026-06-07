@@ -21,7 +21,7 @@ fi
 TODAY=$(date +"%Y-%m-%d")
 MONTH_START=$(date +"%Y-%m-01")
 DAILY_START=$(dateadd "$MONTH_START" -3mo --format="%Y-%m-%d")
-MONTHLY_START=$(dateadd "$MONTH_START" -24mo --format="%Y-%m-%d")
+MONTHLY_START=$(dateadd "$MONTH_START" -120mo --format="%Y-%m-%d")
 BONUS_MONTH=$(dateadd "$MONTH_START" -18mo --format="%Y-%m-01")
 HIGH_HEALTH_MONTH=$(dateadd "$MONTH_START" -12mo --format="%Y-%m-01")
 BIG_PURCHASE_MONTH=$(dateadd "$MONTH_START" -9mo --format="%Y-%m-01")
