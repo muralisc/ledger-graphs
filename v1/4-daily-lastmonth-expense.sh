@@ -17,9 +17,15 @@ fi
 pushd $FOLDER
 cat /dev/null > graph4_daily_lastmonth_expense.tmp
 
+last_date=$(ledger -f "$LEDGER_FILE" reg Expenses \
+    --format="%(format_date(date, \"%Y-%m-%d\"))\n" \
+    --sort date | tail -1)
+BEGIN_DATE=$(date -d "$last_date" +"%Y-%m-01")
+
 ledger -f $LEDGER_FILE \
     -X GBP \
     reg \
+    --begin "$BEGIN_DATE" \
     --amount-data \
     --daily \
     --collapse \
