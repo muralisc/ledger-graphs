@@ -4,14 +4,15 @@
 
 export LEDGER_FILE=$1
 export LEDGER_PRICE_DB=$2
+export FOLDER="$3"
 
+shift #unset $3 if any
 shift #unset $2 if any
 shift #unset $1 if any
 
 
 ledger_run_date=$(date +%Y-%m-%d)
-FOLDER="/var/tmp/ledger/ledger_3_${ledger_run_date}"
-mkdir -p $FOLDER
+mkdir -p "$FOLDER"
 
 if [[ -z "$LEDGER_TERM" ]]; then
   LEDGER_TERM="qt size 1280,720 persist"
