@@ -4,11 +4,19 @@
 # Usage:
 #   bash run_tests.sh                  # compare against golden files
 #   bash run_tests.sh --update-golden  # overwrite golden files with current output
+#   bash run_tests.sh --keep-work-dir  # keep temp output dir for inspection
+#   bash run_tests.sh --update-golden --keep-work-dir  # flags can be combined
 
 set -uo pipefail
 
 UPDATE_GOLDEN=false
-[[ "${1:-}" == "--update-golden" ]] && UPDATE_GOLDEN=true
+KEEP_WORK_DIR=false
+for arg in "$@"; do
+    case "$arg" in
+        --update-golden)  UPDATE_GOLDEN=true ;;
+        --keep-work-dir)  KEEP_WORK_DIR=true ;;
+    esac
+done
 
 TESTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 V1_DIR="$(dirname "$TESTS_DIR")/v1"
@@ -16,7 +24,14 @@ TEST_LEDGER="$TESTS_DIR/test.ledger"
 TEST_PRICEDB="$TESTS_DIR/test.pricedb"
 GOLDEN_DIR="$TESTS_DIR/golden"
 WORK_DIR=$(mktemp -d)
-trap 'rm -rf "$WORK_DIR"' EXIT
+cleanup() {
+    if $KEEP_WORK_DIR; then
+        echo "Work dir kept at: $WORK_DIR"
+    else
+        rm -rf "$WORK_DIR"
+    fi
+}
+trap cleanup EXIT
 
 # Fixed reference date — must match the test.ledger window.
 # Regenerate golden files (create_golden.sh) after changing this.
