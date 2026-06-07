@@ -2,14 +2,14 @@
 
 export LEDGER_FILE=$1
 export LEDGER_PRICE_DB=$2
+export FOLDER="$3"
 
+shift #unset $3 if any
 shift #unset $2 if any
 shift #unset $1 if any
 
 ledger_run_date=$(date +%Y-%m-%d)
-FOLDER="/var/tmp/ledger/ledger_rolling_12_months"
-rm -rfv $FOLDER
-mkdir -p $FOLDER
+mkdir -p "$FOLDER"
 echo "$ledger_run_date" > "$FOLDER/ledger_run_date.txt"
 
 if [[ -z "$LEDGER_TERM" ]]; then
