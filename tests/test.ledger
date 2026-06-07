@@ -19,6 +19,24 @@ commodity VUAG
 commodity GOOG
    note Alphabet Inc. (USD)
 
+account Assets:Bank:HSBC:Savings
+account Assets:Bank:SBI:Savings
+account Assets:Investments:CharlesSchwab:Cash
+account Assets:Investments:CharlesSchwab:GOOG
+account Assets:Investments:Fidelity:ISA:VUAG
+account Equity:OpeningBalance
+account Expenses:Allowance
+account Expenses:Entertainment
+account Expenses:Groceries
+account Expenses:Health
+account Expenses:Housing
+account Expenses:Posessions
+account Expenses:Transport
+account Expenses:Utilities
+account Income:Salary
+account Income:SBI:Interest
+account Income:Schwab:Interest
+
 ; ── Opening balances ──────────────────────────────────────────────────────
 2024-06-01 * "Opening Balance"
     Assets:Bank:HSBC:Savings    10000 GBP
