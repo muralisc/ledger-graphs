@@ -96,9 +96,9 @@ run_script1() {
     local data_files=(
         graph1_assets.tmp
         graph1_expense.tmp
-        graph1_old_meta_compound.tmp
+        graph1_newjob_compound_from_old_job_milestone.tmp
         graph1_old_cisco_compound.tmp
-        graph1_meta_compound.tmp
+        graph1_newjob_compound_from_now.tmp
         graph1_cisco_compound.tmp
     )
     for f in "${data_files[@]}"; do

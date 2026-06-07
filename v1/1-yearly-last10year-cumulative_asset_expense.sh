@@ -60,13 +60,13 @@ echo "Monthly Savings Old at $dateEnd : $monthsav_old"
 
 
 # projection from end of old-job milestone at new-job rate
-projection graph1_old_meta_compound.tmp "$avg_monthsav_new_job" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
+projection graph1_newjob_compound_from_old_job_milestone.tmp "$avg_monthsav_new_job" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
 
 # Projection from end of old-job milestone at old-job rate
 projection graph1_old_cisco_compound.tmp "$monthsav_old" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
 
 # Project from now at new-job rate
-projection graph1_meta_compound.tmp "$avg_monthsav_new_job" $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
+projection graph1_newjob_compound_from_now.tmp "$avg_monthsav_new_job" $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
 
 # Project from now at old-job rate
 projection graph1_cisco_compound.tmp "$monthsav_old" $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
@@ -123,13 +123,13 @@ echo "Creating file in $FOLDER/ledger_projection.png"
     ""                      every 1   using 1:2:2 with labels font "Courier,12" rotate by 05 offset 0,0.5 textcolor linestyle 0 notitle, \
     "graph1_expense.tmp"              using 1:2   with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
     ""                                using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
-    "graph1_old_meta_compound.tmp"    using 1:2   with linespoints ls 1 title "Job Change ProjectionCompound Meta" ,\
+    "graph1_newjob_compound_from_old_job_milestone.tmp" using 1:2   with linespoints ls 1 title "Job Change ProjectionCompound at NewJob Rate" ,\
     ""                                using 1:2:2 with labels font "Courier,12" rotate by 1 offset 7,0 textcolor linestyle 0 notitle, \
-    "graph1_meta_compound.tmp"        using 1:2   with linespoints ls 2 title "ProjectionCompound Meta", \
+    "graph1_newjob_compound_from_now.tmp" using 1:2   with linespoints ls 2 title "ProjectionCompound at NewJob Rate", \
     ""                                using 1:2:2 with labels font "Courier,12" offset 0,1 textcolor linestyle 2 notitle, \
-    "graph1_old_cisco_compound.tmp"   using 1:2   with linespoints ls 3 title "Job Change ProjectionCompound Cisco" ,\
+    "graph1_old_cisco_compound.tmp"   using 1:2   with linespoints ls 3 title "Job Change ProjectionCompound at OldJob Rate" ,\
     ""                                using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle, \
-    "graph1_cisco_compound.tmp"       using 1:2   with linespoints ls 4 title "ProjectionCompound Cisco", \
+    "graph1_cisco_compound.tmp"       using 1:2   with linespoints ls 4 title "ProjectionCompound at OldJob Rate", \
     ""                                using 1:2:2 with labels font "Courier,12" offset 0,0.5 textcolor linestyle 4 notitle
 EOF
 popd || return
