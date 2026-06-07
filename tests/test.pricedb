@@ -1,0 +1,4 @@
+; Fixed exchange rates for deterministic testing.
+; These are intentionally simplified round numbers — not real market rates.
+P 2016-01-01 INR 0.01 GBP
+P 2016-01-01 USD 0.80 GBP
