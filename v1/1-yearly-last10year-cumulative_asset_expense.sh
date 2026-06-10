@@ -46,21 +46,20 @@ net_yearly "graph1_assets.tmp" "^Assets" "9" &
 net_yearly "graph1_expense.tmp" "^Expense" "8" &
 wait
 
-YEARLY_INTEREST=8
 dateEnd=${MILESTONE_DATE_NEW_JOB:-2021-12}
 echo "Calculating avg monthly savings from -12m to $dateEnd"
-avg_monthsav_new_job=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST)
+avg_monthsav_new_job=$(get_past12_mothly_avg_savings $dateEnd)
 echo "Monthly Savings at $dateEnd : $avg_monthsav_new_job"
 
 dateEnd=${MILESTONE_DATE_OLD_JOB:-2020-11}
 echo "Calculating avg monthly savings from -12m to $dateEnd"
-monthsav_old=$(get_past12_mothly_avg_savings $dateEnd $YEARLY_INTEREST)
+monthsav_old=$(get_past12_mothly_avg_savings $dateEnd)
 echo "Monthly Savings Old at $dateEnd : $monthsav_old"
 
 
 
 # projection from end of old-job milestone at new-job rate
-projection graph1_newjob_compound_from_old_job_milestone.tmp "$avg_monthsav_new_job" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
+projection graph1_newjob_compound_from_old_job_milestone.tmp "$avg_monthsav_new_job" $targe_amt "${MILESTONE_DATE_NEW_JOB:-2021-12}-01" &
 
 # Projection from end of old-job milestone at old-job rate
 projection graph1_oldjob_compound_from_old_job_milestone.tmp "$monthsav_old" $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
