@@ -182,7 +182,7 @@ run_script3() {
             compare_or_update "script3/$f" "$folder/$f" "$GOLDEN_DIR/script3/$f"
         fi
     done
-    check_exists "script3/ledger_monthly_payee.png" "$folder/ledger_monthly_payee.png"
+    check_exists "script3/graph3_lastmonth.png" "$folder/graph3_lastmonth.png"
 }
 
 # ── Script 4 ─────────────────────────────────────────────────────────────────
