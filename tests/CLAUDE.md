@@ -74,8 +74,9 @@ target FI annual expense figure. These are now env vars with defaults:
 
 | Env var | Default | Purpose |
 |---------|---------|---------|
-| `MILESTONE_DATE_NEW_JOB` | `2021-12` | Avg savings calculated at this date |
-| `MILESTONE_DATE_OLD_JOB` | `2020-11` | Projection anchor + savings baseline |
+| `PROJECTION_DATE1` | `2021-12` | Start date for projection 1 |
+| `PROJECTION_DATE2` | `2020-11` | Start date for projection 2 |
+| `PROJECTION_DATE3` | falls back to `LEDGER_TEST_DATE` | Start date for projection 3 (current) |
 | `YEARLY_EXPENSES_GBP` | `46000` | FI target calculation |
 | `LEDGER_RUN_DATE` | falls back to `LEDGER_TEST_DATE` | Graph title date |
 

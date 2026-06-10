@@ -36,8 +36,8 @@ trap cleanup EXIT
 # Fixed reference date — must match the test.ledger window.
 # Regenerate golden files (create_golden.sh) after changing this.
 export LEDGER_TEST_DATE="2026-06-01"
-export MILESTONE_DATE_NEW_JOB="2021-12"
-export MILESTONE_DATE_OLD_JOB="2020-11"
+export PROJECTION_DATE1="2021-12"
+export PROJECTION_DATE2="2020-11"
 export YEARLY_EXPENSES_GBP="46000"
 
 PASS=0

@@ -51,13 +51,14 @@ net_yearly "graph1_expense.tmp" "^Expense" "8" &
 wait
 
 # projection from end of old-job milestone at new-job rate
-projection graph1_projection1.tmp $targe_amt "${MILESTONE_DATE_NEW_JOB:-2021-12}-01" &
+projection graph1_projection1.tmp $targe_amt "${PROJECTION_DATE1:-2021-12}-01" &
 
 # Projection from end of old-job milestone at old-job rate
-projection graph1_projection2.tmp $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
+projection graph1_projection2.tmp $targe_amt "${PROJECTION_DATE2:-2020-11}-01" &
 
 # Project from now at current savings rate
-projection graph1_projection3.tmp $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
+PROJECTION_DATE3=${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}
+projection graph1_projection3.tmp $targe_amt "$PROJECTION_DATE3" &
 
 wait
 
