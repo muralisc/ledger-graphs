@@ -51,13 +51,13 @@ net_yearly "graph1_expense.tmp" "^Expense" "8" &
 wait
 
 # projection from end of old-job milestone at new-job rate
-projection graph1_newjob_compound_from_old_job_milestone.tmp $targe_amt "${MILESTONE_DATE_NEW_JOB:-2021-12}-01" &
+projection graph1_projection1.tmp $targe_amt "${MILESTONE_DATE_NEW_JOB:-2021-12}-01" &
 
 # Projection from end of old-job milestone at old-job rate
-projection graph1_oldjob_compound_from_old_job_milestone.tmp $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
+projection graph1_projection2.tmp $targe_amt "${MILESTONE_DATE_OLD_JOB:-2020-11}-01" &
 
 # Project from now at current savings rate
-projection graph1_newjob_compound_from_now.tmp $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
+projection graph1_projection3.tmp $targe_amt "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}" &
 
 wait
 
@@ -111,11 +111,11 @@ echo "Creating file in $FOLDER/ledger_projection.png"
     ""                      every 1   using 1:2:2 with labels font "Courier,12" rotate by 05 offset 0,0.5 textcolor linestyle 0 notitle, \
     "graph1_expense.tmp"              using 1:2   with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
     ""                                using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
-    "graph1_newjob_compound_from_old_job_milestone.tmp" using 1:2   with linespoints ls 1 title "Job Change ProjectionCompound at NewJob Rate" ,\
+    "graph1_projection1.tmp" using 1:2   with linespoints ls 1 title "Job Change ProjectionCompound at NewJob Rate" ,\
     ""                                using 1:2:2 with labels font "Courier,12" rotate by 1 offset 7,0 textcolor linestyle 0 notitle, \
-    "graph1_newjob_compound_from_now.tmp" using 1:2   with linespoints ls 2 title "ProjectionCompound at Current Rate", \
+    "graph1_projection2.tmp" using 1:2   with linespoints ls 2 title "ProjectionCompound at Current Rate", \
     ""                                using 1:2:2 with labels font "Courier,12" offset 0,1 textcolor linestyle 2 notitle, \
-    "graph1_oldjob_compound_from_old_job_milestone.tmp"   using 1:2   with linespoints ls 3 title "Job Change ProjectionCompound at OldJob Rate" ,\
+    "graph1_projection3.tmp"   using 1:2   with linespoints ls 3 title "Job Change ProjectionCompound at OldJob Rate" ,\
     ""                                using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle
 EOF
 popd || return

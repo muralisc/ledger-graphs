@@ -111,9 +111,9 @@ run_script1() {
     local data_files=(
         graph1_assets.tmp
         graph1_expense.tmp
-        graph1_newjob_compound_from_old_job_milestone.tmp
-        graph1_oldjob_compound_from_old_job_milestone.tmp
-        graph1_newjob_compound_from_now.tmp
+        graph1_projection1.tmp
+        graph1_projection2.tmp
+        graph1_projection3.tmp
     )
     for f in "${data_files[@]}"; do
         if check_exists "script1/$f" "$folder/$f"; then
