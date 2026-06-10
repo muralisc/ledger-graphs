@@ -50,16 +50,26 @@ net_yearly "graph1_assets.tmp" "^Assets" "9" &
 net_yearly "graph1_expense.tmp" "^Expense" "8" &
 wait
 
-PROJECTION_DATE1="${PROJECTION_DATE1:-2021-12}-01"
-PROJECTION_DATE2="${PROJECTION_DATE2:-2020-11}-01"
-PROJECTION_DATE3="${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}"
+projection_dates=(
+    "${PROJECTION_DATE1:-2021-12}-01"
+    "${PROJECTION_DATE2:-2020-11}-01"
+    "${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}"
+)
 
-for i in 1 2 3; do
-    date_var="PROJECTION_DATE$i"
-    projection "graph1_projection${i}.tmp" $targe_amt "${!date_var}" &
+for i in "${!projection_dates[@]}"; do
+    projection "graph1_projection$((i+1)).tmp" $targe_amt "${projection_dates[$i]}" &
 done
 wait
 
+last_idx=$(( ${#projection_dates[@]} - 1 ))
+projection_plots=""
+for i in "${!projection_dates[@]}"; do
+    n=$((i+1))
+    [[ $i -lt $last_idx ]] && tail=",\\" || tail=""
+    projection_plots+="    \"graph1_projection${n}.tmp\" using 1:2 with linespoints ls ${n} title \"Projection ${n}\" ,\\
+    \"\" using 1:2:2 with labels font \"Courier,12\" offset 0,1 textcolor linestyle ${n} notitle${tail}
+"
+done
 
 echo "Creating file in $FOLDER/ledger_projection.png"
 
@@ -110,12 +120,7 @@ echo "Creating file in $FOLDER/ledger_projection.png"
     ""                      every 1   using 1:2:2 with labels font "Courier,12" rotate by 05 offset 0,0.5 textcolor linestyle 0 notitle, \
     "graph1_expense.tmp"              using 1:2   with filledcurves y1=0 title "Expenses" linecolor rgb "violet", \
     ""                                using 1:2:2 with labels font "Courier,8" offset 0,0.5 textcolor linestyle 0 notitle, \
-    "graph1_projection1.tmp" using 1:2   with linespoints ls 1 title "Job Change ProjectionCompound at NewJob Rate" ,\
-    ""                                using 1:2:2 with labels font "Courier,12" rotate by 1 offset 7,0 textcolor linestyle 0 notitle, \
-    "graph1_projection2.tmp" using 1:2   with linespoints ls 2 title "ProjectionCompound at Current Rate", \
-    ""                                using 1:2:2 with labels font "Courier,12" offset 0,1 textcolor linestyle 2 notitle, \
-    "graph1_projection3.tmp"   using 1:2   with linespoints ls 3 title "Job Change ProjectionCompound at OldJob Rate" ,\
-    ""                                using 1:2:2 with labels font "Courier,12" rotate by 40 offset 1,-1 textcolor linestyle 3 notitle
+$projection_plots
 EOF
 popd || return
 
