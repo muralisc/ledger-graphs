@@ -13,10 +13,12 @@ then
 fi
 
 
-export LEDGER_FILE=$1
-export LEDGER_PRICE_DB=$2
-export FOLDER="$3"
+export YEARLY_EXPENSES_GBP=$1
+export LEDGER_FILE=$2
+export LEDGER_PRICE_DB=$3
+export FOLDER="$4"
 
+shift #unset $4 if any
 shift #unset $3 if any
 shift #unset $2 if any
 shift #unset $1 if any
@@ -28,11 +30,13 @@ if [[ -z "$LEDGER_TERM" ]]; then
 fi
 
 CURRENCY=GBP
-yearly_expenses_gbp=${YEARLY_EXPENSES_GBP:-46000}
+yearly_expenses_gbp=${YEARLY_EXPENSES_GBP}
 targe_amt=$((2*25*yearly_expenses_gbp))
 financialInd=$((25*yearly_expenses_gbp))
 lean_FI=$((17*yearly_expenses_gbp))
 half_FI=$((12*yearly_expenses_gbp))
+# Fuck You Money - Savings that grant career flexibility and the power to walk away from bad situations.
+# simplistically a beefier emergency fund
 FU_target=$((3*yearly_expenses_gbp))
 
 LEDGER_RUN_DATE=${LEDGER_RUN_DATE:-${LEDGER_TEST_DATE:-$(date +%Y-%m-%d)}}

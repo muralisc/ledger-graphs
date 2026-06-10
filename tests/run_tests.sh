@@ -106,7 +106,7 @@ run_script1() {
     run_and_check \
         "1-yearly-last10year-cumulative_asset_expense.sh" \
         "$folder" "$log" \
-        "$TEST_LEDGER" "$TEST_PRICEDB" "$folder"
+        "$YEARLY_EXPENSES_GBP" "$TEST_LEDGER" "$TEST_PRICEDB" "$folder"
 
     local data_files=(
         graph1_assets.tmp
