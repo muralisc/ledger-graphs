@@ -114,7 +114,6 @@ run_script1() {
         graph1_newjob_compound_from_old_job_milestone.tmp
         graph1_oldjob_compound_from_old_job_milestone.tmp
         graph1_newjob_compound_from_now.tmp
-        graph1_oldjob_compound_from_now.tmp
     )
     for f in "${data_files[@]}"; do
         if check_exists "script1/$f" "$folder/$f"; then
