@@ -71,11 +71,11 @@ get_past12_mothly_avg_savings() {
 
 function projection() {
     FILENAME="$1"
-    AVG_MONTH_SAV="$2"
-    TARGET_AMT="$3"
-    date_value="$4"
+    TARGET_AMT="$2"
+    date_value="$3"
     YEARLY_INTEREST=8
 
+    AVG_MONTH_SAV=$(get_past12_mothly_avg_savings "$date_value")
     CURRENCY="GBP"
     cur_balence=$(ledger b \
         Assets \
