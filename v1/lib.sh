@@ -56,7 +56,6 @@ function net_yearly() {
 
 get_past12_mothly_avg_savings() {
     dateEnd=$1
-    YEARLY_INTEREST=$2
     LOOKBACK_MONTHS=12
     CURRENCY="GBP"
 
