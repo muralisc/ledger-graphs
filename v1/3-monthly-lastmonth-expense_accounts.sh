@@ -123,10 +123,10 @@ min_exp=$(awk 'BEGIN{min='$min_exp'}{if ($2<0+min) min=$2} END{print min}' ledge
 min_exp=$(awk 'BEGIN{min='$min_exp'}{if ($2<0+min) min=$2} END{print min}' ledger_monthly_posessions_moving_avg.txt)
 max_exp=$(awk 'BEGIN{max=0}{if ($2>0+max) max=$2} END{print max}' ledger_monthly_housing_moving_avg.txt)
 
-echo "Creating $FOLDER/ledger_monthly_payee.png"
+echo "Creating $FOLDER/graph3_lastmonth.png"
 (cat <<EOF) | gnuplot
   set terminal pngcairo size 1750,900 enhanced font 'Verdana,10'
-  set output "$FOLDER/ledger_monthly_payee.png"
+  set output "$FOLDER/graph3_lastmonth.png"
   set xdata time
   set logscale y 2
   set timefmt "%Y-%m-%d"
