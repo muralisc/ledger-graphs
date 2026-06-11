@@ -20,6 +20,32 @@ All scripts live in `v1/`. File-naming convention:
 | `4-daily-lastmonth-expense.sh` | Daily expenses for the current/last month (`graph4_daily_lastmonth_expense.png`) | Last month |
 | `5-monthly-last1year-income_expense.sh` | Rolling 12-month income & expense (`graph5_yearly_inc_exp.png`) | Last 12 months |
 
+---
+
+## Example graphs
+
+> Generated from the synthetic 10-year test dataset included in `tests/`.
+
+### Script 1 — Cumulative assets & FIRE projections
+
+![Cumulative assets and FIRE projections](docs/screenshots/graph1_projection.png)
+
+### Script 2 — Monthly income vs expense (14 months)
+
+![Monthly income vs expense](docs/screenshots/graph2_monthly_inc_exp.png)
+
+### Script 3 — Expense sub-accounts with moving averages (13 months)
+
+![Expense sub-accounts](docs/screenshots/graph3_lastmonth.png)
+
+### Script 4 — Daily expenses for the last month
+
+![Daily expenses](docs/screenshots/graph4_daily_expense.png)
+
+### Script 5 — Rolling 12-month income & expense
+
+![Rolling 12-month income and expense](docs/screenshots/graph5_yearly_inc_exp.png)
+
 `v1/lib.sh` is sourced by script 1 and provides shared functions: `ledger_b` (balance query), `net_yearly`, `projection`, and `get_past12_mothly_avg_savings`.
 
 ---
