@@ -4,24 +4,6 @@ Shell scripts that query [Ledger CLI](https://ledger-cli.org/) and render person
 
 ---
 
-## Scripts
-
-All scripts live in `v1/`. File-naming convention:
-
-```
-<index>-<point-interval>-<total-interval>-<title>.sh
-```
-
-| Script | Graph produced | Window |
-|--------|---------------|--------|
-| `1-yearly-last10year-cumulative_asset_expense.sh` | Cumulative assets & expenses + FIRE projections (`ledger_projection.png`) | Past ~10 years |
-| `2-monthly-lastmonth-income_expense.sh` | Monthly income vs expense, with savings on a second axis (`graph2_monthly_inc_exp.png`) | Last 14 months |
-| `3-monthly-lastmonth-expense_accounts.sh` | Expense sub-accounts with moving averages (`graph3_lastmonth.png`) | Last 13 months |
-| `4-daily-lastmonth-expense.sh` | Daily expenses for the current/last month (`graph4_daily_lastmonth_expense.png`) | Last month |
-| `5-monthly-last1year-income_expense.sh` | Rolling 12-month income & expense (`graph5_yearly_inc_exp.png`) | Last 12 months |
-
----
-
 ## Example graphs
 
 > Generated from the synthetic 10-year test dataset included in `tests/`.
@@ -45,6 +27,24 @@ All scripts live in `v1/`. File-naming convention:
 ### Script 5 — Rolling 12-month income & expense
 
 ![Rolling 12-month income and expense](docs/screenshots/graph5_yearly_inc_exp.png)
+
+---
+
+## Scripts
+
+All scripts live in `v1/`. File-naming convention:
+
+```
+<index>-<point-interval>-<total-interval>-<title>.sh
+```
+
+| Script | Graph produced | Window |
+|--------|---------------|--------|
+| `1-yearly-last10year-cumulative_asset_expense.sh` | Cumulative assets & expenses + FIRE projections (`ledger_projection.png`) | Past ~10 years |
+| `2-monthly-lastmonth-income_expense.sh` | Monthly income vs expense, with savings on a second axis (`graph2_monthly_inc_exp.png`) | Last 14 months |
+| `3-monthly-lastmonth-expense_accounts.sh` | Expense sub-accounts with moving averages (`graph3_lastmonth.png`) | Last 13 months |
+| `4-daily-lastmonth-expense.sh` | Daily expenses for the current/last month (`graph4_daily_lastmonth_expense.png`) | Last month |
+| `5-monthly-last1year-income_expense.sh` | Rolling 12-month income & expense (`graph5_yearly_inc_exp.png`) | Last 12 months |
 
 `v1/lib.sh` is sourced by script 1 and provides shared functions: `ledger_b` (balance query), `net_yearly`, `projection`, and `get_past12_mothly_avg_savings`.
 
