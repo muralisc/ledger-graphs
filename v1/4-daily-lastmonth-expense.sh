@@ -48,7 +48,8 @@ awk '
 NR==FNR { daily[$1]=$2; next }
 {
     date=$1; amt=$2; payee=substr($0, index($0,$3))
-    if (amt+0 > max[date]+0) { max[date]=amt; label[date]=substr(payee,1,20) }
+    gsub(/"/, "", payee)
+    if (amt+0 > max[date]+0) { max[date]=amt; label[date]=sprintf("\"£%s %s\"", amt, substr(payee,1,15)) }
 }
 END { for (d in daily) print d, daily[d], label[d] }
 ' graph4_daily_lastmonth_expense.tmp graph4_daily_lastmonth_expense_txns.tmp \
@@ -75,6 +76,6 @@ echo "Creating file $FOLDER/graph4_daily_lastmonth_expense.png"
   plot \
     "graph4_daily_lastmonth_expense.tmp" using 1:2 with linespoints title "Expense" ls 1 linecolor rgb "red", \
                      '' using 1:2:(sprintf("%'g", \$2)) with labels left font "Courier,12" rotate by 45 offset 1,1 textcolor "red" notitle, \
-    "graph4_daily_lastmonth_expense_labels.tmp" using 1:2:3 with labels left font "Courier,10" rotate by 45 offset 1,3 textcolor "dark-red" notitle
+    "graph4_daily_lastmonth_expense_labels.tmp" using 1:2:3 with labels left font "Courier,10" rotate by 45 offset 1,3 textcolor "blue" notitle
 EOF
 popd
