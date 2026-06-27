@@ -40,7 +40,7 @@ ledger -f $LEDGER_FILE \
     --amount-data \
     --daily \
     --collapse \
-    --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(abs(quantity(scrub(floor(display_total)))))\n" \
+    --plot-amount-format="%(format_date(date, \"%Y-%m-%d\")) %(quantity(scrub(floor(display_total))))\n" \
     MonthlyBudget > graph4b_daily_lastmonth_budget.tmp
 
 echo "Creating file $FOLDER/graph4b_daily_lastmonth_budget.png"
